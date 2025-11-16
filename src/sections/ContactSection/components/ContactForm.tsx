@@ -1,4 +1,29 @@
+'use client';
+
+import { useState } from 'react';
+
 export const ContactForm = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    phone: '',
+    message: ''
+  });
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission logic here
+    console.log('Form submitted:', formData);
+  };
+
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent flex basis-full flex-col grow justify-start leading-[21px] max-w-full text-left px-5 md:text-base md:basis-6/12 md:leading-6 md:max-w-[50%]">
       <div className="text-sm bg-zinc-100 bg-no-repeat box-border caret-transparent leading-[21px] w-full px-10 rounded-[10px] md:text-base md:leading-6">
@@ -40,6 +65,7 @@ export const ContactForm = () => {
               <form
                 aria-label="Contact form"
                 className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6"
+                onSubmit={handleSubmit}
               >
                 <fieldset className="text-sm bg-no-repeat box-border caret-transparent hidden leading-[21px] p-0 md:text-base md:leading-6">
                   <input
@@ -92,9 +118,10 @@ export const ContactForm = () => {
                         <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <input
                             placeholder="Your name"
-                            value=""
+                            value={formData.name}
+                            onChange={handleInputChange}
                             type="text"
-                            name="your-name"
+                            name="name"
                             className="text-sm bg-transparent box-border caret-transparent block leading-[14px] min-h-[43.75px] text-start w-full px-[17.5px] py-[11.2px] border-t-black/70 border-t-0 border-b-black/10 border-x-black/70 border-x-0 border-b md:text-base md:leading-4 md:min-h-[50px] md:px-5 md:py-[12.8px]"
                           />
                         </span>
@@ -105,9 +132,10 @@ export const ContactForm = () => {
                         <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <input
                             placeholder="Your Email Address"
-                            value=""
+                            value={formData.email}
+                            onChange={handleInputChange}
                             type="email"
-                            name="your-email"
+                            name="email"
                             className="text-sm bg-transparent box-border caret-transparent block leading-[14px] min-h-[43.75px] text-start w-full px-[17.5px] py-[11.2px] border-t-black/70 border-t-0 border-b-black/10 border-x-black/70 border-x-0 border-b md:text-base md:leading-4 md:min-h-[50px] md:px-5 md:py-[12.8px]"
                           />
                         </span>
@@ -120,9 +148,10 @@ export const ContactForm = () => {
                         <span className="relative text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
                           <input
                             placeholder="Contact phone"
-                            value=""
+                            value={formData.phone}
+                            onChange={handleInputChange}
                             type="tel"
-                            name="your-tel"
+                            name="phone"
                             className="text-sm bg-transparent box-border caret-transparent block leading-[14px] min-h-[43.75px] text-start w-full px-[17.5px] py-[11.2px] border-t-black/70 border-t-0 border-b-black/10 border-x-black/70 border-x-0 border-b md:text-base md:leading-4 md:min-h-[50px] md:px-5 md:py-[12.8px]"
                           />
                         </span>
@@ -146,7 +175,9 @@ export const ContactForm = () => {
                         <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <textarea
                             placeholder="Describe your request"
-                            name="your-message"
+                            value={formData.message}
+                            onChange={handleInputChange}
+                            name="message"
                             className="text-sm bg-transparent box-border caret-transparent block leading-[21px] min-h-[43.75px] resize-y text-start w-full px-[17.5px] py-[11.2px] border-black/10 md:text-base md:leading-6 md:min-h-[50px] md:px-5 md:py-[12.8px]"
                           ></textarea>
                         </span>

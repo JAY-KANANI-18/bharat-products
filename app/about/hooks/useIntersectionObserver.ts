@@ -8,7 +8,7 @@ interface UseIntersectionObserverOptions {
   triggerOnce?: boolean;
 }
 
-export function useIntersectionObserver(
+export function useIntersectionObserver<T extends HTMLElement = HTMLElement>(
   options: UseIntersectionObserverOptions = {}
 ) {
   const {
@@ -19,7 +19,7 @@ export function useIntersectionObserver(
 
   const [isIntersecting, setIsIntersecting] = useState(false);
   const [hasTriggered, setHasTriggered] = useState(false);
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<T | null>(null);
 
   useEffect(() => {
     const element = elementRef.current;
@@ -52,14 +52,14 @@ export function useIntersectionObserver(
   return { ref: elementRef, isIntersecting };
 }
 
-export function useMultipleIntersectionObserver(
+export function useMultipleIntersectionObserver<T extends HTMLElement = HTMLElement>(
   count: number,
   options: UseIntersectionObserverOptions = {}
 ) {
   const [intersectingStates, setIntersectingStates] = useState<boolean[]>(
     new Array(count).fill(false)
   );
-  const elementRefs = useRef<(HTMLElement | null)[]>(new Array(count).fill(null));
+  const elementRefs = useRef<(T | null)[]>(new Array(count).fill(null));
 
   const {
     threshold = 0.1,
@@ -104,7 +104,7 @@ export function useMultipleIntersectionObserver(
     };
   }, [threshold, rootMargin, triggerOnce]);
 
-  const setRef = (index: number) => (ref: HTMLElement | null) => {
+  const setRef = (index: number) => (ref: T | null) => {
     elementRefs.current[index] = ref;
   };
 

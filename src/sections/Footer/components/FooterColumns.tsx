@@ -1,6 +1,21 @@
+'use client';
+
+import { useState } from 'react';
 import { FooterColumn } from "@/sections/Footer/components/FooterColumn";
 
 export const FooterColumns = () => {
+  const [email, setEmail] = useState('');
+
+  const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setEmail(e.target.value);
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle newsletter subscription logic here
+    console.log('Newsletter subscription:', email);
+  };
+
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent flex basis-full flex-col grow justify-start leading-[21px] max-w-full text-left px-5 md:text-base md:basis-[83.3333%] md:leading-6 md:max-w-[83.3333%]">
       <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6">
@@ -139,6 +154,7 @@ export const FooterColumns = () => {
                         <form
                           aria-label="Contact form"
                           className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6"
+                          onSubmit={handleSubmit}
                         >
                           <fieldset className="text-sm bg-no-repeat box-border caret-transparent hidden leading-[21px] p-0 md:text-base md:leading-6">
                             <input
@@ -191,9 +207,10 @@ export const FooterColumns = () => {
                                   <span className="relative text-[16.002px] bg-no-repeat box-border caret-transparent leading-[21px] md:text-[18.288px] md:leading-6">
                                     <input
                                       placeholder="Email address"
-                                      value=""
+                                      value={email}
+                                      onChange={handleEmailChange}
                                       type="email"
-                                      name="your-email"
+                                      name="email"
                                       className="text-white text-base bg-transparent box-border caret-transparent block leading-4 min-h-[50px] text-start w-full px-5 py-[12.8px] border-t-white border-t-0 border-b-white/30 border-x-white border-x-0 border-b"
                                     />
                                   </span>

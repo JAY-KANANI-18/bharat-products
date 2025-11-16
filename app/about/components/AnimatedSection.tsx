@@ -20,7 +20,7 @@ export function AnimatedSection({
   threshold = 0.1,
   rootMargin = '0px 0px -50px 0px'
 }: AnimatedSectionProps) {
-  const { ref, isIntersecting } = useIntersectionObserver({
+  const { ref, isIntersecting } = useIntersectionObserver<HTMLDivElement>({
     threshold,
     rootMargin,
     triggerOnce: true
