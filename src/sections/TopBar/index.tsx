@@ -27,7 +27,7 @@ export const TopBar = () => {
         isNavVisible ? "translate-y-0" : "-translate-y-full"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className=" mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between h-16 md:h-20 gap-4">
           {/* Logo */}
           <div className="flex-shrink-0">
@@ -51,7 +51,7 @@ export const TopBar = () => {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className={`nav-item px-3 py-2 text-sm font-medium transition-colors ${
+                  className={`nav-item px-3 py-2 text-lg font-medium transition-colors ${
                     isActive
                       ? "text-primary"
                       : "text-foreground/70 hover:text-foreground"

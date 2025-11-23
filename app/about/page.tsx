@@ -26,24 +26,30 @@ export default function AboutPage() {
     <div className="relative overflow-hidden">
       <TopBar />
 
-      {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-gray-50 to-white py-20 md:py-32 overflow-hidden">
-        {/* Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-300"></div>
-          <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-gray-400/20 rounded-full animate-ping delay-700"></div>
+      {/* Hero Section - Full Screen */}
+      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+        {/* Background Image with Overlay */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage:
+              "url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&h=900&fit=crop)",
+          }}
+        >
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black/50"></div>
         </div>
 
-        <div className="relative max-w-6xl mx-auto px-5 md:px-8 text-center">
+        {/* Content */}
+        <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center z-10">
           <AnimatedSection animationType="fade-up" delay={0}>
-            <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
+            <div className="text-xs font-bold tracking-[0.3em] text-white/80 mb-4 font-red_hat_text">
               // ABOUT BHARAT PRODUCT //
             </div>
           </AnimatedSection>
 
           <AnimatedSection animationType="fade-up" delay={200}>
-            <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 font-red_hat_display">
+            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-red_hat_display">
               Your Curated <span className="text-primary">Metallic</span>
               <br />
               Expertise Partner
@@ -51,7 +57,7 @@ export default function AboutPage() {
           </AnimatedSection>
 
           <AnimatedSection animationType="fade-up" delay={400}>
-            <p className="text-lg md:text-xl text-gray-700 leading-8 max-w-3xl mx-auto mb-12">
+            <p className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-12">
               Transforming raw metals into precision-engineered components that
               drive industrial excellence. We combine advanced technology with
               unwavering integrity to deliver reliable, high-tolerance
@@ -64,19 +70,19 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">15+</div>
-                <div className="text-sm text-gray-600">Years Experience</div>
+                <div className="text-sm text-white/80">Years Experience</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-gray-600">Team Members</div>
+                <div className="text-sm text-white/80">Team Members</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-gray-600">Satisfied Clients</div>
+                <div className="text-sm text-white/80">Satisfied Clients</div>
               </div>
               <div className="text-center">
                 <div className="text-3xl font-bold text-primary mb-2">ISO</div>
-                <div className="text-sm text-gray-600">9001:2015</div>
+                <div className="text-sm text-white/80">9001:2015</div>
               </div>
             </div>
           </AnimatedSection>
@@ -84,97 +90,146 @@ export default function AboutPage() {
       </section>
 
       {/* Who We Are Section */}
-      <section className="py-16 md:py-24 bg-white">
-        <div className="max-w-6xl mx-auto px-5 md:px-8">
+      <section className="py-16 md:py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
+        {/* Decorative Bubbles */}
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-10 left-5 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
+          <div className="absolute top-40 right-10 w-24 h-24 bg-primary/15 rounded-full animate-bounce delay-300"></div>
+          <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-primary/20 rounded-full animate-ping delay-700"></div>
+          <div className="absolute bottom-10 right-1/3 w-28 h-28 bg-primary/10 rounded-full animate-float"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-5 md:px-8 relative z-10">
           <AnimatedSection animationType="fade-up" delay={0}>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-red_hat_display">
+            <div className="text-center mb-16">
+              <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
+                // ABOUT BHARAT PRODUCT //
+              </div>
+              <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 font-red_hat_display">
                 Who We Are
               </h2>
               <div className="h-1 w-20 bg-primary rounded-full mx-auto"></div>
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            {/* Left: Image with Bubbles */}
             <AnimatedSection animationType="slide-left" delay={100}>
-              <div className="space-y-6">
-                <p className="text-lg text-gray-700 leading-8">
-                  At <strong>Bharat Product</strong>, we are architects of
-                  precision and partners in progress. We transform raw
-                  metals—Brass, Stainless Steel, Mild Steel, Copper, and
-                  Aluminum—into high-quality, precision-engineered components
-                  that drive industrial excellence.
-                </p>
-                <p className="text-gray-700 leading-8">
-                  With 15+ years of expertise, our team of 50+ skilled
-                  professionals combines advanced technology with unwavering
-                  integrity. We deliver reliable, high-tolerance solutions that
-                  exceed industry standards and customer expectations.
-                </p>
-                <p className="text-gray-700 leading-8">
-                  Our ISO 9001:2015 certification reflects our commitment to
-                  quality management and continuous improvement. We serve 500+
-                  satisfied clients across diverse industries worldwide.
-                </p>
+              <div className="relative">
+                <div className="relative max-w-lg mx-auto lg:max-w-full">
+                  <img
+                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=500&fit=crop"
+                    alt="Bharat Product - Manufacturing Excellence"
+                    className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
+                  />
 
-                {/* Materials we work with */}
-                <div className="pt-4">
-                  <p className="text-sm font-semibold text-gray-600 mb-3">
-                    Materials We Specialize In:
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {[
-                      "Brass",
-                      "Stainless Steel",
-                      "Mild Steel",
-                      "Copper",
-                      "Aluminum",
-                    ].map((m) => (
-                      <span
-                        key={m}
-                        className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20"
-                      >
-                        {m}
-                      </span>
-                    ))}
-                  </div>
+                  {/* Animated Decorative Elements */}
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
+                  <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
+                  <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
                 </div>
               </div>
             </AnimatedSection>
 
+            {/* Right: Content */}
             <AnimatedSection animationType="slide-right" delay={200}>
-              <div className="grid grid-cols-1 gap-4">
-                <div className="p-6 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-lg transition-shadow">
-                  <Target className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="text-lg font-bold text-foreground mb-2">
-                    Our Mission
-                  </h3>
-                  <p className="text-gray-700 text-sm leading-6">
-                    Transform raw metals through advanced machining and curated
-                    expertise into dependable building blocks for our clients'
-                    success and growth.
-                  </p>
+              <div className="space-y-8">
+                <div>
+                  <AnimatedSection animationType="fade-up" delay={300}>
+                    <p className="text-lg text-gray-700 leading-8 mb-6">
+                      At <strong>Bharat Product</strong>, we are more than just manufacturers; we are architects of precision and partners in progress. As a leading force in Indian manufacturing, we specialize in transforming raw metals—Brass, Stainless Steel, Mild Steel, Copper, and Aluminum—into high-quality, precision-engineered components that drive industrial and national growth.
+                    </p>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="fade-up" delay={400}>
+                    <p className="text-gray-700 leading-8 mb-6">
+                      Our identity is built on a foundation of Indian manufacturing excellence, where advanced technology meets unwavering integrity.
+                    </p>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="fade-up" delay={500}>
+                    <p className="text-gray-700 leading-8 mb-6">
+                      Our mission is clear: to harness advanced machining and curated expertise to transform raw metals into reliable, high-tolerance solutions. We go beyond supplying parts; we partner with industries to provide the essential building blocks for our clients' success.
+                    </p>
+                  </AnimatedSection>
                 </div>
-                <div className="p-6 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-lg transition-shadow">
-                  <Award className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="text-lg font-bold text-foreground mb-2">
+
+                {/* Materials we work with */}
+                <AnimatedSection animationType="fade-up" delay={600}>
+                  <div className="pt-4">
+                    <p className="text-sm font-semibold text-gray-600 mb-4">
+                      Materials We Specialize In:
+                    </p>
+                    <div className="flex flex-wrap gap-3">
+                      {[
+                        "Brass",
+                        "Stainless Steel",
+                        "Mild Steel",
+                        "Copper",
+                        "Aluminum",
+                      ].map((m) => (
+                        <span
+                          key={m}
+                          className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20 hover:bg-primary/20 hover:shadow-md transition-all duration-300"
+                        >
+                          {m}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </AnimatedSection>
+          </div>
+
+          {/* Vision, Promise, Difference Cards */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
+            <AnimatedSection animationType="scale" delay={700}>
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
+                {/* Bubble decoration */}
+                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative z-10">
+                  <Target className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
                     Our Vision
                   </h3>
-                  <p className="text-gray-700 text-sm leading-6">
-                    Be India's most trusted engineering partner and a global
-                    benchmark for precision manufacturing, innovation, and
-                    customer satisfaction.
+                  <p className="text-gray-700 leading-6">
+                    To be recognized as India's most trusted engineering partner and set the global standard for precision manufacturing excellence.
                   </p>
                 </div>
-                <div className="p-6 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-lg transition-shadow">
-                  <Zap className="w-8 h-8 text-primary mb-3" />
-                  <h3 className="text-lg font-bold text-foreground mb-2">
-                    Our Promise
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animationType="scale" delay={800}>
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
+                {/* Bubble decoration */}
+                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative z-10">
+                  <Award className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                    Our Brand Promise
                   </h3>
-                  <p className="text-gray-700 text-sm leading-6">
-                    Precision forged in trust—delivering reliable,
-                    high-tolerance solutions with unwavering integrity and
-                    exceptional service.
+                  <p className="text-gray-700 leading-6">
+                    Precision, Forged in Trust. Transforming raw metals into reliable, high-tolerance solutions with unwavering integrity.
+                  </p>
+                </div>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection animationType="scale" delay={900}>
+              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
+                {/* Bubble decoration */}
+                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                
+                <div className="relative z-10">
+                  <Zap className="w-10 h-10 text-primary mb-4" />
+                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                    Our Difference
+                  </h3>
+                  <p className="text-gray-700 leading-6">
+                    Where others see an order, we see a partnership. We deliver precision-engineered solutions that form the essential building blocks for your success.
                   </p>
                 </div>
               </div>
@@ -184,56 +239,154 @@ export default function AboutPage() {
       </section>
 
       {/* The Pillars of Our Excellence */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-6xl mx-auto px-5 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
-            <div className="text-center mb-12">
+            <div className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold text-black mb-4 font-red_hat_display">
                 What Sets Us Apart
               </h2>
               <div className="h-1 w-20 bg-primary rounded-full mx-auto"></div>
             </div>
           </AnimatedSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              {
-                icon: Award,
-                title: "Quality & Reliability",
-                desc: "ISO 9001:2015 certified with RoHS & REACH compliant materials—quality you can trust.",
-              },
-              {
-                icon: Zap,
-                title: "Precision Engineering",
-                desc: "Cutting-edge technology and high-tolerance machining for consistent excellence.",
-              },
-              {
-                icon: Users,
-                title: "Customer Partnership",
-                desc: "Transparent, tailored solutions with a true customer-first approach.",
-              },
-              {
-                icon: Target,
-                title: "Value & Capacity",
-                desc: "Competitive rates and massive capacity—millions of components daily.",
-              },
-            ].map((p, i) => {
-              const Icon = p.icon;
-              return (
-                <AnimatedSection
-                  key={i}
-                  animationType="scale"
-                  delay={100 + i * 100}
-                >
-                  <div className="p-6 bg-white rounded-xl shadow-sm hover:shadow-lg transition-shadow">
-                    <Icon className="w-10 h-10 text-primary mb-4" />
-                    <h3 className="font-bold text-foreground mb-2">
-                      {p.title}
+
+          {/* Alternating Image-Content Sections */}
+          <div className="space-y-20">
+            {/* Section 1: Quality & Reliability */}
+            <AnimatedSection animationType="fade-up" delay={0}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <AnimatedSection animationType="slide-left" delay={200}>
+                  <div>
+                    <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
+                      Uncompromising Quality & Reliability
                     </h3>
-                    <p className="text-gray-700 text-sm leading-6">{p.desc}</p>
+                    <p className="text-gray-700 leading-8 mb-4">
+                      As an ISO 9001:2015 TUV SÜD Certified Company, our adherence to stringent international standards is non-negotiable. We employ RoHS and REACH-compliant materials, ensuring every component meets the most demanding industry requirements and earns the constant faith of our customers.
+                    </p>
+                    <div className="flex items-center gap-3 text-primary font-semibold">
+                      <Award className="w-6 h-6" />
+                      <span>ISO 9001:2015 Certified</span>
+                    </div>
                   </div>
                 </AnimatedSection>
-              );
-            })}
+                <AnimatedSection animationType="slide-right" delay={400}>
+                  <div className="relative group">
+                    <img
+                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=500&fit=crop"
+                      alt="Quality & Reliability"
+                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
+                    {/* Decorative Bubbles */}
+                    <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
+                    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
+                    <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </AnimatedSection>
+
+            {/* Section 2: Engineering with Excellent Precision */}
+            <AnimatedSection animationType="fade-up" delay={0}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <AnimatedSection animationType="slide-left" delay={200} className="lg:order-2">
+                  <div>
+                    <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
+                      Engineering with Excellent Precision
+                    </h3>
+                    <p className="text-gray-700 leading-8 mb-4">
+                      We are highly equipped with cutting-edge technology, enabling us to deliver exceptional precision and high-tolerance solutions day after day. Our advanced CNC machinery and skilled engineers ensure every component meets exact specifications.
+                    </p>
+                    <div className="flex items-center gap-3 text-primary font-semibold">
+                      <Zap className="w-6 h-6" />
+                      <span>±0.01mm Tolerance Capability</span>
+                    </div>
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection animationType="slide-right" delay={400} className="lg:order-1">
+                  <div className="relative group">
+                    <img
+                      src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&h=500&fit=crop"
+                      alt="Precision Engineering"
+                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
+                    {/* Decorative Bubbles */}
+                    <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
+                    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
+                    <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </AnimatedSection>
+
+            {/* Section 3: Customer-Centric Partnership */}
+            <AnimatedSection animationType="fade-up" delay={0}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <AnimatedSection animationType="slide-left" delay={200}>
+                  <div>
+                    <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
+                      Customer-Centric Partnership
+                    </h3>
+                    <p className="text-gray-700 leading-8 mb-4">
+                      Our "customer-first" policy is more than a motto; it's our practice. We believe in strengthening relationships through unmatched transparency and providing fully customized solutions for every unique requirement, ensuring total satisfaction.
+                    </p>
+                    <div className="flex items-center gap-3 text-primary font-semibold">
+                      <Users className="w-6 h-6" />
+                      <span>500+ Satisfied Clients</span>
+                    </div>
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection animationType="slide-right" delay={400}>
+                  <div className="relative group">
+                    <img
+                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
+                      alt="Customer Partnership"
+                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
+                    {/* Decorative Bubbles */}
+                    <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
+                    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
+                    <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </AnimatedSection>
+
+            {/* Section 4: Unbeatable Value & Capacity */}
+            <AnimatedSection animationType="fade-up" delay={0}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <AnimatedSection animationType="slide-left" delay={200} className="lg:order-2">
+                  <div>
+                    <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
+                      Unbeatable Value & Capacity
+                    </h3>
+                    <p className="text-gray-700 leading-8 mb-4">
+                      We combine the most competitive rates in the market with a massive production capacity, capable of producing millions of precision components daily. This synergy of scale and efficiency makes us the undeniable market leader.
+                    </p>
+                    <div className="flex items-center gap-3 text-primary font-semibold">
+                      <Target className="w-6 h-6" />
+                      <span>Millions of Components Daily</span>
+                    </div>
+                  </div>
+                </AnimatedSection>
+                <AnimatedSection animationType="slide-right" delay={400} className="lg:order-1">
+                  <div className="relative group">
+                    <img
+                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=500&fit=crop"
+                      alt="Value & Capacity"
+                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
+                    {/* Decorative Bubbles */}
+                    <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
+                    <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
+                    <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
+                  </div>
+                </AnimatedSection>
+              </div>
+            </AnimatedSection>
           </div>
         </div>
       </section>
@@ -311,201 +464,249 @@ export default function AboutPage() {
 
           {/* Story, Culture, Capabilities Sections */}
           <div className="space-y-20">
-            {/* Our Story Section */}
+            {/* Our Story Section - Timeline Style */}
             <AnimatedSection animationType="fade-up" delay={0}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <AnimatedSection animationType="slide-left" delay={200}>
-                  <div>
-                    <header className="mb-6">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
-                          <BookOpen className="w-6 h-6 text-white" />
+              <div className="bg-gradient-to-r from-primary/5 to-primary/10 rounded-3xl p-12 relative overflow-hidden">
+                {/* Background Decoration */}
+                <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full"></div>
+                <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/10 rounded-full"></div>
+                
+                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <AnimatedSection animationType="slide-left" delay={200}>
+                    <div>
+                      <div className="flex items-center mb-8">
+                        <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mr-4 animate-pulse shadow-lg">
+                          <BookOpen className="w-8 h-8 text-white" />
                         </div>
                         <h2 className="text-4xl font-semibold text-black font-red_hat_display">
                           Our Story
                         </h2>
                       </div>
-                    </header>
-                    <div className="space-y-4">
-                      <AnimatedSection animationType="fade-up" delay={400}>
-                        <p className="text-gray-700 leading-7">
-                          We take your trust seriously, employing proven quality
-                          management principles to enhance customer satisfaction
-                          and continually improve our performance and
-                          capabilities.
-                        </p>
-                      </AnimatedSection>
-                      <AnimatedSection animationType="fade-up" delay={600}>
-                        <p className="text-gray-700 leading-7">
-                          We have decades of experience meeting stringent
-                          regulations for automotive, aerospace and medical
-                          device industries.
-                        </p>
-                      </AnimatedSection>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                <AnimatedSection animationType="slide-right" delay={400}>
-                  <div className="relative group">
-                    <img
-                      src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=400&fit=crop"
-                      alt="Our Manufacturing Story"
-                      className="w-full h-80 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-500"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--primary))]/20 to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <div className="bg-black/50 px-3 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
-                        <Layers className="w-4 h-4" /> Since 1995
+                      
+                      <div className="space-y-6">
+                        <AnimatedSection animationType="fade-up" delay={400}>
+                          <div className="flex gap-4">
+                            <div className="w-1 bg-gradient-to-b from-primary to-primary/30 rounded-full"></div>
+                            <div>
+                              <h3 className="font-bold text-black mb-2">Quality Management Excellence</h3>
+                              <p className="text-gray-700 leading-7">
+                                We take your trust seriously, employing proven quality management principles to enhance customer satisfaction and continually improve our performance and capabilities.
+                              </p>
+                            </div>
+                          </div>
+                        </AnimatedSection>
+                        
+                        <AnimatedSection animationType="fade-up" delay={600}>
+                          <div className="flex gap-4">
+                            <div className="w-1 bg-gradient-to-b from-primary to-primary/30 rounded-full"></div>
+                            <div>
+                              <h3 className="font-bold text-black mb-2">Industry Expertise</h3>
+                              <p className="text-gray-700 leading-7">
+                                We have decades of experience meeting stringent regulations for automotive, aerospace and medical device industries with precision and reliability.
+                              </p>
+                            </div>
+                          </div>
+                        </AnimatedSection>
                       </div>
                     </div>
-                  </div>
-                </AnimatedSection>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="slide-right" delay={400}>
+                    <div className="relative group">
+                      <img
+                        src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=500&fit=crop"
+                        alt="Our Manufacturing Story"
+                        className="w-full h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-3xl"></div>
+                      <div className="absolute bottom-6 left-6 text-white">
+                        <div className="bg-black/60 backdrop-blur px-4 py-3 rounded-full text-sm font-bold flex items-center gap-2">
+                          <Layers className="w-5 h-5" /> Since 1995
+                        </div>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                </div>
               </div>
             </AnimatedSection>
 
-            {/* Our Culture Section */}
+            {/* Our Culture Section - Card Grid Style */}
             <AnimatedSection animationType="fade-up" delay={0}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <AnimatedSection
-                  animationType="slide-left"
-                  delay={200}
-                  className="lg:order-2"
-                >
-                  <div>
-                    <header className="mb-6">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
-                          <Briefcase className="w-6 h-6 text-white" />
-                        </div>
-                        <h2 className="text-4xl font-semibold text-black font-red_hat_display">
-                          Our Culture
-                        </h2>
-                      </div>
-                    </header>
-                    <div className="space-y-4">
-                      <AnimatedSection animationType="fade-up" delay={400}>
-                        <p className="text-gray-700 leading-7">
-                          Over the years, we've built a culture of service,
-                          teamwork, and innovation. With an exceptionally
-                          diverse staff and an average tenure of ten years.
-                        </p>
-                      </AnimatedSection>
-
-                      <AnimatedSection animationType="fade-up" delay={600}>
-                        <div className="grid grid-cols-2 gap-4 mt-6">
-                          <div className="bg-gray-50 p-4 rounded-xl text-center hover-lift">
-                            <div className="text-2xl font-bold text-primary mb-1">
-                              10+
-                            </div>
-                            <div className="text-sm text-gray-600">
-                              Years Average Tenure
-                            </div>
-                          </div>
-                          <div className="bg-gray-50 p-4 rounded-xl text-center hover-lift">
-                            <div className="text-2xl font-bold text-primary mb-1">
-                              95%
-                            </div>
-                            <div className="text-sm text-gray-600">
-                              Employee Satisfaction
-                            </div>
-                          </div>
-                        </div>
-                      </AnimatedSection>
+              <div>
+                <div className="text-center mb-12">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center shadow-lg">
+                      <Briefcase className="w-7 h-7 text-white" />
                     </div>
                   </div>
-                </AnimatedSection>
+                  <h2 className="text-4xl font-semibold text-black mb-4 font-red_hat_display">
+                    Our Culture
+                  </h2>
+                  <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
+                    Over the years, we've built a culture of service, teamwork, and innovation with an exceptionally diverse staff and strong commitment to excellence.
+                  </p>
+                </div>
 
-                <AnimatedSection
-                  animationType="slide-right"
-                  delay={400}
-                  className="lg:order-1"
-                >
-                  <div className="relative group">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                  <AnimatedSection animationType="scale" delay={300}>
+                    <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-primary overflow-hidden">
+                      <div className="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-primary mb-2">10+</div>
+                        <div className="text-sm text-gray-600 font-semibold">Years Average Tenure</div>
+                        <p className="text-gray-700 text-sm mt-3 leading-6">Our team members stay with us, reflecting our positive work environment.</p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="scale" delay={400}>
+                    <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-primary overflow-hidden">
+                      <div className="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold text-primary mb-2">95%</div>
+                        <div className="text-sm text-gray-600 font-semibold">Employee Satisfaction</div>
+                        <p className="text-gray-700 text-sm mt-3 leading-6">Our team is satisfied and engaged in their work every day.</p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="scale" delay={500}>
+                    <div className="group relative bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-white overflow-hidden">
+                      <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                      <div className="relative z-10">
+                        <div className="text-4xl font-bold mb-2">50+</div>
+                        <div className="text-sm font-semibold opacity-90">Diverse Team Members</div>
+                        <p className="text-white/90 text-sm mt-3 leading-6">Bringing varied perspectives and expertise to every project.</p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <AnimatedSection animationType="slide-left" delay={200}>
                     <img
-                      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=400&fit=crop"
+                      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=500&fit=crop"
                       alt="Team Culture"
-                      className="w-full h-80 object-cover rounded-2xl shadow-lg group-hover:scale-105 transition-transform duration-500"
+                      className="w-full h-auto rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[hsl(var(--accent))]/20 to-transparent rounded-2xl"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <div className="bg-black/50 px-3 py-2 rounded-full text-sm font-semibold flex items-center gap-2">
-                        <Users className="w-4 h-4" /> Diverse Team
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="slide-right" delay={400}>
+                    <div className="space-y-6">
+                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                          <div className="w-3 h-3 bg-primary rounded-full"></div>
+                          Service Excellence
+                        </h3>
+                        <p className="text-gray-700 leading-7">We prioritize customer and team member satisfaction in everything we do.</p>
+                      </div>
+                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                          <div className="w-3 h-3 bg-primary rounded-full"></div>
+                          Teamwork & Innovation
+                        </h3>
+                        <p className="text-gray-700 leading-7">Collaborative environment where ideas flourish and innovation thrives.</p>
+                      </div>
+                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                          <div className="w-3 h-3 bg-primary rounded-full"></div>
+                          Continuous Growth
+                        </h3>
+                        <p className="text-gray-700 leading-7">We invest in our people's development and career advancement.</p>
                       </div>
                     </div>
-                  </div>
-                </AnimatedSection>
+                  </AnimatedSection>
+                </div>
               </div>
             </AnimatedSection>
 
-            {/* Our Capabilities Section */}
+            {/* Our Capabilities Section - Hexagon Grid Style */}
             <AnimatedSection animationType="fade-up" delay={0}>
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <AnimatedSection animationType="slide-left" delay={200}>
-                  <div>
-                    <header className="mb-6">
-                      <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
-                          <Cog className="w-6 h-6 text-white" />
-                        </div>
-                        <h2 className="text-4xl font-semibold text-black font-red_hat_display">
-                          Our Capabilities
-                        </h2>
-                      </div>
-                    </header>
-
-                    <div className="space-y-4">
-                      {[
-                        { icon: Wrench, text: "Gasketing and sealing" },
-                        { icon: Shield, text: "EMI and RFI shielding" },
-                        { icon: Gauge, text: "Spacers and washers" },
-                        { icon: Zap, text: "Sound dampeners and insulators" },
-                        {
-                          icon: Cpu,
-                          text: "Electrically conductive adhesives",
-                        },
-                      ].map((item, index) => {
-                        const IconComponent = item.icon;
-                        return (
-                          <AnimatedSection
-                            key={index}
-                            animationType="slide-left"
-                            delay={400 + index * 100}
-                          >
-                            <div className="flex items-center p-4 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors">
-                              <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3 flex-shrink-0">
-                                <IconComponent className="w-4 h-4 text-white" />
-                              </div>
-                              <span className="text-gray-800 font-medium">
-                                {item.text}
-                              </span>
-                            </div>
-                          </AnimatedSection>
-                        );
-                      })}
+              <div>
+                <div className="text-center mb-16">
+                  <div className="flex items-center justify-center mb-4">
+                    <div className="w-14 h-14 bg-gradient-to-br from-primary to-primary/70 rounded-full flex items-center justify-center shadow-lg">
+                      <Cog className="w-7 h-7 text-white" />
                     </div>
                   </div>
-                </AnimatedSection>
+                  <h2 className="text-4xl font-semibold text-black mb-4 font-red_hat_display">
+                    Our Capabilities
+                  </h2>
+                  <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
+                    We specialize in precision manufacturing across diverse product categories with cutting-edge technology and expert craftsmanship.
+                  </p>
+                </div>
 
-                <AnimatedSection animationType="slide-right" delay={400}>
-                  <div className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                  {[
+                    { icon: Wrench, text: "Gaskets & Sealing", color: "from-blue-500 to-blue-600" },
+                    { icon: Shield, text: "EMI/RFI Shielding", color: "from-purple-500 to-purple-600" },
+                    { icon: Gauge, text: "Spacers & Washers", color: "from-green-500 to-green-600" },
+                    { icon: Zap, text: "Sound Dampeners", color: "from-yellow-500 to-yellow-600" },
+                    { icon: Cpu, text: "Conductive Adhesives", color: "from-red-500 to-red-600" },
+                    { icon: Layers, text: "Custom Manufacturing", color: "from-indigo-500 to-indigo-600" },
+                  ].map((item, index) => {
+                    const IconComponent = item.icon;
+                    return (
+                      <AnimatedSection
+                        key={index}
+                        animationType="scale"
+                        delay={300 + index * 100}
+                      >
+                        <div className={`group relative bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105`}>
+                          <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+                          <div className="relative z-10 text-center">
+                            <IconComponent className="w-12 h-12 mx-auto mb-4 opacity-90" />
+                            <h3 className="font-bold text-lg">{item.text}</h3>
+                          </div>
+                        </div>
+                      </AnimatedSection>
+                    );
+                  })}
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                  <AnimatedSection animationType="slide-left" delay={200}>
+                    <div className="space-y-6">
+                      <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
+                        <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
+                          <Award className="w-6 h-6 text-primary" />
+                          Quality Assured
+                        </h3>
+                        <p className="text-gray-700 leading-8">
+                          ISO 9001:2015 certified quality management system ensures every component meets the highest standards of excellence.
+                        </p>
+                      </div>
+                      <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
+                        <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
+                          <Zap className="w-6 h-6 text-primary" />
+                          Advanced Technology
+                        </h3>
+                        <p className="text-gray-700 leading-8">
+                          State-of-the-art CNC machinery and precision equipment enable us to deliver consistent, high-tolerance components.
+                        </p>
+                      </div>
+                    </div>
+                  </AnimatedSection>
+
+                  <AnimatedSection animationType="slide-right" delay={400}>
                     <div className="grid grid-cols-2 gap-4">
                       {[
                         {
-                          src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=200&h=150&fit=crop",
-                          label: "CNC Tech",
+                          src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop",
+                          label: "CNC Technology",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=200&h=150&fit=crop",
-                          label: "Precision",
+                          src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=300&h=300&fit=crop",
+                          label: "Precision Machining",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=200&h=150&fit=crop",
-                          label: "Quality",
+                          src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=300&h=300&fit=crop",
+                          label: "Quality Control",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=200&h=150&fit=crop",
-                          label: "Assembly",
+                          src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=300&h=300&fit=crop",
+                          label: "Assembly & Testing",
                         },
                       ].map((item, index) => (
                         <AnimatedSection
@@ -513,36 +714,22 @@ export default function AboutPage() {
                           animationType="scale"
                           delay={600 + index * 100}
                         >
-                          <div className="relative group">
+                          <div className="relative group overflow-hidden rounded-2xl">
                             <img
                               src={item.src}
                               alt={item.label}
-                              className="w-full h-32 object-cover rounded-xl group-hover:scale-110 transition-transform duration-500"
+                              className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-xl"></div>
-                            <div className="absolute bottom-2 left-2 text-white text-xs font-semibold">
-                              {item.label}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                            <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                              <p className="font-bold text-sm">{item.label}</p>
                             </div>
                           </div>
                         </AnimatedSection>
                       ))}
                     </div>
-
-                    <AnimatedSection animationType="fade-up" delay={1000}>
-                      <div className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] p-6 rounded-xl text-white text-center animate-glow">
-                        <div className="flex items-center justify-center mb-2">
-                          <Award className="w-6 h-6 mr-2" />
-                          <span className="font-bold text-lg">
-                            ISO 9001:2015
-                          </span>
-                        </div>
-                        <div className="text-sm opacity-90">
-                          Certified Quality Management
-                        </div>
-                      </div>
-                    </AnimatedSection>
-                  </div>
-                </AnimatedSection>
+                  </AnimatedSection>
+                </div>
               </div>
             </AnimatedSection>
           </div>
@@ -653,51 +840,64 @@ export default function AboutPage() {
       <TestimonialCarousel />
 
       {/* Manufacturing Showcase */}
-      <section className="bg-white py-20 md:py-32">
-        <div className="max-w-6xl mx-auto px-5 md:px-8">
+      <section className="bg-gradient-to-br from-white to-gray-50 py-20 md:py-32 relative overflow-hidden">
+        {/* Background Decoration */}
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full"></div>
+        <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary/5 rounded-full"></div>
+
+        <div className="max-w-6xl mx-auto px-5 md:px-8 relative z-10">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-16">
               <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
                 // EXCELLENCE IN MANUFACTURING //
               </div>
-              <h2 className="text-4xl font-bold text-black font-red_hat_display">
+              <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 font-red_hat_display">
                 Our Manufacturing Excellence
               </h2>
+              <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
+                State-of-the-art facilities and cutting-edge technology delivering precision components with uncompromising quality standards.
+              </p>
             </div>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[
               {
-                src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop",
+                src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=350&fit=crop",
                 title: "Advanced CNC Technology",
+                desc: "Precision machinery for consistent, high-tolerance manufacturing",
               },
               {
-                src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=400&h=250&fit=crop",
+                src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&h=350&fit=crop",
                 title: "Precision Manufacturing",
+                desc: "Expert craftsmanship meets advanced engineering excellence",
               },
               {
-                src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop",
+                src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=350&fit=crop",
                 title: "Quality Control",
+                desc: "Rigorous testing and inspection at every production stage",
               },
             ].map((item, index) => (
               <AnimatedSection
                 key={index}
-                animationType="fade-up"
-                delay={200 + index * 200}
+                animationType="scale"
+                delay={200 + index * 150}
               >
-                <div className="group hover:scale-105 transition-all duration-300">
-                  <div className="relative overflow-hidden rounded-2xl">
+                <div className="group h-full">
+                  <div className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
                     <img
                       src={item.src}
                       alt={item.title}
-                      className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
+                      className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h3 className="text-lg font-semibold font-red_hat_display">
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+                      <h3 className="text-xl font-bold font-red_hat_display mb-2">
                         {item.title}
                       </h3>
+                      <p className="text-sm text-white/90 leading-6">
+                        {item.desc}
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -706,17 +906,33 @@ export default function AboutPage() {
           </div>
 
           <AnimatedSection animationType="fade-up" delay={800}>
-            <div className="text-center">
-              <div className="bg-gray-50 rounded-2xl p-8 md:p-12">
-                <h3 className="text-2xl font-bold mb-4 font-red_hat_display">
-                  ISO 9001:2015 Certified Facility
-                </h3>
-                <p className="text-gray-600 leading-6 max-w-3xl mx-auto">
-                  At Bharat Product, we craft high-quality components using
-                  advanced technology in our certified facility. Our commitment
-                  to excellence allows us to serve various industries with
-                  precision-engineered solutions.
-                </p>
+            <div className="relative">
+              <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-3xl p-12 md:p-16 border border-primary/20 relative overflow-hidden">
+                {/* Decorative Element */}
+                <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full"></div>
+                
+                <div className="relative z-10 text-center">
+                  <div className="flex items-center justify-center mb-6">
+                    <Award className="w-12 h-12 text-primary mr-3" />
+                    <h3 className="text-3xl font-bold text-black font-red_hat_display">
+                      ISO 9001:2015 Certified
+                    </h3>
+                  </div>
+                  <p className="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-6">
+                    Our facility is ISO 9001:2015 certified, ensuring the highest standards of quality management. We craft high-quality components using advanced technology and rigorous quality control processes. Our commitment to excellence allows us to serve various industries with precision-engineered solutions that exceed expectations.
+                  </p>
+                  <div className="flex flex-wrap gap-4 justify-center">
+                    <div className="bg-white rounded-full px-6 py-3 shadow-md">
+                      <span className="font-semibold text-primary">✓ TUV SÜD Certified</span>
+                    </div>
+                    <div className="bg-white rounded-full px-6 py-3 shadow-md">
+                      <span className="font-semibold text-primary">✓ RoHS Compliant</span>
+                    </div>
+                    <div className="bg-white rounded-full px-6 py-3 shadow-md">
+                      <span className="font-semibold text-primary">✓ REACH Compliant</span>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </AnimatedSection>

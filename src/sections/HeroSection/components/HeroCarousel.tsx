@@ -156,7 +156,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
                 }`}
               >
                 {slide.subtitle ? (
-                  <p className="text-yellow-400 text-xl mb-2 font-sanchez">
+                  <p className="text-primary text-xl mb-2 font-sanchez">
                     {slide.subtitle}
                   </p>
                 ) : null}
@@ -236,4 +236,3 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
 };
 
 export default HeroCarousel;
-
