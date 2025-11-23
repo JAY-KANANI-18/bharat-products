@@ -9,9 +9,9 @@ export const Header = () => {
         <MobileMenuToggle variant="text-[0px] hidden float-right leading-[120px] text-center ml-4 md:text-start" />
         <Logo
           variant="default"
-          href="https://amwerk.bold-themes.com/berlin/"
-          imageUrl="https://c.animaapp.com/mhypf3xrXgMUxE/assets/amwerk-logo-gold-bronze.png"
-          alt="Berlin"
+          href="/"
+          imageUrl="/logo/Bg White Main Logo.png"
+          alt="Logo"
         />
         <PhoneButton />
       </div>

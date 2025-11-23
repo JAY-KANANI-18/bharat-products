@@ -10,7 +10,7 @@ export const HeroImage = () => {
           </div>
           <div className="absolute text-sm bg-no-repeat box-border caret-transparent leading-[21px] pointer-events-none ml-7 mr-auto mt-[70px] top-0 inset-x-0 md:text-base md:leading-6 md:ml-8 md:mt-20">
             <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] translate-y-[-1.8px] md:text-base md:leading-6 md:translate-y-[0.8px]">
-              <span className="text-sm bg-no-repeat shadow-[rgb(227,178,57)_0px_0px_0px_5px] box-border caret-transparent block h-28 leading-[21px] mix-blend-multiply opacity-90 w-28 rounded-[50%] md:text-base md:h-32 md:leading-6 md:w-32"></span>
+              <span className="text-sm bg-no-repeat shadow-[hsl(var(--primary))_0px_0px_0px_5px] box-border caret-transparent block h-28 leading-[21px] mix-blend-multiply opacity-90 w-28 rounded-[50%] md:text-base md:h-32 md:leading-6 md:w-32"></span>
             </div>
           </div>
           <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] overflow-hidden rounded-[50%] md:text-base md:leading-6">
@@ -25,7 +25,7 @@ export const HeroImage = () => {
           </div>
           <div className="absolute text-sm bg-no-repeat box-border caret-transparent leading-[21px] pointer-events-none mr-[70px] mb-[70px] right-0 bottom-0 md:text-base md:leading-6 md:mr-20 md:mb-20">
             <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] translate-y-[-14.7063px] md:text-base md:leading-6 md:translate-y-[45.8px]">
-              <span className="text-sm bg-stone-500 bg-no-repeat box-border caret-transparent block h-[70px] leading-[21px] mix-blend-multiply opacity-90 w-[70px] rounded-[50%] md:text-base md:h-20 md:leading-6 md:w-20"></span>
+              <span className="text-sm bg-[hsl(var(--accent))] bg-no-repeat box-border caret-transparent block h-[70px] leading-[21px] mix-blend-multiply opacity-90 w-[70px] rounded-[50%] md:text-base md:h-20 md:leading-6 md:w-20"></span>
             </div>
           </div>
         </div>

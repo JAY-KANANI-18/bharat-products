@@ -9,7 +9,7 @@ export const PricingCard = () => {
                 <a
                   href="#"
                   title="Start with Amwerk"
-                  className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-yellow-500 hover:border-yellow-500"
+                  className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
                 >
                   <img
                     src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-4-1280x1280.jpg"
@@ -24,7 +24,7 @@ export const PricingCard = () => {
               <span className="relative text-[17.5px] bg-no-repeat box-border caret-transparent block grow shrink-0 leading-[17.5px] opacity-70 z-[2] md:text-xl md:leading-5">
                 $
               </span>
-              <span className="relative text-yellow-500 text-[43.75px] font-bold bg-no-repeat box-border caret-transparent block basis-full grow shrink-0 tracking-[-1.3125px] leading-[35px] min-w-full text-nowrap z-[2] ml-[3px] md:text-[50px] md:tracking-[-1.5px] md:leading-10">
+              <span className="relative text-primary text-[43.75px] font-bold bg-no-repeat box-border caret-transparent block basis-full grow shrink-0 tracking-[-1.3125px] leading-[35px] min-w-full text-nowrap z-[2] ml-[3px] md:text-[50px] md:tracking-[-1.5px] md:leading-10">
                 1299
               </span>
             </div>
@@ -33,16 +33,16 @@ export const PricingCard = () => {
             </div>
             <div className="text-sm bg-no-repeat box-border caret-transparent basis-full grow shrink-0 leading-[21px] max-w-full opacity-70 order-4 md:text-base md:leading-6"></div>
             <ul className="text-sm bg-no-repeat box-border caret-transparent clear-left basis-full grow shrink-0 leading-[21px] list-none max-w-full order-5 mb-[21.882px] px-[30.632px] md:text-base md:leading-6 md:mb-[25.008px] md:px-[35.008px] before:accent-auto before:bg-black before:box-border before:caret-transparent before:clear-both before:text-black before:block before:text-sm before:not-italic before:normal-nums before:font-normal before:h-px before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:opacity-10 before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:mb-[17.5px] before:border-separate before:font-sanchez before:md:text-base before:md:leading-6 before:md:mb-5">
-              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-yellow-500 before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
+              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-primary before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
                 Objectively integrate core competencies
               </li>
-              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-yellow-500 before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
+              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-primary before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
                 Process-centric communities
               </li>
-              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-yellow-500 before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
+              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-primary before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
                 Evisculate holistic innovation
               </li>
-              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-yellow-500 before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
+              <li className="text-sm bg-no-repeat box-border caret-transparent block leading-[21px] pb-[4.2px] md:text-base md:leading-6 md:pb-[4.8px] before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:text-primary before:inline-block before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[21px] before:list-outside before:list-none before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:mr-[7px] before:border-separate before:font-fontawesome5solid before:md:text-base before:md:leading-6 before:md:mr-2">
                 Incubate intuitive opportunities
               </li>
             </ul>
@@ -60,9 +60,10 @@ export const PricingCard = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-5 md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-black/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
+          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-5 md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
         </div>
       </div>
     </div>
   );
 };
+

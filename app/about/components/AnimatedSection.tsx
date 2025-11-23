@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React from 'react';
-import { useIntersectionObserver } from '../hooks/useIntersectionObserver';
+import React from "react";
+import { useIntersectionObserver } from "../hooks/useIntersectionObserver";
 
 interface AnimatedSectionProps {
   children: React.ReactNode;
   className?: string;
-  animationType?: 'fade-up' | 'slide-left' | 'slide-right' | 'scale';
+  animationType?: "fade-up" | "slide-left" | "slide-right" | "scale";
   delay?: number;
   threshold?: number;
   rootMargin?: string;
@@ -14,40 +14,40 @@ interface AnimatedSectionProps {
 
 export function AnimatedSection({
   children,
-  className = '',
-  animationType = 'fade-up',
+  className = "",
+  animationType = "fade-up",
   delay = 0,
   threshold = 0.1,
-  rootMargin = '0px 0px -50px 0px'
+  rootMargin = "0px 0px -50px 0px",
 }: AnimatedSectionProps) {
   const { ref, isIntersecting } = useIntersectionObserver<HTMLDivElement>({
     threshold,
     rootMargin,
-    triggerOnce: true
+    triggerOnce: true,
   });
 
   const getAnimationClasses = () => {
-    let classes = 'animate-on-scroll';
-    
+    let classes = "animate-on-scroll";
+
     switch (animationType) {
-      case 'slide-left':
-        classes += ' slide-left';
+      case "slide-left":
+        classes += " slide-left";
         break;
-      case 'slide-right':
-        classes += ' slide-right';
+      case "slide-right":
+        classes += " slide-right";
         break;
-      case 'scale':
-        classes += ' scale';
+      case "scale":
+        classes += " scale";
         break;
       default:
         // fade-up is the default
         break;
     }
-    
+
     if (isIntersecting) {
-      classes += ' is-visible';
+      classes += " is-visible";
     }
-    
+
     return classes;
   };
 
@@ -56,7 +56,7 @@ export function AnimatedSection({
       ref={ref}
       className={`${getAnimationClasses()} ${className}`}
       style={{
-        transitionDelay: `${delay}ms`
+        transitionDelay: `${delay}ms`,
       }}
     >
       {children}

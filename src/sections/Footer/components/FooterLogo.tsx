@@ -7,14 +7,14 @@ export const FooterLogo = () => {
           <div className="text-sm bg-no-repeat box-border caret-transparent clear-both hidden leading-[0px] mb-10 md:text-base md:block before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-white before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
           <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-10 overflow-hidden md:text-base md:leading-6">
             <a
-              href="/berlin"
-              title="Amwerk"
-              className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-yellow-500 hover:border-yellow-500"
+              href="/"
+              title="Logo"
+              className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
             >
               <img
-                src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/amwerk-logo-gold-bronze-sign.png"
-                title="Amwerk"
-                alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/amwerk-logo-gold-bronze-sign.png"
+                src="/logo/Bg White Main Logo.png"
+                title="Logo"
+                alt="Logo"
                 className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
               />
             </a>
@@ -25,3 +25,4 @@ export const FooterLogo = () => {
     </div>
   );
 };
+

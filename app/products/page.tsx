@@ -108,7 +108,7 @@ export default function ProductsPage() {
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-yellow-500/30 rounded-full animate-bounce delay-300"></div>
+          <div className="absolute top-40 right-20 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-300"></div>
           <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-gray-400/20 rounded-full animate-ping delay-700"></div>
         </div>
         
@@ -121,7 +121,7 @@ export default function ProductsPage() {
           
           <AnimatedSection animationType="fade-up" delay={200}>
             <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 font-red_hat_display">
-              <span className="text-yellow-500">Precision</span> Products
+              <span className="text-primary">Precision</span> Products
               <br />
               for Every Industry
             </h1>
@@ -137,19 +137,19 @@ export default function ProductsPage() {
           <AnimatedSection animationType="fade-up" delay={600}>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-500 mb-2">9</div>
+                <div className="text-3xl font-bold text-primary mb-2">9</div>
                 <div className="text-sm text-gray-600">Product Categories</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-500 mb-2">500+</div>
+                <div className="text-3xl font-bold text-primary mb-2">500+</div>
                 <div className="text-sm text-gray-600">Custom Solutions</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-500 mb-2">15+</div>
+                <div className="text-3xl font-bold text-primary mb-2">15+</div>
                 <div className="text-sm text-gray-600">Industries Served</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-yellow-500 mb-2">99%</div>
+                <div className="text-3xl font-bold text-primary mb-2">99%</div>
                 <div className="text-sm text-gray-600">Quality Rating</div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function ProductsPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                       
                       {/* Category Badge */}
-                      <div className="absolute top-4 left-4 bg-yellow-500 text-white px-3 py-1 rounded-full text-sm font-semibold transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
+                      <div className="absolute top-4 left-4 bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold transform -translate-y-2 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500 delay-100">
                         {product.category}
                       </div>
                       
@@ -202,7 +202,7 @@ export default function ProductsPage() {
                       </div>
                       
                       {/* Hover Overlay with Features */}
-                      <div className="absolute inset-0 bg-yellow-500/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
+                      <div className="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
                         <div className="text-center text-white transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-100">
                           <div className="text-sm font-semibold mb-2">Key Features:</div>
                           <ul className="text-xs space-y-1">
@@ -239,10 +239,10 @@ export default function ProductsPage() {
                       
                       {/* Call to Action */}
                       <div className="flex items-center justify-between">
-                        <span className="text-yellow-500 font-semibold text-sm group-hover:text-yellow-600 transition-colors duration-300">
+                        <span className="text-primary font-semibold text-sm group-hover:text-yellow-600 transition-colors duration-300">
                           View Details
                         </span>
-                        <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-yellow-600 transition-all duration-300">
+                        <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center transform group-hover:scale-110 group-hover:bg-yellow-600 transition-all duration-300">
                           <svg className="w-4 h-4 text-white transform group-hover:translate-x-0.5 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                           </svg>
@@ -251,7 +251,7 @@ export default function ProductsPage() {
                     </div>
 
                     {/* Animated Border */}
-                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-yellow-500 rounded-2xl transition-all duration-500"></div>
+                    <div className="absolute inset-0 border-2 border-transparent group-hover:border-primary rounded-2xl transition-all duration-500"></div>
                     
                     {/* Shine Effect */}
                     <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700">
@@ -305,3 +305,4 @@ export default function ProductsPage() {
     </div>
   );
 }
+

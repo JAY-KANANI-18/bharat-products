@@ -71,7 +71,7 @@ export default function TestimonialCarousel() {
             <div className="flex justify-center mb-6">
               <div className="flex space-x-1">
                 {[...Array(5)].map((_, i) => (
-                  <span key={i} className={`text-yellow-500 text-2xl animate-pulse delay-${i * 100}`}>★</span>
+                  <span key={i} className={`text-primary text-2xl animate-pulse delay-${i * 100}`}>★</span>
                 ))}
               </div>
             </div>
@@ -86,7 +86,7 @@ export default function TestimonialCarousel() {
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center justify-center space-x-4">
-                  <div className="w-16 h-16 bg-yellow-500 rounded-full flex items-center justify-center overflow-hidden animate-float">
+                  <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center overflow-hidden animate-float">
                     <img 
                       src={testimonial.image}
                       alt={testimonial.name}
@@ -96,7 +96,7 @@ export default function TestimonialCarousel() {
                   <div className="text-left">
                     <div className="font-semibold text-lg font-red_hat_display">{testimonial.name}</div>
                     <div className="text-gray-600 text-sm font-red_hat_text">{testimonial.position}</div>
-                    <div className="text-yellow-500 text-xs">{testimonial.industry}</div>
+                    <div className="text-primary text-xs">{testimonial.industry}</div>
                   </div>
                 </div>
               </div>
@@ -111,14 +111,14 @@ export default function TestimonialCarousel() {
                 onClick={() => goToSlide(index)}
                 className={`testimonial-dot w-3 h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide 
-                    ? 'bg-yellow-500 scale-125' 
+                    ? 'bg-primary scale-125' 
                     : 'bg-gray-300 hover:bg-yellow-400'
                 }`}
               />
             ))}
           </div>
           
-          <div className="mt-6 text-yellow-500 font-bold text-lg animate-count-up delay-1000">
+          <div className="mt-6 text-primary font-bold text-lg animate-count-up delay-1000">
             4.9 Average Rating • 500+ Happy Clients
           </div>
         </div>
@@ -126,3 +126,4 @@ export default function TestimonialCarousel() {
     </section>
   );
 }
+

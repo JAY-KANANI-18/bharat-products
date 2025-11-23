@@ -59,7 +59,7 @@ export const ContactForm = () => {
               </div>
             </div>
           </div>
-          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-10 md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-black/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
+          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-10 md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
           <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
             <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
               <form
@@ -115,7 +115,7 @@ export const ContactForm = () => {
                   <div className="text-sm bg-no-repeat box-border caret-transparent flex flex-wrap leading-[21px] ml-[-13.132px] mr-[-13.132px] mb-[17.5px] md:text-base md:leading-6 md:ml-[-15.008px] md:mr-[-15.008px] md:mb-5">
                     <div className="text-sm bg-no-repeat box-border caret-transparent basis-full grow leading-[21px] mb-[8.75px] px-[13.132px] md:text-base md:basis-6/12 md:leading-6 md:mb-0 md:px-[15.008px]">
                       <p className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] mb-3.5 md:text-base md:leading-6 md:mb-4">
-                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
+                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-primary after:box-border after:caret-transparent after:text-foreground/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <input
                             placeholder="Your name"
                             value={formData.name}
@@ -129,7 +129,7 @@ export const ContactForm = () => {
                     </div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent basis-full grow leading-[21px] px-[13.132px] md:text-base md:basis-6/12 md:leading-6 md:px-[15.008px]">
                       <p className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] mb-3.5 md:text-base md:leading-6 md:mb-4">
-                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
+                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-primary after:box-border after:caret-transparent after:text-foreground/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <input
                             placeholder="Your Email Address"
                             value={formData.email}
@@ -172,7 +172,7 @@ export const ContactForm = () => {
                   <div className="text-sm bg-no-repeat box-border caret-transparent flex flex-wrap leading-[21px] ml-[-13.132px] mr-[-13.132px] mb-[17.5px] md:text-base md:leading-6 md:ml-[-15.008px] md:mr-[-15.008px] md:mb-5">
                     <div className="text-sm bg-no-repeat box-border caret-transparent basis-full grow leading-[21px] mb-[8.75px] px-[13.132px] md:text-base md:basis-6/12 md:leading-6 md:mb-0 md:px-[15.008px]">
                       <p className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] mb-3.5 md:text-base md:leading-6 md:mb-4">
-                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-yellow-500 after:box-border after:caret-transparent after:text-black/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
+                        <span className="relative text-sm bg-no-repeat box-border caret-transparent block leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-primary after:box-border after:caret-transparent after:text-foreground/70 after:block after:text-sm after:not-italic after:normal-nums after:font-normal after:h-1.5 after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-none after:absolute after:text-left after:indent-[0px] after:normal-case after:visible after:w-1.5 after:z-[5] after:rounded-md after:border-separate after:right-[3.5px] after:top-[3.5px] after:font-sanchez after:md:text-base after:md:leading-6 after:md:right-1 after:md:top-1">
                           <textarea
                             placeholder="Describe your request"
                             value={formData.message}
@@ -189,7 +189,7 @@ export const ContactForm = () => {
                       <input
                         type="submit"
                         value="Submit your request"
-                        className="text-white text-sm font-bold bg-yellow-500 box-border caret-transparent block leading-[14px] min-h-[43.75px] text-center text-nowrap px-[26.25px] py-3.5 rounded-[50px] md:text-base md:leading-4 md:min-h-[50px] md:px-[30px] md:py-4 hover:shadow-[rgba(0,0,0,0.2)_0px_5px_20px_0px]"
+                        className="text-white text-sm font-bold bg-primary box-border caret-transparent block leading-[14px] min-h-[43.75px] text-center text-nowrap px-[26.25px] py-3.5 rounded-[50px] md:text-base md:leading-4 md:min-h-[50px] md:px-[30px] md:py-4 hover:shadow-[rgba(0,0,0,0.2)_0px_5px_20px_0px]"
                       />
                     </p>
                   </div>
@@ -198,9 +198,10 @@ export const ContactForm = () => {
               </form>
             </div>
           </div>
-          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[60px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-black/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
+          <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[60px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
         </div>
       </div>
     </div>
   );
 };
+

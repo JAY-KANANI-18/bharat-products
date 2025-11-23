@@ -14,7 +14,7 @@ export default function AboutPage() {
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-yellow-500/30 rounded-full animate-bounce delay-300"></div>
+          <div className="absolute top-40 right-20 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-300"></div>
           <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-gray-400/20 rounded-full animate-ping delay-700"></div>
         </div>
         
@@ -31,7 +31,7 @@ export default function AboutPage() {
                 <AnimatedSection animationType="slide-left" delay={400} className="inline-block">
                   <span>Crafting</span>
                 </AnimatedSection>
-                <AnimatedSection animationType="slide-right" delay={600} className="inline-block ml-4 text-yellow-500">
+                <AnimatedSection animationType="slide-right" delay={600} className="inline-block ml-4 text-primary">
                   <span>Excellence</span>
                 </AnimatedSection>
                 <br />
@@ -53,25 +53,25 @@ export default function AboutPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               <AnimatedSection animationType="scale" delay={0}>
                 <div className="text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 font-red_hat_display">2000+</div>
+                  <div className="text-3xl font-bold text-primary font-red_hat_display">2000+</div>
                   <div className="text-sm text-gray-600 font-red_hat_text">Projects Completed</div>
                 </div>
               </AnimatedSection>
               <AnimatedSection animationType="scale" delay={200}>
                 <div className="text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 font-red_hat_display">50+</div>
+                  <div className="text-3xl font-bold text-primary font-red_hat_display">50+</div>
                   <div className="text-sm text-gray-600 font-red_hat_text">Professional Team</div>
                 </div>
               </AnimatedSection>
               <AnimatedSection animationType="scale" delay={400}>
                 <div className="text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 font-red_hat_display">500+</div>
+                  <div className="text-3xl font-bold text-primary font-red_hat_display">500+</div>
                   <div className="text-sm text-gray-600 font-red_hat_text">Satisfied Customers</div>
                 </div>
               </AnimatedSection>
               <AnimatedSection animationType="scale" delay={600}>
                 <div className="text-center group hover:scale-105 transition-transform duration-300">
-                  <div className="text-3xl font-bold text-yellow-500 font-red_hat_display">15+</div>
+                  <div className="text-3xl font-bold text-primary font-red_hat_display">15+</div>
                   <div className="text-sm text-gray-600 font-red_hat_text">Years Experience</div>
                 </div>
               </AnimatedSection>
@@ -97,7 +97,7 @@ export default function AboutPage() {
                   />
                   
                   {/* Animated Decorative Elements */}
-                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-yellow-500 rounded-full opacity-20 animate-pulse"></div>
+                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
                   <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
                 </div>
               </div>
@@ -128,11 +128,11 @@ export default function AboutPage() {
                 <AnimatedSection animationType="fade-up" delay={1000}>
                   <div className="grid grid-cols-2 gap-6">
                     <div className="text-center p-4 bg-gray-50 rounded-xl hover-lift">
-                      <div className="text-3xl font-bold text-yellow-500 mb-2">2000+</div>
+                      <div className="text-3xl font-bold text-primary mb-2">2000+</div>
                       <div className="text-sm text-gray-600">Projects Completed</div>
                     </div>
                     <div className="text-center p-4 bg-gray-50 rounded-xl hover-lift">
-                      <div className="text-3xl font-bold text-yellow-500 mb-2">15+</div>
+                      <div className="text-3xl font-bold text-primary mb-2">15+</div>
                       <div className="text-sm text-gray-600">Years Experience</div>
                     </div>
                   </div>
@@ -151,7 +151,7 @@ export default function AboutPage() {
                   <div>
                     <header className="mb-6">
                       <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4 animate-float">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
                           <span className="text-white text-xl font-bold">📖</span>
                         </div>
                         <h2 className="text-4xl font-semibold text-black font-red_hat_display">
@@ -199,7 +199,7 @@ export default function AboutPage() {
                   <div>
                     <header className="mb-6">
                       <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4 animate-float">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
                           <span className="text-white text-xl font-bold">🤝</span>
                         </div>
                         <h2 className="text-4xl font-semibold text-black font-red_hat_display">
@@ -217,11 +217,11 @@ export default function AboutPage() {
                       <AnimatedSection animationType="fade-up" delay={600}>
                         <div className="grid grid-cols-2 gap-4 mt-6">
                           <div className="bg-gray-50 p-4 rounded-xl text-center hover-lift">
-                            <div className="text-2xl font-bold text-yellow-500 mb-1">10+</div>
+                            <div className="text-2xl font-bold text-primary mb-1">10+</div>
                             <div className="text-sm text-gray-600">Years Average Tenure</div>
                           </div>
                           <div className="bg-gray-50 p-4 rounded-xl text-center hover-lift">
-                            <div className="text-2xl font-bold text-yellow-500 mb-1">95%</div>
+                            <div className="text-2xl font-bold text-primary mb-1">95%</div>
                             <div className="text-sm text-gray-600">Employee Satisfaction</div>
                           </div>
                         </div>
@@ -255,7 +255,7 @@ export default function AboutPage() {
                   <div>
                     <header className="mb-6">
                       <div className="flex items-center mb-4">
-                        <div className="w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center mr-4 animate-float">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mr-4 animate-float">
                           <span className="text-white text-xl font-bold">⚙️</span>
                         </div>
                         <h2 className="text-4xl font-semibold text-black font-red_hat_display">
@@ -274,7 +274,7 @@ export default function AboutPage() {
                       ].map((item, index) => (
                         <AnimatedSection key={index} animationType="slide-left" delay={400 + index * 100}>
                           <div className="flex items-center p-3 bg-gray-50 rounded-lg hover-lift">
-                            <div className="w-8 h-8 bg-yellow-500 rounded-full flex items-center justify-center mr-3">
+                            <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
                               <span className="text-white text-sm font-bold">{item.icon}</span>
                             </div>
                             <span className="text-gray-800 font-medium">{item.text}</span>
@@ -462,3 +462,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

@@ -87,7 +87,7 @@ export default function SafetyPage() {
         {/* Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-20 left-10 w-20 h-20 bg-red-400/20 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-20 w-16 h-16 bg-yellow-500/30 rounded-full animate-bounce delay-300"></div>
+          <div className="absolute top-40 right-20 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-300"></div>
           <div className="absolute bottom-20 left-1/4 w-12 h-12 bg-blue-400/20 rounded-full animate-ping delay-700"></div>
         </div>
         
@@ -102,7 +102,7 @@ export default function SafetyPage() {
             <h1 className="text-5xl md:text-6xl font-bold text-black mb-6 font-red_hat_display">
               <span className="text-red-500">Safety</span> is
               <br />
-              Our <span className="text-yellow-500">Priority</span>
+              Our <span className="text-primary">Priority</span>
             </h1>
           </AnimatedSection>
           
@@ -116,7 +116,7 @@ export default function SafetyPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/products"
-                className="bg-yellow-500 text-white font-bold px-8 py-4 rounded-full hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
+                className="bg-primary text-white font-bold px-8 py-4 rounded-full hover:bg-yellow-600 transition-all duration-300 hover:scale-105"
               >
                 EXPLORE PRODUCTS
               </Link>
@@ -256,10 +256,10 @@ export default function SafetyPage() {
           
           <AnimatedSection animationType="fade-up" delay={600}>
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-8">
-              <button className="group bg-yellow-500 text-black font-bold px-8 py-4 rounded-full hover:bg-yellow-400 transition-all duration-300 hover:scale-105 flex items-center space-x-3 shadow-2xl">
+              <button className="group bg-primary text-black font-bold px-8 py-4 rounded-full hover:bg-yellow-400 transition-all duration-300 hover:scale-105 flex items-center space-x-3 shadow-2xl">
                 <span className="text-lg">WATCH OUR</span>
                 <div className="w-10 h-10 bg-black rounded-full flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                  <svg className="w-5 h-5 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M8 5v14l11-7z"/>
                   </svg>
                 </div>
@@ -295,7 +295,7 @@ export default function SafetyPage() {
                 alt="Founder"
                 className="w-32 h-32 rounded-full mx-auto shadow-2xl"
               />
-              <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-yellow-500 rounded-full flex items-center justify-center">
+              <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">CEO</span>
               </div>
             </div>
@@ -337,7 +337,7 @@ export default function SafetyPage() {
               <div className="flex items-center justify-center space-x-2 mb-4">
                 <div className="flex space-x-1">
                   {[...Array(5)].map((_, i) => (
-                    <svg key={i} className="w-6 h-6 text-yellow-500" fill="currentColor" viewBox="0 0 24 24">
+                    <svg key={i} className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                     </svg>
                   ))}
@@ -351,7 +351,7 @@ export default function SafetyPage() {
           <AnimatedSection animationType="fade-up" delay={200}>
             <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-12 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-6xl text-yellow-500 mb-6">"</div>
+                <div className="text-6xl text-primary mb-6">"</div>
                 <blockquote className="text-xl md:text-2xl text-gray-700 leading-8 mb-8 italic">
                   In a world where precision is paramount, Amwerk stands out. Their commitment to excellence is unmatched. We highly recommend their services.
                 </blockquote>
@@ -412,3 +412,4 @@ export default function SafetyPage() {
     </div>
   );
 }
+

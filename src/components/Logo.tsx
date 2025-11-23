@@ -8,9 +8,9 @@ export type LogoProps = {
 export const Logo = (props: LogoProps) => {
   const {
     variant,
-    href = "https://amwerk.bold-themes.com/berlin/",
-    imageUrl = "https://c.animaapp.com/mhypf3xrXgMUxE/assets/amwerk-logo-gold-bronze.png",
-    alt = "Berlin",
+    href = "/",
+    imageUrl = "/logo/Bg White Main Logo.png",
+    alt = "Logo",
   } = props;
 
   if (variant === "variant1") {
@@ -20,7 +20,7 @@ export const Logo = (props: LogoProps) => {
           <span className="text-sm bg-no-repeat box-border caret-transparent flex md:text-base">
             <a
               href={href}
-              className="text-sm bg-no-repeat box-border caret-transparent block min-h-[auto] min-w-[auto] md:text-base md:min-h-0 md:min-w-0 hover:text-yellow-500 hover:border-yellow-500"
+              className="text-sm bg-no-repeat box-border caret-transparent block min-h-[auto] min-w-[auto] md:text-base md:min-h-0 md:min-w-0 hover:text-primary hover:border-primary"
             >
               <img
                 src={imageUrl}
@@ -39,7 +39,7 @@ export const Logo = (props: LogoProps) => {
       <span className="text-sm bg-no-repeat box-border caret-transparent text-center md:text-base md:text-start">
         <a
           href={href}
-          className="text-sm bg-no-repeat box-border caret-transparent text-center md:text-base md:text-start hover:text-yellow-500 hover:border-yellow-500"
+          className="text-sm bg-no-repeat box-border caret-transparent text-center md:text-base md:text-start hover:text-primary hover:border-primary"
         >
           <img
             src={imageUrl}
@@ -51,3 +51,4 @@ export const Logo = (props: LogoProps) => {
     </div>
   );
 };
+

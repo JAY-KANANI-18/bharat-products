@@ -8,6 +8,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        black: "hsl(var(--foreground))",
+        white: "hsl(var(--background))",
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
@@ -20,6 +22,10 @@ module.exports = {
         secondary: {
           DEFAULT: "hsl(var(--secondary))",
           foreground: "hsl(var(--secondary-foreground))",
+        },
+        // Map legacy yellow-500 usages to brand primary
+        yellow: {
+          500: "hsl(var(--primary))",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive))",
@@ -49,6 +55,17 @@ module.exports = {
       },
       fontFamily: {
         sans: [
+          "Roboto",
+          "ui-sans-serif",
+          "system-ui",
+          "sans-serif",
+          '"Apple Color Emoji"',
+          '"Segoe UI Emoji"',
+          '"Segoe UI Symbol"',
+          '"Noto Color Emoji"',
+        ],
+        roboto: [
+          "Roboto",
           "ui-sans-serif",
           "system-ui",
           "sans-serif",
