@@ -1,6 +1,5 @@
 import React from "react";
 import { AnimatedSection } from "./about/components/AnimatedSection";
-import { MobileMenuToggle } from "../src/components/MobileMenuToggle";
 import { TopBar } from "../src/sections/TopBar";
 import { HeroSection } from "../src/sections/HeroSection";
 import { ServicesSection } from "../src/sections/ServicesSection";
@@ -15,12 +14,6 @@ export default function Home() {
   return (
     <div className="relative text-sm bg-no-repeat box-border caret-transparent leading-[21px] overflow-hidden md:text-base md:leading-6 after:accent-auto after:bg-no-repeat after:box-border after:caret-transparent after:clear-both after:text-foreground/70 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:w-full after:border-separate after:font-sanchez after:md:text-base after:md:leading-6">
       <ScrollProgressBar />
-      <MobileMenuToggle
-        variant="absolute text-black text-sm bg-white flex justify-start leading-[21px] w-full z-[10002] px-[30px] md:text-base md:bg-transparent md:hidden md:leading-6"
-        logoUrl="/logo/Bg White Main Logo.png"
-        logoAlt="Logo"
-        logoLinkUrl="/"
-      />
       <TopBar />
       <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-no-repeat after:box-border after:caret-transparent after:clear-both after:text-foreground/70 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:w-full after:border-separate after:font-sanchez after:md:text-base after:md:leading-6">
         <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">

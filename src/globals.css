@@ -267,6 +267,7 @@
   display: block;
   padding: 15px 30px;
   font-weight: 600;
+  z-index: 0; /* create stacking context for ::before at z:-1 */
 }
 
 /* yellow box from center on hover */
@@ -284,6 +285,19 @@
   opacity: 0;
   transition: transform 300ms ease, opacity 300ms ease;
   z-index: -1;
+}
+
+/* Expand the background from center on hover/focus */
+.nav-item:hover::before,
+.nav-item:focus-visible::before {
+  transform: translate(-50%, -50%) scaleX(1);
+  opacity: 1;
+}
+
+/* Improve contrast while the background is visible */
+.nav-item:hover,
+.nav-item:focus-visible {
+  color: hsl(var(--primary-foreground)) !important;
 }
 
 /* Base states - elements start invisible */
@@ -587,11 +601,113 @@
   transform: translateY(-10px) rotateX(5deg);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
-
 .safety-icon {
   transition: transform 0.3s ease;
 }
 
 .safety-card:hover .safety-icon {
   transform: scale(1.1) rotateY(10deg);
+}
+
+/* Scroll to Top Button Animations */
+@keyframes float-up {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0.7);
+  }
+  70% {
+    box-shadow: 0 0 0 10px hsl(var(--primary) / 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 hsl(var(--primary) / 0);
+  }
+}
+
+/* Apply animations on hover */
+button[aria-label="Scroll to top"]:hover {
+  animation: float-up 0.6s ease-in-out infinite, pulse-ring 2s ease-out;
+}
+
+/* Testimonial Carousel Animations */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in-left {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slide-in-right {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-out-left {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply testimonial animations */
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.5s ease-out;
+}
+
+.animate-fade-in-left {
+  animation: fade-in-left 0.5s ease-out;
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
 }

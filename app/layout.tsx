@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import React from 'react'
 import { Roboto } from 'next/font/google'
 import '../src/globals.css'
+import { ScrollToTop } from '../src/components/ScrollToTop'
 
 export const metadata: Metadata = {
   title: 'Amwerk Berlin',
@@ -24,8 +25,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} text-foreground/70 text-sm not-italic normal-nums font-normal accent-auto bg-fixed bg-white bg-no-repeat bg-cover box-border caret-transparent block tracking-[normal] leading-[21px] list-outside list-disc min-h-[1000px] pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-roboto md:text-base md:leading-6`}>
+      <body className={`${roboto.className} text-foreground/70 text-sm not-italic normal-nums font-normal accent-auto bg-fixed bg-white bg-no-repeat bg-cover box-border caret-transparent block tracking-[normal] leading-[21px] list-outside list-disc min-h-[1000px] pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-roboto md:text-base md:leading-6 pt-16 md:pt-20`}>
         {children}
+        <ScrollToTop />
       </body>
     </html>
   )
