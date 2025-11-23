@@ -9,7 +9,7 @@ export const Logo = (props: LogoProps) => {
   const {
     variant,
     href = "/",
-    imageUrl = "/logo/Bg White Main Logo.png",
+    imageUrl = "/Final Logo/SVG/Bharat PRoduct Final Logo.svg",
     alt = "Logo",
   } = props;
 
@@ -51,4 +51,3 @@ export const Logo = (props: LogoProps) => {
     </div>
   );
 };
-

@@ -12,7 +12,7 @@ export const FooterLogo = () => {
               className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
             >
               <img
-                src="/logo/Bg White Main Logo.png"
+                src="/Final Logo/SVG/Bharat PRoduct Final Logo.svg"
                 title="Logo"
                 alt="Logo"
                 className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
@@ -25,4 +25,3 @@ export const FooterLogo = () => {
     </div>
   );
 };
-

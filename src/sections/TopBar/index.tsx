@@ -33,7 +33,7 @@ export const TopBar = () => {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center">
               <Image
-                src="/logo/Bg White Main Logo.png"
+                src="/Final Logo/SVG/Bharat PRoduct Final Logo.svg"
                 alt="Bharat Product"
                 width={100}
                 height={50}
@@ -82,4 +82,3 @@ export const TopBar = () => {
     </header>
   );
 };
-
