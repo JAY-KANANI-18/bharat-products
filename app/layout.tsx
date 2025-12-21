@@ -8,8 +8,8 @@ export const metadata: Metadata = {
   title: "Bharat Products",
   description: "Professional services website",
   icons: {
-    icon: "/Final Logo/SVG/White BG Favicon.svg",
-    apple: "/Final Logo/SVG/Bharat PRoduct Final Logo.svg",
+    icon: "/Final-Logo/SVG/White-BG-Favicon.svg",
+    apple: "/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg",
   },
 };
 

@@ -10,7 +10,7 @@ export const Header = () => {
         <Logo
           variant="default"
           href="/"
-          imageUrl="/Final Logo/SVG/Bharat PRoduct Final Logo.svg"
+          imageUrl="/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg"
           alt="Logo"
         />
         <PhoneButton />
