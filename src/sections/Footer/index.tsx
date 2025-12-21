@@ -18,7 +18,7 @@ export const Footer = () => {
                 <br />
                 Phase-3, Dared,
                 <br />
-                Jamnagar, Gujrat - 361006
+                Jamnagar, Gujarat - 361006
               </div>
               <div>
                 <a

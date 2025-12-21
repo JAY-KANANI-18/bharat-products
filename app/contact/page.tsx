@@ -21,7 +21,7 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Address",
-      value: "G-3533, GIDC, Phase-3, Dared, Jamnagar, Gujrat - 361006",
+      value: "G-3533, GIDC, Phase-3, Dared, Jamnagar, Gujarat - 361006",
       link: "#",
     },
     {
