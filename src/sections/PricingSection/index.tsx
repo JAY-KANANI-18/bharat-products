@@ -3,9 +3,9 @@ import { PricingCard } from "@/sections/PricingSection/components/PricingCard";
 export const PricingSection = () => {
   return (
     <section className="relative text-sm bg-zinc-100 bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] md:text-base md:leading-6">
-      <div className="absolute text-sm bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] overflow-hidden inset-0 md:text-base md:leading-6">
+      {/* <div className="absolute text-sm bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] overflow-hidden inset-0 md:text-base md:leading-6">
         <div className="absolute text-sm bg-[url('https://c.animaapp.com/mhypf3xrXgMUxE/assets/bgn-curve-white-top-left.png')] bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] inset-0 md:text-base md:leading-6"></div>
-      </div>
+      </div> */}
       <div className="text-sm items-start bg-no-repeat box-border caret-transparent flex justify-center leading-[21px] pt-[100px] pb-20 md:text-base md:leading-6">
         <div className="relative text-sm bg-no-repeat box-border caret-transparent basis-[1400px] leading-[21px] max-w-[calc(100%_-_60px)] w-[1400px] md:text-base md:leading-6">
           <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
@@ -194,4 +194,3 @@ export const PricingSection = () => {
     </section>
   );
 };
-

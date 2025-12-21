@@ -2,7 +2,7 @@ export const VideoSection = () => {
   return (
     <section className="relative text-sm bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] z-[1] -mb-5 md:text-base md:leading-6">
       <div className="absolute text-sm bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] overflow-hidden inset-0 md:text-base md:leading-6">
-        <div className="absolute text-sm bg-[url('https://c.animaapp.com/mhypf3xrXgMUxE/assets/bgn-curve-gray-top-left.png')] bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] inset-0 md:text-base md:leading-6"></div>
+        {/* <div className="absolute text-sm bg-[url('https://c.animaapp.com/mhypf3xrXgMUxE/assets/bgn-curve-gray-top-left.png')] bg-no-repeat bg-size-[20%] box-border caret-transparent leading-[21px] inset-0 md:text-base md:leading-6"></div> */}
       </div>
       <div className="text-sm items-start bg-no-repeat box-border caret-transparent flex justify-center leading-[21px] py-[100px] md:text-base md:leading-6">
         <div className="relative text-sm bg-no-repeat box-border caret-transparent basis-[1200px] leading-[21px] max-w-[calc(100%_-_60px)] w-[1200px] md:text-base md:leading-6">
@@ -14,11 +14,11 @@ export const VideoSection = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
                       <div className="relative text-sm bg-no-repeat box-border caret-transparent flex justify-center leading-[21px] overflow-hidden rounded-[20px] md:text-base md:leading-6">
                         <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                          <img
+                          {/* <img
                             src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-7-1280x640.jpg"
                             alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/img-yellow-demo-7-1280x640.jpg"
                             className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
-                          />
+                          /> */}
                         </span>
                         <div className="absolute text-sm bg-stone-500/40 bg-no-repeat box-border caret-transparent leading-[21px] pointer-events-none inset-0 md:text-base md:leading-6">
                           <div className="absolute text-sm items-center bg-no-repeat box-border caret-transparent flex leading-[21px] overflow-hidden inset-0 md:text-base md:leading-6">
@@ -50,4 +50,3 @@ export const VideoSection = () => {
     </section>
   );
 };
-
