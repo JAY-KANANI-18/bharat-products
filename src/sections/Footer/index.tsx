@@ -14,14 +14,13 @@ export const Footer = () => {
             <div className="px-5 mt-4 space-y-3 text-white/80">
               {/* <div>Bharat Products</div> */}
               <div>
-                GIDC phase-3,
+                G-3533, GIDC,
                 <br />
-                Jamnagar, Gujarat,
+                Phase-3, Dared,
                 <br />
-                361001, India
+                Jamnagar, Gujrat - 361006
               </div>
               <div>
-                Email:{" "}
                 <a
                   className="hover:text-white"
                   href="mailto:info@bharatproducts.com"
@@ -32,7 +31,7 @@ export const Footer = () => {
               <div>
                 Phone:{" "}
                 <a className="hover:text-white" href="tel:+919876543210">
-                  +91 11111 11111
+                  +91 8460524463
                 </a>
               </div>
             </div>
