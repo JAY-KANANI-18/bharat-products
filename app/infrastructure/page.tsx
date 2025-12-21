@@ -14,7 +14,15 @@ import {
   Wrench,
   ShieldCheck,
 } from "lucide-react";
-function ImageBlock({ src, index, className }) {
+function ImageBlock({
+  src,
+  index,
+  className,
+}: {
+  src: string;
+  index: string;
+  className: string;
+}) {
   return (
     <div
       className={`relative overflow-hidden rounded-2xl group shadow-sm hover:shadow-lg transition ${className}`}
