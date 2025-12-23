@@ -139,7 +139,7 @@ export default function VisitorPolicyPage() {
               Mandatory Personal Protective Equipment (PPE)
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-2">
               {[
                 {
                   img: "/images/policy/visitor-policy/imgi_13_img_1.png",
