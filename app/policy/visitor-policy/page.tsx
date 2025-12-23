@@ -34,6 +34,27 @@ export default function VisitorPolicyPage() {
           </AnimatedSection>
         </div>
       </section>
+      <section className="py-2 bg-white">
+        <AnimatedSection animationType="fade-up" delay={0}>
+          <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
+            <h2 className="text-xl font-semibold mb-3">Purpose</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              This Visitor Policy is established to ensure the safety, security,
+              and smooth operation of Bharat Products’ facilities. It provides
+              clear guidance for all visitors and defines the responsibilities
+              of employees who sponsor or host visitors within the premises.
+            </p>
+
+            <h2 className="text-xl font-semibold mt-6 mb-3">Scope</h2>
+            <p className="text-foreground/80 leading-relaxed">
+              This policy applies to all visitors, contractors, suppliers, and
+              guests entering any Bharat Products facility. It also applies to
+              employees responsible for coordinating, escorting, or approving
+              visitor access.
+            </p>
+          </div>
+        </AnimatedSection>
+      </section>
       <section className="py-14 bg-gray-50">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up">
@@ -41,7 +62,7 @@ export default function VisitorPolicyPage() {
               Prohibited Inside Premises
             </h2>
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4">
+            <div className="grid grid-cols-4 md:grid-cols-7 gap-2 ">
               {[
                 {
                   img: "/images/policy/visitor-policy/imgi_6_group_1.png",
@@ -68,7 +89,7 @@ export default function VisitorPolicyPage() {
                 <img
                   src={item.img}
                   alt="Icon"
-                  className="h-40 object-contain mb-3"
+                  className="h-20 sm:h-24 md:h-40 object-contain "
                 />
               ))}
             </div>
@@ -77,30 +98,10 @@ export default function VisitorPolicyPage() {
       </section>
 
       {/* Content */}
-      <section className="py-16 md:py-24 bg-white">
+      <section className="py-5 md:py-7 bg-white">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div className="">
             {/* Purpose & Scope */}
-            <AnimatedSection animationType="fade-up" delay={0}>
-              <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-                <h2 className="text-xl font-semibold mb-3">Purpose</h2>
-                <p className="text-foreground/80 leading-relaxed">
-                  This Visitor Policy is established to ensure the safety,
-                  security, and smooth operation of Bharat Products’ facilities.
-                  It provides clear guidance for all visitors and defines the
-                  responsibilities of employees who sponsor or host visitors
-                  within the premises.
-                </p>
-
-                <h2 className="text-xl font-semibold mt-6 mb-3">Scope</h2>
-                <p className="text-foreground/80 leading-relaxed">
-                  This policy applies to all visitors, contractors, suppliers,
-                  and guests entering any Bharat Products facility. It also
-                  applies to employees responsible for coordinating, escorting,
-                  or approving visitor access.
-                </p>
-              </div>
-            </AnimatedSection>
 
             {/* Visitor Guidelines */}
             <AnimatedSection animationType="fade-up" delay={120}>
@@ -131,7 +132,7 @@ export default function VisitorPolicyPage() {
         </div>
       </section>
 
-      <section className="py-14 bg-white">
+      <section className="py-5 bg-white">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up">
             <h2 className="text-2xl font-semibold mb-8 text-center">
