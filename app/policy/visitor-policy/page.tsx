@@ -166,7 +166,7 @@ export default function VisitorPolicyPage() {
                 <img
                   src={item.img}
                   alt="PPE"
-                  className="h-40 object-contain mb-3"
+                  className="h-20 sm:h-24 md:h-40 object-contain mb-3"
                 />
               ))}
             </div>
