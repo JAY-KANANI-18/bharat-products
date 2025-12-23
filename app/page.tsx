@@ -9,6 +9,12 @@ import { VideoSection } from "../src/sections/VideoSection";
 import { ContactSection } from "../src/sections/ContactSection";
 import { Footer } from "../src/sections/Footer";
 import { ScrollProgressBar } from "../src/components/ScrollProgressBar";
+import { WhyChoose } from "../src/sections/Home/WhyChoose";
+import { AboutHighlights } from "../src/sections/Home/AboutHighlights";
+import { ProductionCapacity } from "../src/sections/Home/ProductionCapacity";
+import { QualityHighlight } from "../src/sections/Home/QualityHighlight";
+import { ProductSliderLocal } from "../src/sections/Home/ProductSliderLocal";
+import { PolicySlider } from "../src/sections/Home/PolicySlider";
 
 export default function Home() {
   return (
@@ -23,28 +29,54 @@ export default function Home() {
                 <HeroSection />
               </AnimatedSection>
               <AnimatedSection animationType="fade-up" threshold={0.15}>
-                <ServicesSection />
+                <WhyChoose />
               </AnimatedSection>
-              <AnimatedSection
+              {/* <AnimatedSection animationType="fade-up" threshold={0.15}>
+                <ServicesSection />
+              </AnimatedSection> */}
+              <AnimatedSection animationType="fade-up" threshold={0.15}>
+                <AboutHighlights />
+              </AnimatedSection>
+              {/* <AnimatedSection
                 animationType="slide-left"
                 threshold={0.2}
                 delay={100}
               >
                 <AboutSection />
+              </AnimatedSection> */}
+              <AnimatedSection animationType="fade-up" threshold={0.15}>
+                <ProductionCapacity />
               </AnimatedSection>
-              <AnimatedSection
+              <AnimatedSection animationType="fade-up" threshold={0.15}>
+                <QualityHighlight />
+              </AnimatedSection>
+              {/* <AnimatedSection
                 animationType="slide-right"
                 threshold={0.2}
                 delay={150}
               >
                 <PricingSection />
-              </AnimatedSection>
-              <AnimatedSection
+              </AnimatedSection> */}
+              {/* <AnimatedSection
                 animationType="scale"
                 threshold={0.2}
                 delay={100}
               >
                 <VideoSection />
+              </AnimatedSection> */}
+              <AnimatedSection
+                animationType="fade-up"
+                threshold={0.15}
+                delay={100}
+              >
+                <ProductSliderLocal />
+              </AnimatedSection>
+              <AnimatedSection
+                animationType="fade-up"
+                threshold={0.15}
+                delay={120}
+              >
+                <PolicySlider />
               </AnimatedSection>
               <AnimatedSection
                 animationType="fade-up"
@@ -74,4 +106,3 @@ export default function Home() {
     </div>
   );
 }
-

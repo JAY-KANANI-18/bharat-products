@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#f3f4f6"/>
+      <stop offset="1" stop-color="#e5e7eb"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#g)"/>
+  <g fill="none" stroke="#d1d5db" stroke-width="2">
+    <circle cx="220" cy="280" r="80"/>
+    <circle cx="220" cy="280" r="40"/>
+    <path d="M340 180 h280 v240 h-280z"/>
+    <path d="M360 200 h160 v200 h-160z"/>
+  </g>
+  <text x="24" y="560" fill="#6b7280" font-family="sans-serif" font-size="20">CNC machining detail (placeholder)</text>
+</svg>

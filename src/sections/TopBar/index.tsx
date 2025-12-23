@@ -68,6 +68,7 @@ export const TopBar = () => {
                   key={item.href}
                   href={item.href}
                   className={`
+                    nav-item
                     px-2 lg:px-2.5 xl:px-3
                     py-2
                     text-base lg:text-[15px] xl:text-lg
@@ -155,6 +156,8 @@ export const TopBar = () => {
                   key={item.href}
                   href={item.href}
                   className={`
+                                        nav-item
+
                     px-2 lg:px-2.5 xl:px-3
                     py-2
                     text-base lg:text-[15px] xl:text-lg

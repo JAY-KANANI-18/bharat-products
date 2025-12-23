@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState } from "react";
 
@@ -71,9 +71,7 @@ export const ServiceCard = ({
               />
             </a>
           </div>
-          <div className="relative text-sm bg-no-repeat box-border caret-transparent float-left justify-center leading-[14px] max-w-full z-[1] -mt-10 pr-[7px] md:text-base md:leading-4 md:pr-2">
-            <span className="text-sm content-center items-center bg-no-repeat box-border caret-transparent flex justify-start leading-[14px] pointer-events-none md:text-base md:leading-4 before:accent-auto before:content-center before:items-center before:bg-primary before:box-border before:caret-transparent before:text-white before:flex before:flex-col before:text-[40px] before:not-italic before:normal-nums before:font-normal before:h-20 before:justify-center before:tracking-[normal] before:leading-[normal] before:list-outside before:list-disc before:order-1 before:pointer-events-none before:text-left before:indent-[0px] before:normal-case before:visible before:w-20 before:rounded-[50%] before:border-separate before:font-amwerk"></span>
-          </div>
+
           <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[25px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
           <header className="relative text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6 after:accent-auto after:bg-no-repeat after:box-border after:caret-transparent after:clear-both after:text-foreground/70 after:table after:text-sm after:not-italic after:normal-nums after:font-normal after:tracking-[normal] after:leading-[21px] after:list-outside after:list-disc after:pointer-events-auto after:text-left after:indent-[0px] after:normal-case after:visible after:w-full after:border-separate after:font-sanchez after:md:text-base after:md:leading-6">
             <h4 className="relative text-black text-[25px] font-bold bg-no-repeat box-border caret-transparent clear-both tracking-[-0.75px] leading-[25px] font-red_hat_display after:accent-auto after:bg-no-repeat after:box-border after:caret-transparent after:clear-both after:text-black after:table after:text-[25px] after:not-italic after:normal-nums after:font-bold after:tracking-[-0.75px] after:leading-[25px] after:list-outside after:list-disc after:pointer-events-auto after:text-left after:indent-[0px] after:normal-case after:visible after:w-full after:border-separate after:font-red_hat_display">
@@ -114,4 +112,3 @@ export const ServiceCard = ({
     </div>
   );
 };
-

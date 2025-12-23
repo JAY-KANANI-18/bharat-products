@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#eef2ff"/>
+      <stop offset="1" stop-color="#e0e7ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="300" fill="url(#g)"/>
+  <g fill="#a5b4fc">
+    <circle cx="160" cy="160" r="40"/>
+    <circle cx="320" cy="160" r="40"/>
+    <circle cx="480" cy="160" r="40"/>
+    <circle cx="640" cy="160" r="40"/>
+  </g>
+  <text x="24" y="280" fill="#6366f1" font-family="sans-serif" font-size="18">Skilled team (placeholder)</text>
+</svg>
