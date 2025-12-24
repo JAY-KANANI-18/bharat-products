@@ -18,7 +18,7 @@ type AdvancedCarouselProps<T> = {
 export function AdvancedCarousel<T>({
   items,
   renderItem,
-  autoPlayMs = 1000,
+  autoPlayMs = 2000,
   className = "",
   initialIndex = 0,
   ariaLabel = "Carousel",
@@ -31,6 +31,7 @@ export function AdvancedCarousel<T>({
   const [paused, setPaused] = useState(false);
   const scrollerRef = useRef<HTMLDivElement>(null);
   const slideRefs = useRef<Array<HTMLDivElement | null>>([]);
+  const isAutoScrollingRef = useRef(false);
 
   const count = items.length;
   const goTo = useCallback(
@@ -47,6 +48,58 @@ export function AdvancedCarousel<T>({
     return () => clearInterval(id);
   }, [paused, count, next, autoPlayMs]);
 
+  const getCenteredIndex = useCallback(() => {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+
+    const scrollerCenter = scroller.scrollLeft + scroller.clientWidth / 2;
+
+    let closestIndex = 0;
+    let minDistance = Infinity;
+
+    slideRefs.current.forEach((el, i) => {
+      if (!el) return;
+
+      const slideCenter = el.offsetLeft + el.clientWidth / 2;
+      const distance = Math.abs(slideCenter - scrollerCenter);
+
+      if (distance < minDistance) {
+        minDistance = distance;
+        closestIndex = i;
+      }
+    });
+    if (current == 0 || current == slideRefs.current.length - 1) {
+      return;
+    }
+    goTo(closestIndex);
+    // setCurrent((prev) => (prev !== closestIndex ? closestIndex : prev));
+  }, []);
+
+  useEffect(() => {
+    const scroller = scrollerRef.current;
+    if (!scroller) return;
+
+    let ticking = false;
+
+    const onScroll = () => {
+      if (isAutoScrollingRef.current) return;
+
+      if (!ticking) {
+        requestAnimationFrame(() => {
+          getCenteredIndex();
+          ticking = false;
+        });
+        ticking = true;
+      }
+    };
+
+    scroller.addEventListener("scroll", onScroll, { passive: true });
+
+    return () => {
+      scroller.removeEventListener("scroll", onScroll);
+    };
+  }, [getCenteredIndex]);
+
   // keyboard
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
@@ -62,10 +115,19 @@ export function AdvancedCarousel<T>({
     const scroller = scrollerRef.current;
     const el = slideRefs.current[idx];
     if (!scroller || !el) return;
+
+    isAutoScrollingRef.current = true;
+
     const scrollerCenter = scroller.clientWidth / 2;
     const slideCenter = el.offsetLeft + el.clientWidth / 2;
     const target = Math.max(0, slideCenter - scrollerCenter);
+
     scroller.scrollTo({ left: target, behavior: "smooth" });
+
+    // reset after animation settles
+    setTimeout(() => {
+      isAutoScrollingRef.current = false;
+    }, 350); // matches smooth scroll duration
   }, []);
 
   useEffect(() => {
@@ -76,8 +138,8 @@ export function AdvancedCarousel<T>({
     <div
       className={`relative isolate overflow-hidden ${className}  md:p-6`}
       aria-label={ariaLabel}
-      onMouseEnter={() => setPaused(true)}
-      onMouseLeave={() => setPaused(false)}
+      // onMouseEnter={() => setPaused(true)}
+      // onMouseLeave={() => setPaused(false)}
     >
       {showArrows && (
         <>
@@ -117,7 +179,7 @@ export function AdvancedCarousel<T>({
                   slideRefs.current[i] = el;
                 }}
                 className={`shrink-0 snap-center ${basisClasses}`}
-                onMouseEnter={focusOnHover ? () => goTo(i) : undefined}
+                // onMouseEnter={focusOnHover ? () => goTo(i) : undefined}
                 onClick={() => goTo(i)}
               >
                 <div className="relative h-full w-full transition-all duration-500">
@@ -129,7 +191,7 @@ export function AdvancedCarousel<T>({
         </div>
       </div>
 
-      {showDots && (
+      {/* {showDots && (
         <div className="mt-4 flex justify-center gap-2 sm:hidden">
           {items.map((_, i) => (
             <button
@@ -144,7 +206,7 @@ export function AdvancedCarousel<T>({
             />
           ))}
         </div>
-      )}
+      )} */}
     </div>
   );
 }

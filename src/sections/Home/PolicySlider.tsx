@@ -83,11 +83,11 @@ export const PolicySlider: React.FC = () => {
             <AdvancedCarousel
               items={policies}
               ariaLabel="Policies carousel"
-              autoPlayMs={2000}
+              autoPlayMs={2500}
               basisClasses="basis-[92%] sm:basis-[70%] md:basis-[55%] lg:basis-[42%] xl:basis-[36%]"
               renderItem={({ href, title, Icon, desc }, _i, isActive) => {
                 const details = policyDetails[href] ?? [desc];
-                const visibleDetails = isActive ? details : details.slice(0, 2);
+                const visibleDetails = true ? details : details.slice(0, 2);
                 return (
                   <Link key={href} href={href}>
                     <div

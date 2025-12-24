@@ -6,17 +6,17 @@ const FEATURES = [
   {
     icon: Gauge,
     title: "Performance-Driven Manufacturing",
-    desc: "Advanced machining, controlled processes, and continuous quality monitoring ensure consistent precision across every production batch.",
+    desc: "We pride ourselves on best-in-class quality and reliability. With a proven track record of achieving over 93% on-time delivery, Bharat Products combines efficiency with cost-effectiveness. Our commitment lies in striking the perfect balance between quality, timeliness, and affordability—delivering solutions that consistently exceed expectations.",
   },
   {
     icon: Users,
-    title: "Partnership-Focused Engagement",
-    desc: "We collaborate closely with OEMs and industrial clients, aligning engineering, timelines, and cost efficiency with long-term business goals.",
+    title: "Client-Centric Approach",
+    desc: "Your success drives everything we do. At Bharat Products, we listen, collaborate, and adapt. By working closely with your team, we refine our solutions to align seamlessly with your objectives, ensuring that every project contributes to your growth and success.",
   },
   {
     icon: ShieldCheck,
-    title: "Compliance, Trust & Confidentiality",
-    desc: "ISO-certified systems, NDA-backed operations, and secure handling of technical data protect your designs at every stage.",
+    title: "Trust & Confidentiality",
+    desc: "We understand the value of trust. That’s why Bharat Products enforces stringent data security measures to safeguard your information. Our robust confidentiality policies guarantee the privacy and protection of your data at all times, giving you complete peace of mind.",
   },
 ];
 

@@ -88,7 +88,7 @@ export const ProductSliderLocal: React.FC = () => {
             <AdvancedCarousel
               items={items}
               ariaLabel="Product carousel"
-              autoPlayMs={2000}
+              autoPlayMs={3000}
               basisClasses="basis-[92%] sm:basis-[70%] md:basis-[52%] lg:basis-[38%] xl:basis-[32%]"
               renderItem={(p, i, isActive) => (
                 <Link

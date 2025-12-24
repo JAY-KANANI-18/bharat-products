@@ -9,10 +9,16 @@ export const AboutHighlights: React.FC = () => {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <AnimatedSection animationType="fade-up">
           <div className="text-center mb-10">
-            <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-3 font-red_hat_text">// ABOUT US //</div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-red_hat_display">Excellence Backed by Innovation</h2>
+            <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-3 font-red_hat_text">
+              // ABOUT US //
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-red_hat_display">
+              Excellence Backed by Innovation
+            </h2>
             <p className="text-foreground/70 max-w-3xl mx-auto leading-7">
-              We continuously invest in cutting‑edge machinery and advanced manufacturing technology to stay aligned with evolving customer needs.
+              We continuously invest in cutting‑edge machinery and advanced
+              manufacturing technology to stay aligned with evolving customer
+              needs.
             </p>
           </div>
         </AnimatedSection>
@@ -41,19 +47,39 @@ export const AboutHighlights: React.FC = () => {
         <AnimatedSection animationType="fade-up" delay={140}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
             <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img src="/images/about/cnc-operations.svg" alt="CNC operations on production line" className="w-full h-28 md:h-32 object-cover" loading="lazy" />
+              <img
+                src="/images/about/cnc-operations.svg"
+                alt="CNC operations on production line"
+                className="w-full h-28 md:h-32 object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
             <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img src="/images/about/optical-comparator.svg" alt="Optical comparator measuring part geometry" className="w-full h-28 md:h-32 object-cover" loading="lazy" />
+              <img
+                src="/images/about/optical-comparator.svg"
+                alt="Optical comparator measuring part geometry"
+                className="w-full h-28 md:h-32 object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
             <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img src="/images/about/inspection-instruments.svg" alt="Inspection instruments for precision measurement" className="w-full h-28 md:h-32 object-cover" loading="lazy" />
+              <img
+                src="/images/about/inspection-instruments.svg"
+                alt="Inspection instruments for precision measurement"
+                className="w-full h-28 md:h-32 object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
             <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200 hidden md:block">
-              <img src="/images/about/skilled-team.svg" alt="Skilled manufacturing team collaborating on shop floor" className="w-full h-28 md:h-32 object-cover" loading="lazy" />
+              <img
+                src="/images/about/skilled-team.svg"
+                alt="Skilled manufacturing team collaborating on shop floor"
+                className="w-full h-28 md:h-32 object-cover"
+                loading="lazy"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </div>
@@ -64,10 +90,23 @@ export const AboutHighlights: React.FC = () => {
             <div className="h-full p-6 rounded-2xl border border-gray-200 bg-white shadow-sm">
               <div className="flex items-center gap-3 mb-3">
                 <Cpu className="w-6 h-6 text-primary" />
-                <h3 className="text-lg font-semibold text-foreground">Staying Ahead with Technology</h3>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Staying Ahead with Technology
+                </h3>
               </div>
               <p className="text-foreground/70 leading-7">
-                Innovation is at the heart of everything we do—ensuring solutions that not only meet but consistently exceed expectations.
+                At{" "}
+                <span className="text-primary text-lg mb-2 ">
+                  {" "}
+                  Bharat Products{" "}
+                </span>
+                , innovation is at the heart of everything we do. We
+                continuously invest in cutting-edge machinery and advanced
+                manufacturing technology to stay aligned with the evolving needs
+                of our customers. This commitment to progress ensures that we
+                consistently deliver solutions that not only meet but exceed
+                expectations—providing you with the highest quality products and
+                services.
               </p>
             </div>
           </AnimatedSection>
@@ -76,10 +115,22 @@ export const AboutHighlights: React.FC = () => {
             <div className="h-full p-6 rounded-2xl border border-gray-200 bg-white shadow-sm">
               <div className="flex items-center gap-3 mb-3">
                 <Handshake className="w-6 h-6 text-primary" />
-                <h3 className="text-lg font-semibold text-foreground">Building Partnerships That Last</h3>
+                <h3 className="text-lg font-semibold text-foreground">
+                  Building Partnerships That Last
+                </h3>
               </div>
               <p className="text-foreground/70 leading-7">
-                We go beyond delivering components—we foster long‑term partnerships built on trust, transparency, and reliability.
+                We believe true success comes from collaboration. At Bharat
+                Products, we go beyond delivering components—we foster long-term
+                partnerships built on{" "}
+                <span className="text-primary text-lg mb-2 ">
+                  {" "}
+                  trust, transparency & reliability.{" "}
+                </span>{" "}
+                Our dedication to your growth extends well beyond the first
+                project. As your business evolves, we remain your steadfast
+                partner, supporting you with precision-engineered solutions
+                every step of the way.{" "}
               </p>
             </div>
           </AnimatedSection>
@@ -89,17 +140,41 @@ export const AboutHighlights: React.FC = () => {
           <div className="rounded-2xl border border-gray-200 bg-white p-6 md:p-8">
             <div className="flex items-center gap-2 mb-4">
               <BadgeCheck className="w-5 h-5 text-primary" />
-              <h3 className="text-lg font-semibold text-foreground">Our Promise</h3>
+              <h3 className="text-lg font-semibold text-foreground">
+                Our Promise
+              </h3>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-foreground/80">
-              <div>• Innovation at Scale – Advanced CNC technology and modern manufacturing practices.</div>
-              <div>• Client‑Centric Approach – Tailored solutions for your unique requirements.</div>
-              <div>• Reliability You Can Trust – ISO 9001:2015 certified processes.</div>
-              <div>• Partnership Beyond Projects – Supporting your success as you grow.</div>
+              <div>
+                <span className="text-primary text-lg mb-2"> Innovation at Scale </span> –
+                Advanced CNC technology and modern manufacturing practices.
+              </div>
+              <div>
+                <span className="text-primary text-lg mb-2"> Client‑Centric Approach </span>{" "}
+                – Tailored solutions for your unique requirements.
+              </div>
+              <div>
+                <span className="text-primary text-lg mb-2">
+                  {" "}
+                  Reliability You Can Trust{" "}
+                </span>{" "}
+                – ISO 9001:2015 certified processes.
+              </div>
+              <div>
+              
+                <span className="text-primary text-lg mb-2">
+                  {" "}
+                  Partnership Beyond Projects{" "}
+                </span>{" "}
+                – Supporting your success as you grow.
+              </div>
             </div>
 
             <div className="mt-6">
-              <Link href="/about" className="inline-flex items-center gap-2 font-semibold text-primary hover:underline">
+              <Link
+                href="/about"
+                className="inline-flex items-center gap-2 font-semibold hover:text-primary hover:underline"
+              >
                 More about Bharat Products <span aria-hidden>→</span>
               </Link>
             </div>

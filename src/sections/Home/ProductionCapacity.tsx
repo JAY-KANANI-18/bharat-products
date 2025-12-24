@@ -8,10 +8,15 @@ export const ProductionCapacity: React.FC = () => {
       <div className="max-w-7xl mx-auto px-5 md:px-8">
         <AnimatedSection animationType="fade-up">
           <div className="text-center mb-10">
-            <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-3 font-red_hat_text">// PRODUCTION & CAPACITY //</div>
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-red_hat_display">Production & Capacity</h2>
+            <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-3 font-red_hat_text">
+              // PRODUCTION & CAPACITY //
+            </div>
+            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4 font-red_hat_display">
+              Production & Capacity
+            </h2>
             <p className="text-foreground/70 max-w-3xl mx-auto leading-7">
-              Large‑scale capacity and global reach to meet diverse industry demands with consistency and reliability.
+              Large‑scale capacity and global reach to meet diverse industry
+              demands with consistency and reliability.
             </p>
           </div>
         </AnimatedSection>
@@ -38,7 +43,9 @@ export const ProductionCapacity: React.FC = () => {
           <AnimatedSection animationType="scale" delay={100}>
             <div className="p-6 rounded-2xl border border-gray-200 bg-white text-center shadow-sm">
               <Package className="w-8 h-8 text-primary mx-auto mb-2" />
-              <div className="text-3xl font-bold text-foreground">1,000,000+</div>
+              <div className="text-3xl font-bold text-foreground">
+                1,000,000+
+              </div>
               <div className="text-foreground/70">Parts per month</div>
             </div>
           </AnimatedSection>
@@ -59,10 +66,13 @@ export const ProductionCapacity: React.FC = () => {
             </div>
           </AnimatedSection>
         </div>
-
         <AnimatedSection animationType="fade-up" delay={350}>
           <p className="text-foreground/70 leading-7 text-center mt-8">
-            At Bharat Products, our large-scale production capacity, combined with global distribution, ensures consistency, reliability, and uncompromising quality.
+            At{" "}
+            <span className="text-primary text-lg mb-2">Bharat Products</span>,
+            our large-scale production capacity, combined with global
+            distribution, ensures consistency, reliability, and uncompromising
+            quality.
           </p>
         </AnimatedSection>
       </div>
