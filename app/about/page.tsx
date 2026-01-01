@@ -791,75 +791,89 @@ export default function AboutPage() {
                   })}
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <AnimatedSection animationType="slide-left" delay={200}>
-                    <div className="space-y-6">
-                      <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
-                        <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
-                          <Award className="w-6 h-6 text-primary" />
-                          Quality Assured
-                        </h3>
-                        <p className="text-gray-700 leading-8">
-                          ISO 9001:2015 certified quality management system
-                          ensures every component meets the highest standards of
-                          excellence.
-                        </p>
-                      </div>
-                      <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
-                        <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
-                          <Zap className="w-6 h-6 text-primary" />
-                          Advanced Technology
-                        </h3>
-                        <p className="text-gray-700 leading-8">
-                          State-of-the-art CNC machinery and precision equipment
-                          enable us to deliver consistent, high-tolerance
-                          components.
-                        </p>
-                      </div>
-                    </div>
-                  </AnimatedSection>
-
-                  <AnimatedSection animationType="slide-right" delay={400}>
-                    <div className="grid grid-cols-2 gap-4">
-                      {[
-                        {
-                          src: "/images/about/CNC Technology 2473146403.jpg",
-                          label: "CNC Technology",
-                        },
-                        {
-                          src: "/images/about/Precision Machining 1926254777.jpg",
-                          label: "Precision Machining",
-                        },
-                        {
-                          src: "/images/about/Quality Control 1926254777.jpg",
-                          label: "Quality Control",
-                        },
-                        {
-                          src: "/images/about/Assembly & Testing 348871838.jpg",
-                          label: "Assembly & Testing",
-                        },
-                      ].map((item, index) => (
-                        <AnimatedSection
-                          key={index}
-                          animationType="scale"
-                          delay={600 + index * 100}
-                        >
-                          <div className="relative group overflow-hidden rounded-2xl">
-                            <img
-                              src={item.src}
-                              alt={item.label}
-                              className="w-full h-40 object-cover group-hover:scale-110 transition-transform duration-500"
-                            />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
-                            <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
-                              <p className="font-bold text-sm">{item.label}</p>
-                            </div>
+                <section className="relative py-20">
+                  <div className="max-w-7xl mx-auto px-5 md:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                      {/* LEFT : CONTENT (defines height) */}
+                      <AnimatedSection animationType="slide-left" delay={200}>
+                        <div className="flex flex-col space-y-6 h-full">
+                          <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
+                            <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
+                              <Award className="w-6 h-6 text-primary" />
+                              Quality Assured
+                            </h3>
+                            <p className="text-gray-700 leading-8">
+                              ISO 9001:2015 certified quality management system
+                              ensures every component meets the highest
+                              standards of excellence.
+                            </p>
                           </div>
-                        </AnimatedSection>
-                      ))}
+
+                          <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
+                            <h3 className="text-2xl font-bold text-black mb-4 flex items-center gap-3">
+                              <Zap className="w-6 h-6 text-primary" />
+                              Advanced Technology
+                            </h3>
+                            <p className="text-gray-700 leading-8">
+                              State-of-the-art CNC machinery and precision
+                              equipment enable us to deliver consistent,
+                              high-tolerance components.
+                            </p>
+                          </div>
+                        </div>
+                      </AnimatedSection>
+
+                      {/* RIGHT : IMAGE GRID (matches left height) */}
+                      <AnimatedSection animationType="slide-right" delay={400}>
+                        <div className="h-full grid grid-cols-2 gap-4">
+                          {[
+                            {
+                              src: "/images/about/CNC Technology 2473146403.jpg",
+                              label: "CNC Technology",
+                            },
+                            {
+                              src: "/images/about/Precision Machining 1926254777.jpg",
+                              label: "Precision Machining",
+                            },
+                            {
+                              src: "/images/about/Quality Control 1926254777.jpg",
+                              label: "Quality Control",
+                            },
+                            {
+                              src: "/images/about/Assembly & Testing 348871838.jpg",
+                              label: "Assembly & Testing",
+                            },
+                          ].map((item, index) => (
+                            <AnimatedSection
+                              key={index}
+                              animationType="scale"
+                              delay={600 + index * 100}
+                            >
+                              <div className="relative h-full group overflow-hidden rounded-2xl">
+                                <img
+                                  src={item.src}
+                                  alt={item.label}
+                                  className="absolute inset-0 w-full h-full object-cover
+                             group-hover:scale-110 transition-transform duration-500"
+                                />
+
+                                {/* Overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+
+                                {/* Label */}
+                                <div className="absolute bottom-0 left-0 right-0 p-4 text-white">
+                                  <p className="font-bold text-sm">
+                                    {item.label}
+                                  </p>
+                                </div>
+                              </div>
+                            </AnimatedSection>
+                          ))}
+                        </div>
+                      </AnimatedSection>
                     </div>
-                  </AnimatedSection>
-                </div>
+                  </div>
+                </section>
               </div>
             </AnimatedSection>
           </div>
