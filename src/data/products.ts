@@ -365,7 +365,7 @@ export const specialCategoryGroups: Record<string, CategoryGroup[]> = {
         {
             title: "Copper Components",
             items: [
-                { title: "Precision Machined Copper Parts", image: "/images/products/copper-and-other-metal-parts/imgi_6_copper-and-other-metal-products-2.jpg" },
+                { title: "Precision Machined Copper Parts", image: "/images/products/copper-and-other-metal-parts/2663784727_copper-and-other-metal-products-2.jpg" },
             ],
         },
     ],

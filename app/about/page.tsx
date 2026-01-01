@@ -32,8 +32,7 @@ export default function AboutPage() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=1600&h=900&fit=crop)",
+            backgroundImage: "url(/images/about/title-1809528311.jpg)",
           }}
         >
           {/* Dark Overlay */}
@@ -118,7 +117,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative max-w-lg mx-auto lg:max-w-full">
                   <img
-                    src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=500&fit=crop"
+                    src="/images/about/"
                     alt="Bharat Product - Manufacturing Excellence"
                     className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
                   />
@@ -137,19 +136,31 @@ export default function AboutPage() {
                 <div>
                   <AnimatedSection animationType="fade-up" delay={300}>
                     <p className="text-lg text-gray-700 leading-8 mb-6">
-                      At <strong>Bharat Product</strong>, we are more than just manufacturers; we are architects of precision and partners in progress. As a leading force in Indian manufacturing, we specialize in transforming raw metals—Brass, Stainless Steel, Mild Steel, Copper, and Aluminum—into high-quality, precision-engineered components that drive industrial and national growth.
+                      At <strong>Bharat Product</strong>, we are more than just
+                      manufacturers; we are architects of precision and partners
+                      in progress. As a leading force in Indian manufacturing,
+                      we specialize in transforming raw metals—Brass, Stainless
+                      Steel, Mild Steel, Copper, and Aluminum—into high-quality,
+                      precision-engineered components that drive industrial and
+                      national growth.
                     </p>
                   </AnimatedSection>
 
                   <AnimatedSection animationType="fade-up" delay={400}>
                     <p className="text-gray-700 leading-8 mb-6">
-                      Our identity is built on a foundation of Indian manufacturing excellence, where advanced technology meets unwavering integrity.
+                      Our identity is built on a foundation of Indian
+                      manufacturing excellence, where advanced technology meets
+                      unwavering integrity.
                     </p>
                   </AnimatedSection>
 
                   <AnimatedSection animationType="fade-up" delay={500}>
                     <p className="text-gray-700 leading-8 mb-6">
-                      Our mission is clear: to harness advanced machining and curated expertise to transform raw metals into reliable, high-tolerance solutions. We go beyond supplying parts; we partner with industries to provide the essential building blocks for our clients' success.
+                      Our mission is clear: to harness advanced machining and
+                      curated expertise to transform raw metals into reliable,
+                      high-tolerance solutions. We go beyond supplying parts; we
+                      partner with industries to provide the essential building
+                      blocks for our clients' success.
                     </p>
                   </AnimatedSection>
                 </div>
@@ -188,14 +199,16 @@ export default function AboutPage() {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
                 {/* Bubble decoration */}
                 <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
-                
+
                 <div className="relative z-10">
                   <Target className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
                     Our Vision
                   </h3>
                   <p className="text-gray-700 leading-6">
-                    To be recognized as India's most trusted engineering partner and set the global standard for precision manufacturing excellence.
+                    To be recognized as India's most trusted engineering partner
+                    and set the global standard for precision manufacturing
+                    excellence.
                   </p>
                 </div>
               </div>
@@ -205,14 +218,16 @@ export default function AboutPage() {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
                 {/* Bubble decoration */}
                 <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
-                
+
                 <div className="relative z-10">
                   <Award className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
                     Our Brand Promise
                   </h3>
                   <p className="text-gray-700 leading-6">
-                    Precision, Forged in Trust. Transforming raw metals into reliable, high-tolerance solutions with unwavering integrity.
+                    Precision, Forged in Trust. Transforming raw metals into
+                    reliable, high-tolerance solutions with unwavering
+                    integrity.
                   </p>
                 </div>
               </div>
@@ -222,14 +237,16 @@ export default function AboutPage() {
               <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
                 {/* Bubble decoration */}
                 <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
-                
+
                 <div className="relative z-10">
                   <Zap className="w-10 h-10 text-primary mb-4" />
                   <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
                     Our Difference
                   </h3>
                   <p className="text-gray-700 leading-6">
-                    Where others see an order, we see a partnership. We deliver precision-engineered solutions that form the essential building blocks for your success.
+                    Where others see an order, we see a partnership. We deliver
+                    precision-engineered solutions that form the essential
+                    building blocks for your success.
                   </p>
                 </div>
               </div>
@@ -261,7 +278,12 @@ export default function AboutPage() {
                       Uncompromising Quality & Reliability
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      As an ISO 9001:2015 TUV SÜD Certified Company, our adherence to stringent international standards is non-negotiable. We employ RoHS and REACH-compliant materials, ensuring every component meets the most demanding industry requirements and earns the constant faith of our customers.
+                      As an ISO 9001:2015 TUV SÜD Certified Company, our
+                      adherence to stringent international standards is
+                      non-negotiable. We employ RoHS and REACH-compliant
+                      materials, ensuring every component meets the most
+                      demanding industry requirements and earns the constant
+                      faith of our customers.
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Award className="w-6 h-6" />
@@ -272,7 +294,7 @@ export default function AboutPage() {
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=500&fit=crop"
+                      src="/images/about/What-Sets-Us-Apart-2646862705.jpg"
                       alt="Quality & Reliability"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -289,13 +311,21 @@ export default function AboutPage() {
             {/* Section 2: Engineering with Excellent Precision */}
             <AnimatedSection animationType="fade-up" delay={0}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <AnimatedSection animationType="slide-left" delay={200} className="lg:order-2">
+                <AnimatedSection
+                  animationType="slide-left"
+                  delay={200}
+                  className="lg:order-2"
+                >
                   <div>
                     <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
                       Engineering with Excellent Precision
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      We are highly equipped with cutting-edge technology, enabling us to deliver exceptional precision and high-tolerance solutions day after day. Our advanced CNC machinery and skilled engineers ensure every component meets exact specifications.
+                      We are highly equipped with cutting-edge technology,
+                      enabling us to deliver exceptional precision and
+                      high-tolerance solutions day after day. Our advanced CNC
+                      machinery and skilled engineers ensure every component
+                      meets exact specifications.
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Zap className="w-6 h-6" />
@@ -303,10 +333,14 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </AnimatedSection>
-                <AnimatedSection animationType="slide-right" delay={400} className="lg:order-1">
+                <AnimatedSection
+                  animationType="slide-right"
+                  delay={400}
+                  className="lg:order-1"
+                >
                   <div className="relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&h=500&fit=crop"
+                      src="/images/about/Engineering-with-Excellent-Precision-8749717.jpg"
                       alt="Precision Engineering"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -329,7 +363,11 @@ export default function AboutPage() {
                       Customer-Centric Partnership
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      Our "customer-first" policy is more than a motto; it's our practice. We believe in strengthening relationships through unmatched transparency and providing fully customized solutions for every unique requirement, ensuring total satisfaction.
+                      Our "customer-first" policy is more than a motto; it's our
+                      practice. We believe in strengthening relationships
+                      through unmatched transparency and providing fully
+                      customized solutions for every unique requirement,
+                      ensuring total satisfaction.
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Users className="w-6 h-6" />
@@ -340,7 +378,7 @@ export default function AboutPage() {
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=500&fit=crop"
+                      src="/images/about/customer-centricity-2659741901.jpg"
                       alt="Customer Partnership"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -357,13 +395,20 @@ export default function AboutPage() {
             {/* Section 4: Unbeatable Value & Capacity */}
             <AnimatedSection animationType="fade-up" delay={0}>
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                <AnimatedSection animationType="slide-left" delay={200} className="lg:order-2">
+                <AnimatedSection
+                  animationType="slide-left"
+                  delay={200}
+                  className="lg:order-2"
+                >
                   <div>
                     <h3 className="text-3xl font-bold text-black mb-6 font-red_hat_display">
                       Unbeatable Value & Capacity
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      We combine the most competitive rates in the market with a massive production capacity, capable of producing millions of precision components daily. This synergy of scale and efficiency makes us the undeniable market leader.
+                      We combine the most competitive rates in the market with a
+                      massive production capacity, capable of producing millions
+                      of precision components daily. This synergy of scale and
+                      efficiency makes us the undeniable market leader.
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Target className="w-6 h-6" />
@@ -371,10 +416,14 @@ export default function AboutPage() {
                     </div>
                   </div>
                 </AnimatedSection>
-                <AnimatedSection animationType="slide-right" delay={400} className="lg:order-1">
+                <AnimatedSection
+                  animationType="slide-right"
+                  delay={400}
+                  className="lg:order-1"
+                >
                   <div className="relative group">
                     <img
-                      src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=500&fit=crop"
+                      src="/images/about/Unbeatable-Value-&-Capacity-2175192891.jpg"
                       alt="Value & Capacity"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -400,7 +449,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative max-w-lg mx-auto lg:max-w-full">
                   <img
-                    src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-11-1280x1280.avif"
+                    src="/images/about/Precision-Manufacturing-Excellence-1926254777.jpg"
                     title="About Bharat Product"
                     alt="Bharat Product manufacturing facility"
                     className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500"
@@ -470,7 +519,7 @@ export default function AboutPage() {
                 {/* Background Decoration */}
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full"></div>
                 <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-primary/10 rounded-full"></div>
-                
+
                 <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <AnimatedSection animationType="slide-left" delay={200}>
                     <div>
@@ -482,27 +531,37 @@ export default function AboutPage() {
                           Our Story
                         </h2>
                       </div>
-                      
+
                       <div className="space-y-6">
                         <AnimatedSection animationType="fade-up" delay={400}>
                           <div className="flex gap-4">
                             <div className="w-1 bg-gradient-to-b from-primary to-primary/30 rounded-full"></div>
                             <div>
-                              <h3 className="font-bold text-black mb-2">Quality Management Excellence</h3>
+                              <h3 className="font-bold text-black mb-2">
+                                Quality Management Excellence
+                              </h3>
                               <p className="text-gray-700 leading-7">
-                                We take your trust seriously, employing proven quality management principles to enhance customer satisfaction and continually improve our performance and capabilities.
+                                We take your trust seriously, employing proven
+                                quality management principles to enhance
+                                customer satisfaction and continually improve
+                                our performance and capabilities.
                               </p>
                             </div>
                           </div>
                         </AnimatedSection>
-                        
+
                         <AnimatedSection animationType="fade-up" delay={600}>
                           <div className="flex gap-4">
                             <div className="w-1 bg-gradient-to-b from-primary to-primary/30 rounded-full"></div>
                             <div>
-                              <h3 className="font-bold text-black mb-2">Industry Expertise</h3>
+                              <h3 className="font-bold text-black mb-2">
+                                Industry Expertise
+                              </h3>
                               <p className="text-gray-700 leading-7">
-                                We have decades of experience meeting stringent regulations for automotive, aerospace and medical device industries with precision and reliability.
+                                We have decades of experience meeting stringent
+                                regulations for automotive, aerospace and
+                                medical device industries with precision and
+                                reliability.
                               </p>
                             </div>
                           </div>
@@ -514,7 +573,7 @@ export default function AboutPage() {
                   <AnimatedSection animationType="slide-right" delay={400}>
                     <div className="relative group">
                       <img
-                        src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=500&h=500&fit=crop"
+                        src="/images/about/Our Story 1082567276.jpg"
                         alt="Our Manufacturing Story"
                         className="w-full h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                       />
@@ -543,7 +602,9 @@ export default function AboutPage() {
                     Our Culture
                   </h2>
                   <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
-                    Over the years, we've built a culture of service, teamwork, and innovation with an exceptionally diverse staff and strong commitment to excellence.
+                    Over the years, we've built a culture of service, teamwork,
+                    and innovation with an exceptionally diverse staff and
+                    strong commitment to excellence.
                   </p>
                 </div>
 
@@ -552,9 +613,16 @@ export default function AboutPage() {
                     <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-primary overflow-hidden">
                       <div className="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                       <div className="relative z-10">
-                        <div className="text-4xl font-bold text-primary mb-2">10+</div>
-                        <div className="text-sm text-gray-600 font-semibold">Years Average Tenure</div>
-                        <p className="text-gray-700 text-sm mt-3 leading-6">Our team members stay with us, reflecting our positive work environment.</p>
+                        <div className="text-4xl font-bold text-primary mb-2">
+                          10+
+                        </div>
+                        <div className="text-sm text-gray-600 font-semibold">
+                          Years Average Tenure
+                        </div>
+                        <p className="text-gray-700 text-sm mt-3 leading-6">
+                          Our team members stay with us, reflecting our positive
+                          work environment.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -563,9 +631,16 @@ export default function AboutPage() {
                     <div className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border-l-4 border-primary overflow-hidden">
                       <div className="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                       <div className="relative z-10">
-                        <div className="text-4xl font-bold text-primary mb-2">95%</div>
-                        <div className="text-sm text-gray-600 font-semibold">Employee Satisfaction</div>
-                        <p className="text-gray-700 text-sm mt-3 leading-6">Our team is satisfied and engaged in their work every day.</p>
+                        <div className="text-4xl font-bold text-primary mb-2">
+                          95%
+                        </div>
+                        <div className="text-sm text-gray-600 font-semibold">
+                          Employee Satisfaction
+                        </div>
+                        <p className="text-gray-700 text-sm mt-3 leading-6">
+                          Our team is satisfied and engaged in their work every
+                          day.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -575,8 +650,13 @@ export default function AboutPage() {
                       <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                       <div className="relative z-10">
                         <div className="text-4xl font-bold mb-2">50+</div>
-                        <div className="text-sm font-semibold opacity-90">Diverse Team Members</div>
-                        <p className="text-white/90 text-sm mt-3 leading-6">Bringing varied perspectives and expertise to every project.</p>
+                        <div className="text-sm font-semibold opacity-90">
+                          Diverse Team Members
+                        </div>
+                        <p className="text-white/90 text-sm mt-3 leading-6">
+                          Bringing varied perspectives and expertise to every
+                          project.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -585,7 +665,7 @@ export default function AboutPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                   <AnimatedSection animationType="slide-left" delay={200}>
                     <img
-                      src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=500&h=500&fit=crop"
+                      src="/images/about/Service Excellence 2676276151.jpg"
                       alt="Team Culture"
                       className="w-full h-auto rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -598,21 +678,30 @@ export default function AboutPage() {
                           <div className="w-3 h-3 bg-primary rounded-full"></div>
                           Service Excellence
                         </h3>
-                        <p className="text-gray-700 leading-7">We prioritize customer and team member satisfaction in everything we do.</p>
+                        <p className="text-gray-700 leading-7">
+                          We prioritize customer and team member satisfaction in
+                          everything we do.
+                        </p>
                       </div>
                       <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
                         <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
                           <div className="w-3 h-3 bg-primary rounded-full"></div>
                           Teamwork & Innovation
                         </h3>
-                        <p className="text-gray-700 leading-7">Collaborative environment where ideas flourish and innovation thrives.</p>
+                        <p className="text-gray-700 leading-7">
+                          Collaborative environment where ideas flourish and
+                          innovation thrives.
+                        </p>
                       </div>
                       <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
                         <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
                           <div className="w-3 h-3 bg-primary rounded-full"></div>
                           Continuous Growth
                         </h3>
-                        <p className="text-gray-700 leading-7">We invest in our people's development and career advancement.</p>
+                        <p className="text-gray-700 leading-7">
+                          We invest in our people's development and career
+                          advancement.
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -633,18 +722,44 @@ export default function AboutPage() {
                     Our Capabilities
                   </h2>
                   <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
-                    We specialize in precision manufacturing across diverse product categories with cutting-edge technology and expert craftsmanship.
+                    We specialize in precision manufacturing across diverse
+                    product categories with cutting-edge technology and expert
+                    craftsmanship.
                   </p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
                   {[
-                    { icon: Wrench, text: "Gaskets & Sealing", color: "from-blue-500 to-blue-600" },
-                    { icon: Shield, text: "EMI/RFI Shielding", color: "from-purple-500 to-purple-600" },
-                    { icon: Gauge, text: "Spacers & Washers", color: "from-green-500 to-green-600" },
-                    { icon: Zap, text: "Sound Dampeners", color: "from-yellow-500 to-yellow-600" },
-                    { icon: Cpu, text: "Conductive Adhesives", color: "from-red-500 to-red-600" },
-                    { icon: Layers, text: "Custom Manufacturing", color: "from-indigo-500 to-indigo-600" },
+                    {
+                      icon: Wrench,
+                      text: "Gaskets & Sealing",
+                      color: "from-blue-500 to-blue-600",
+                    },
+                    {
+                      icon: Shield,
+                      text: "EMI/RFI Shielding",
+                      color: "from-purple-500 to-purple-600",
+                    },
+                    {
+                      icon: Gauge,
+                      text: "Spacers & Washers",
+                      color: "from-green-500 to-green-600",
+                    },
+                    {
+                      icon: Zap,
+                      text: "Sound Dampeners",
+                      color: "from-yellow-500 to-yellow-600",
+                    },
+                    {
+                      icon: Cpu,
+                      text: "Conductive Adhesives",
+                      color: "from-red-500 to-red-600",
+                    },
+                    {
+                      icon: Layers,
+                      text: "Custom Manufacturing",
+                      color: "from-indigo-500 to-indigo-600",
+                    },
                   ].map((item, index) => {
                     const IconComponent = item.icon;
                     return (
@@ -653,7 +768,9 @@ export default function AboutPage() {
                         animationType="scale"
                         delay={300 + index * 100}
                       >
-                        <div className={`group relative bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105`}>
+                        <div
+                          className={`group relative bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden cursor-pointer transform hover:scale-105`}
+                        >
                           <div className="absolute -top-12 -right-12 w-32 h-32 bg-white/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                           <div className="relative z-10 text-center">
                             <IconComponent className="w-12 h-12 mx-auto mb-4 opacity-90" />
@@ -674,7 +791,9 @@ export default function AboutPage() {
                           Quality Assured
                         </h3>
                         <p className="text-gray-700 leading-8">
-                          ISO 9001:2015 certified quality management system ensures every component meets the highest standards of excellence.
+                          ISO 9001:2015 certified quality management system
+                          ensures every component meets the highest standards of
+                          excellence.
                         </p>
                       </div>
                       <div className="bg-white rounded-2xl p-8 shadow-lg border-t-4 border-primary">
@@ -683,7 +802,9 @@ export default function AboutPage() {
                           Advanced Technology
                         </h3>
                         <p className="text-gray-700 leading-8">
-                          State-of-the-art CNC machinery and precision equipment enable us to deliver consistent, high-tolerance components.
+                          State-of-the-art CNC machinery and precision equipment
+                          enable us to deliver consistent, high-tolerance
+                          components.
                         </p>
                       </div>
                     </div>
@@ -693,19 +814,19 @@ export default function AboutPage() {
                     <div className="grid grid-cols-2 gap-4">
                       {[
                         {
-                          src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=300&h=300&fit=crop",
+                          src: "/images/about/CNC Technology 2473146403.jpg",
                           label: "CNC Technology",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=300&h=300&fit=crop",
+                          src: "/images/about/Precision Machining 1926254777.jpg",
                           label: "Precision Machining",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=300&h=300&fit=crop",
+                          src: "/images/about/Quality Control 1926254777.jpg",
                           label: "Quality Control",
                         },
                         {
-                          src: "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=300&h=300&fit=crop",
+                          src: "/images/about/Assembly & Testing 1926254777.jpg",
                           label: "Assembly & Testing",
                         },
                       ].map((item, index) => (
@@ -855,7 +976,9 @@ export default function AboutPage() {
                 Our Manufacturing Excellence
               </h2>
               <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-8">
-                State-of-the-art facilities and cutting-edge technology delivering precision components with uncompromising quality standards.
+                State-of-the-art facilities and cutting-edge technology
+                delivering precision components with uncompromising quality
+                standards.
               </p>
             </div>
           </AnimatedSection>
@@ -863,17 +986,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
             {[
               {
-                src: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=500&h=350&fit=crop",
+                src: "/images/about/CNC Technology 2473146403.jpg",
                 title: "Advanced CNC Technology",
                 desc: "Precision machinery for consistent, high-tolerance manufacturing",
               },
               {
-                src: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=500&h=350&fit=crop",
+                src: "/images/about/Precision Machining 1926254777.jpg",
                 title: "Precision Manufacturing",
                 desc: "Expert craftsmanship meets advanced engineering excellence",
               },
               {
-                src: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=500&h=350&fit=crop",
+                src: "/images/about/Quality Control 1926254777.jpg",
                 title: "Quality Control",
                 desc: "Rigorous testing and inspection at every production stage",
               },
@@ -910,7 +1033,7 @@ export default function AboutPage() {
               <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-3xl p-12 md:p-16 border border-primary/20 relative overflow-hidden">
                 {/* Decorative Element */}
                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-primary/10 rounded-full"></div>
-                
+
                 <div className="relative z-10 text-center">
                   <div className="flex items-center justify-center mb-6">
                     <Award className="w-12 h-12 text-primary mr-3" />
@@ -919,17 +1042,28 @@ export default function AboutPage() {
                     </h3>
                   </div>
                   <p className="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-6">
-                    Our facility is ISO 9001:2015 certified, ensuring the highest standards of quality management. We craft high-quality components using advanced technology and rigorous quality control processes. Our commitment to excellence allows us to serve various industries with precision-engineered solutions that exceed expectations.
+                    Our facility is ISO 9001:2015 certified, ensuring the
+                    highest standards of quality management. We craft
+                    high-quality components using advanced technology and
+                    rigorous quality control processes. Our commitment to
+                    excellence allows us to serve various industries with
+                    precision-engineered solutions that exceed expectations.
                   </p>
                   <div className="flex flex-wrap gap-4 justify-center">
                     <div className="bg-white rounded-full px-6 py-3 shadow-md">
-                      <span className="font-semibold text-primary">✓ TUV SÜD Certified</span>
+                      <span className="font-semibold text-primary">
+                        ✓ TUV SÜD Certified
+                      </span>
                     </div>
                     <div className="bg-white rounded-full px-6 py-3 shadow-md">
-                      <span className="font-semibold text-primary">✓ RoHS Compliant</span>
+                      <span className="font-semibold text-primary">
+                        ✓ RoHS Compliant
+                      </span>
                     </div>
                     <div className="bg-white rounded-full px-6 py-3 shadow-md">
-                      <span className="font-semibold text-primary">✓ REACH Compliant</span>
+                      <span className="font-semibold text-primary">
+                        ✓ REACH Compliant
+                      </span>
                     </div>
                   </div>
                 </div>
