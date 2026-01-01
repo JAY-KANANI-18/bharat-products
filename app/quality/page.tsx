@@ -274,6 +274,7 @@ export default function QualityPage() {
             </AnimatedSection>
 
             <div>
+              {/* Intro text */}
               <AnimatedSection animationType="fade-up" delay={100}>
                 <p className="text-lg text-foreground/80 leading-8 mb-10">
                   Our quality approach is proactive, systematic, and ingrained
@@ -283,7 +284,8 @@ export default function QualityPage() {
                 </p>
               </AnimatedSection>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Equal-height cards */}
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
                 {[
                   {
                     title: "Prevention Over Correction",
@@ -307,13 +309,24 @@ export default function QualityPage() {
                     animationType="fade-up"
                     delay={150 * (idx + 1)}
                   >
-                    <div className="p-6 bg-white rounded-xl border border-gray-200 flex gap-4">
+                    <div
+                      className="h-full p-6 bg-white rounded-xl border border-gray-200
+                     flex gap-4 items-start shadow-sm
+                     hover:shadow-md transition-shadow"
+                    >
+                      {/* Icon */}
                       <CheckCircle className="w-6 h-6 text-primary mt-1 shrink-0" />
-                      <div>
-                        <h3 className="text-lg font-semibold text-foreground mb-1">
+
+                      {/* Content — flex column fills height */}
+                      <div className="flex flex-col flex-1">
+                        <h3 className="text-lg font-semibold text-foreground mb-2">
                           {item.title}
                         </h3>
-                        <p className="text-foreground/70">{item.desc}</p>
+
+                        {/* This makes all cards equal height */}
+                        <p className="text-foreground/70 leading-7 flex-1">
+                          {item.desc}
+                        </p>
                       </div>
                     </div>
                   </AnimatedSection>
@@ -346,10 +359,13 @@ export default function QualityPage() {
               <div className="absolute inset-0 rounded-2xl bg-black/10"></div>
             </div>
           </AnimatedSection>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+            {/* Card 1 */}
             <AnimatedSection animationType="scale" delay={0}>
-              <div className="bg-white p-8 rounded-xl text-center shadow-md">
+              <div
+                className="h-full bg-white p-8 rounded-xl text-center shadow-md
+               flex flex-col justify-center"
+              >
                 <div className="text-5xl font-bold text-primary mb-2">ISO</div>
                 <p className="text-foreground font-semibold">9001:2015</p>
                 <p className="text-foreground/70 text-sm mt-2">
@@ -358,10 +374,14 @@ export default function QualityPage() {
               </div>
             </AnimatedSection>
 
+            {/* Card 2 */}
             <AnimatedSection animationType="scale" delay={150}>
-              <div className="bg-white p-8 rounded-xl text-center shadow-md">
+              <div
+                className="h-full bg-white p-8 rounded-xl text-center shadow-md
+               flex flex-col justify-center"
+              >
                 <div className="text-4xl font-bold text-primary mb-2">
-                  RoHS & REACH
+                  RoHS &amp; REACH
                 </div>
                 <p className="text-foreground font-semibold">Compliant</p>
                 <p className="text-foreground/70 text-sm mt-2">
@@ -370,8 +390,12 @@ export default function QualityPage() {
               </div>
             </AnimatedSection>
 
+            {/* Card 3 */}
             <AnimatedSection animationType="scale" delay={300}>
-              <div className="bg-white p-8 rounded-xl text-center shadow-md">
+              <div
+                className="h-full bg-white p-8 rounded-xl text-center shadow-md
+               flex flex-col justify-center"
+              >
                 <div className="text-5xl font-bold text-primary mb-2">
                   ±0.01mm
                 </div>
