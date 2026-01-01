@@ -103,10 +103,10 @@ export default function AboutPage() {
 
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
-                    ISO
+                    TÜV SÜD
                   </div>
                   <div className="text-sm text-white/80 tracking-wide">
-                    9001:2015
+                    Certified
                   </div>
                 </div>
               </div>
@@ -345,7 +345,7 @@ export default function AboutPage() {
                       Uncompromising Quality & Reliability
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      As an TUV SUD & ISO 9001:2015 Certified Company, our
+                      As an TÜV SÜD & ISO 9001:2015 Certified Company, our
                       adherence to stringent international standards is
                       non-negotiable. We employ RoHS and REACH-compliant
                       materials, ensuring every component meets the most
@@ -354,7 +354,7 @@ export default function AboutPage() {
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Award className="w-6 h-6" />
-                      <span>TUV SUD Certified</span>
+                      <span>TÜV SÜD Certified</span>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -1061,7 +1061,7 @@ export default function AboutPage() {
                   <div className="flex items-center justify-center mb-6">
                     <Award className="w-12 h-12 text-primary mr-3" />
                     <h3 className="text-3xl font-bold text-black font-red_hat_display">
-                      TUV SUD Certified
+                      TÜV SÜD Certified
                     </h3>
                   </div>
                   <p className="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-6">

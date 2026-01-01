@@ -18,79 +18,79 @@ export default function QualityPage() {
       icon: Shield,
       title: "Material Compliance",
       description: "RoHS and REACH‑compliant sourcing and traceability.",
-      img: "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1200&h=800&fit=crop",
+      img: "/images/quality/Material Compliance 2592076305.jpg",
     },
     {
       icon: Cog,
       title: "Precision Equipment",
       description:
         "Advanced CNC and inspection tools to meet tight tolerances.",
-      img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=1200&h=800&fit=crop",
+      img: "/images/quality/Precision Equipment.jpg",
     },
     {
       icon: Gauge,
       title: "Process Control",
       description:
         "SPC, first‑article inspection, and in‑line gauging to catch deviations early.",
-      img: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200&h=800&fit=crop",
+      img: "/images/quality/Process Control 2655166337.jpg",
     },
     {
       icon: Users,
       title: "Skilled Workforce",
       description:
         "Trained operators and engineers focused on defect prevention.",
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=1200&h=800&fit=crop",
+      img: "",
     },
     {
       icon: BookOpen,
       title: "Documentation",
       description:
         "Full lot traceability, inspection records, and customer‑specific reporting.",
-      img: "https://images.unsplash.com/photo-1517976487492-576ea6b2936b?w=1200&h=800&fit=crop",
+      img: "/images/quality/Documentation 2547020979.jpg",
     },
     {
       icon: Briefcase,
       title: "Customer Partnership",
       description:
         "Collaborative problem solving, transparent communication, and tailored quality plans.",
-      img: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?w=1200&h=800&fit=crop",
+      img: "/images/quality/Customer Partnership 2524990405.jpg",
     },
   ];
 
   const instrumentItems = [
     {
-      img: "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=300&h=300&fit=crop",
+      img: "/images/quality/Digital Micrometers and Calipers.jpg",
       text: "Digital Micrometers and Calipers: For high-precision measurement of component dimensions.",
     },
     {
-      img: "https://images.unsplash.com/photo-1581092580495-05b4d1b3c57c?w=300&h=300&fit=crop",
+      img: "/images/quality/Coordinate Measuring Machines.jpg",
       text: "Coordinate Measuring Machines (CMM): For complex geometric and profile measurements.",
     },
     {
-      img: "https://images.unsplash.com/photo-1472417583565-62e7bdeda490?w=300&h=300&fit=crop",
+      img: "/images/quality/Digital Height Gauges & Surface Plates.jpg",
       text: "Digital Height Gauges & Surface Plates: For accurate vertical measurements and reference plane inspections.",
     },
     {
-      img: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=300&h=300&fit=crop",
+      img: "/images/quality/Optical Comparators.png",
       text: "Optical Comparators: For non-contact measurement and inspection of small, complex parts against a magnified profile.",
     },
     {
-      img: "https://images.unsplash.com/photo-1565008447742-97f6f38c985c?w=300&h=300&fit=crop",
+      img: "/images/quality/Thread Gauges (Plug & Ring).jpg",
       text: "Thread Gauges (Plug & Ring): For comprehensive verification of thread accuracy and fit.",
     },
   ];
 
   const trainingItems = [
     {
-      img: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=300&h=300&fit=crop",
+      img: "/images/quality/Structured Onboarding.jpg",
       text: "Structured Onboarding: Every new employee undergoes rigorous training on our QMS, specific SOPs, and health & safety protocols.",
     },
     {
-      img: "https://images.unsplash.com/photo-1526948128573-703ee1aeb6fa?w=300&h=300&fit=crop",
+      img: "/images/quality/Skill-Specific Certification.jpg",
       text: "Skill-Specific Certification: Operators and technicians receive regular, certified training on advanced machinery, precision instruments, and new technologies.",
     },
     {
-      img: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=300&h=300&fit=crop",
+      img: "/images/quality/Quality Mindset Workshops.jpg",
       text: "Quality Mindset Workshops: We conduct periodic workshops to reinforce the culture of quality, problem-solving techniques, and the importance of each individual's role in delivering excellence.",
     },
   ];
@@ -99,67 +99,100 @@ export default function QualityPage() {
     <div className="relative overflow-hidden">
       <TopBar />
 
-      {/* Hero Section - Full Screen */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Background Image with Overlay */}
+      {/* Hero Section – Full Screen */}
+      <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url(/images/quality-hero.png)",
+            backgroundImage: "url(/images/quality/Title%202640251683.jpg)",
           }}
         >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          {/* Base Overlay */}
+          <div className="absolute inset-0 bg-black/40" />
+
+          {/* Bottom Gradient – for stats readability */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
         </div>
 
         {/* Content */}
-        <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center z-10">
+        <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center pt-24 pb-28">
+          {/* Eyebrow */}
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-xs font-bold tracking-[0.3em] text-white/80 mb-4 font-red_hat_text">
               // QUALITY EXCELLENCE //
             </div>
           </AnimatedSection>
 
-          <AnimatedSection animationType="fade-up" delay={200}>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-red_hat_display">
+          {/* Heading */}
+          <AnimatedSection animationType="fade-up" delay={150}>
+            <h1
+              className="text-4xl md:text-6xl font-bold text-white mb-6 font-red_hat_display
+                   drop-shadow-[0_4px_30px_rgba(0,0,0,0.75)]"
+            >
               Precision is a <span className="text-primary">Promise</span>
             </h1>
           </AnimatedSection>
 
-          <AnimatedSection animationType="fade-up" delay={400}>
-            <p className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-12">
+          {/* Description */}
+          <AnimatedSection animationType="fade-up" delay={300}>
+            <p
+              className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-14
+                  drop-shadow-[0_2px_14px_rgba(0,0,0,0.6)]"
+            >
               At Bharat Product, quality is not just a checkpoint; it is the
               foundational principle that permeates every aspect of our
-              operations. As an ISO 9001:2015 TUV SÜD Certified Company, our
+              operations. As an ISO 9001:2015 TÜV SÜD Certified Company, our
               commitment to excellence is embedded in our processes, our people,
-              and our philosophy. We don't just meet standards; we set them,
-              ensuring every component we deliver is a testament to reliability
-              and precision.
+              and our philosophy. We don&apos;t just meet standards; we set
+              them, ensuring every component we deliver is a testament to
+              reliability and precision.
             </p>
           </AnimatedSection>
 
-          {/* Quality Stats */}
-          <AnimatedSection animationType="fade-up" delay={600}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">ISO</div>
-                <div className="text-sm text-white/80">9001:2015</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  ±0.01mm
+          {/* Stats Panel */}
+          <AnimatedSection animationType="fade-up" delay={450}>
+            <div
+              className="mx-auto max-w-4xl rounded-2xl border border-white/10
+                    bg-white/5 backdrop-blur-md px-6 py-8
+                    shadow-[0_20px_60px_rgba(0,0,0,0.45)]"
+            >
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    ISO
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    9001:2015
+                  </div>
                 </div>
-                <div className="text-sm text-white/80">Tolerance</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">100%</div>
-                <div className="text-sm text-white/80">Inspection</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">
-                  99.9%
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    ±0.01mm
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Tolerance
+                  </div>
                 </div>
-                <div className="text-sm text-white/80">Quality Rate</div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    100%
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Inspection
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    99.9%
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Quality Rate
+                  </div>
+                </div>
               </div>
             </div>
           </AnimatedSection>
@@ -231,7 +264,7 @@ export default function QualityPage() {
             <AnimatedSection animationType="slide-left" delay={150}>
               <div className="relative group">
                 <img
-                  src="https://images.unsplash.com/photo-1581093588401-16b4b28adf5c?w=1200&h=900&fit=crop"
+                  src="/images/quality/Our Quality Approach 2664576671.jpg"
                   alt="Engineers reviewing process controls"
                   className="w-full h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl border-8 border-white"
                 />
@@ -306,7 +339,7 @@ export default function QualityPage() {
           <AnimatedSection animationType="fade-up" delay={100}>
             <div className="relative mb-12">
               <img
-                src="https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?w=1600&h=500&fit=crop"
+                src="/images/quality/Health & Safety Policy.jpeg"
                 alt="Standards and certifications documents"
                 className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-lg"
               />
@@ -359,11 +392,16 @@ export default function QualityPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-12">
-              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">INSTRUMENTS</div>
+              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">
+                INSTRUMENTS
+              </div>
               <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4 font-red_hat_display">
                 Quality Instruments: The Tools of Precision
               </h2>
-              <p className="text-foreground/70 max-w-3xl mx-auto mt-2">Calibrated, compliant, and verified instrumentation for repeatable precision.</p>
+              <p className="text-foreground/70 max-w-3xl mx-auto mt-2">
+                Calibrated, compliant, and verified instrumentation for
+                repeatable precision.
+              </p>
               <div className="h-1 w-20 bg-primary rounded-full mx-auto"></div>
             </div>
           </AnimatedSection>
@@ -371,7 +409,7 @@ export default function QualityPage() {
           <AnimatedSection animationType="fade-up" delay={150}>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl pb-[56%] mb-10">
               <img
-                src="https://images.unsplash.com/photo-1581092580495-05b4d1b3c57c?w=1600&h=900&fit=crop"
+                src="/images/quality/Quality Instruments 2642860503.jpg"
                 alt="Instrumentation showcase"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
@@ -381,7 +419,12 @@ export default function QualityPage() {
 
           <AnimatedSection animationType="fade-up" delay={220}>
             <div className="flex flex-wrap items-center justify-center gap-3 mb-8">
-              {["CMM verified", "±0.01mm Tolerance", "Non‑contact Optical", "Thread Gauging"].map((pill, i) => (
+              {[
+                "CMM verified",
+                "±0.01mm Tolerance",
+                "Non‑contact Optical",
+                "Thread Gauging",
+              ].map((pill, i) => (
                 <span
                   key={i}
                   className="px-3 py-1 rounded-full text-xs font-semibold bg-primary/10 text-primary border border-primary/20"
@@ -400,28 +443,58 @@ export default function QualityPage() {
                 delay={100 * (idx + 1)}
               >
                 <div className="relative group h-full">
-                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/15 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition"></div>
-                  <div className="relative p-6 rounded-2xl border border-gray-200 bg-white/90 backdrop-blur h-full flex flex-col shadow-md hover:shadow-xl ring-1 ring-gray-200/60 hover:ring-primary/30 transition-all duration-300 transform-gpu group-hover:-translate-y-1">
-                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-primary/60 to-primary/80"></div>
-                    <div className="flex items-start gap-4">
-                      <div className="relative w-14 h-14 rounded-xl overflow-hidden shrink-0 ring-1 ring-gray-200">
-                        <img src={item.img} alt="Instrument" loading="lazy" className="absolute inset-0 w-full h-full object-cover" />
+                  {/* Hover glow */}
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-primary/15 via-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition" />
+
+                  <div
+                    className="relative rounded-2xl border border-gray-200 bg-white/90 backdrop-blur
+                        h-full flex flex-col shadow-md hover:shadow-xl
+                        ring-1 ring-gray-200/60 hover:ring-primary/30
+                        transition-all duration-300 transform-gpu group-hover:-translate-y-1 overflow-hidden"
+                  >
+                    {/* Top accent */}
+                    <div className="absolute inset-x-0 top-0 h-1 bg-gradient-to-r from-primary via-primary/60 to-primary/80" />
+
+                    {/* IMAGE — now visually dominant */}
+                    <div className="relative w-full h-44 overflow-hidden">
+                      <img
+                        src={item.img}
+                        alt="Instrument"
+                        loading="lazy"
+                        className="absolute inset-0 w-full h-full object-cover
+                         transition-transform duration-500 group-hover:scale-110"
+                      />
+
+                      {/* subtle overlay */}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
+                    </div>
+
+                    {/* CONTENT */}
+                    <div className="p-6 flex flex-col flex-1">
+                      <div className="flex items-center gap-2 mb-2">
+                        <span
+                          className="inline-flex items-center gap-1 px-2 py-0.5
+                               text-[10px] font-semibold uppercase tracking-wider
+                               bg-primary/10 text-primary rounded-full"
+                        >
+                          Instrument
+                        </span>
+                        <Gauge className="w-4 h-4 text-primary/70" />
+                        <CheckCircle className="w-3.5 h-3.5 text-emerald-500" />
                       </div>
-                      <div className="flex-1">
-                        <div className="flex items-center gap-2 mb-1">
-                          <span className="inline-flex items-center gap-1 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wider bg-primary/10 text-primary rounded-full">Instrument</span>
-                          <Gauge className="w-4 h-4 text-primary/70" />
-                          <CheckCircle className="w-3.5 h-3.5 text-emerald-500" />
-                        </div>
-                        <h3 className="text-base md:text-lg font-semibold text-foreground font-red_hat_display tracking-tight">
-                          {item.text.split(':')[0]}
-                        </h3>
-                        {item.text.includes(':') && (
-                          <p className="text-foreground/70 leading-7 mt-1">
-                            {item.text.split(':').slice(1).join(':').trim()}
-                          </p>
-                        )}
-                      </div>
+
+                      <h3
+                        className="text-base md:text-lg font-semibold text-foreground
+                           font-red_hat_display tracking-tight"
+                      >
+                        {item.text.split(":")[0]}
+                      </h3>
+
+                      {item.text.includes(":") && (
+                        <p className="text-foreground/70 leading-7 mt-1">
+                          {item.text.split(":").slice(1).join(":").trim()}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -433,25 +506,33 @@ export default function QualityPage() {
 
       {/* Testing Equipment */}
       <section className="relative py-16 md:py-24 overflow-hidden">
+        {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1600&h=900&fit=crop)",
+            backgroundImage: "url(/images/quality/Hardness%20Testers.jpg)",
           }}
         >
-          <div className="absolute inset-0 bg-black/60"></div>
+          {/* Gradient overlay for readability */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70" />
         </div>
+
+        {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8">
+          {/* Section Title */}
           <AnimatedSection animationType="fade-up" delay={0}>
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <div className="text-center mb-14">
+              <h2
+                className="text-3xl md:text-4xl font-bold text-white mb-4
+                   drop-shadow-[0_4px_20px_rgba(0,0,0,0.8)]"
+              >
                 Testing Equipment: Validating Every Component
               </h2>
-              <div className="h-1 w-20 bg-primary rounded-full mx-auto"></div>
+              <div className="h-1 w-20 bg-primary rounded-full mx-auto" />
             </div>
           </AnimatedSection>
 
+          {/* Equipment List */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {[
               "Hardness Testers (Rockwell, Vickers): To verify the material hardness and heat treatment efficacy.",
@@ -466,9 +547,17 @@ export default function QualityPage() {
                 animationType="fade-up"
                 delay={100 * (idx + 1)}
               >
-                <div className="p-6 border border-white/20 rounded-xl flex gap-4 bg-white/10 backdrop-blur">
-                  <CheckCircle className="w-6 h-6 text-primary mt-1 shrink-0" />
-                  <p className="text-white/90">{text}</p>
+                <div
+                  className="p-6 rounded-xl flex gap-4 items-start
+                     bg-black/55 backdrop-blur-md
+                     border border-white/20
+                     shadow-[0_10px_40px_rgba(0,0,0,0.4)]
+                     hover:bg-black/65 transition"
+                >
+                  <CheckCircle className="w-6 h-6 text-primary mt-1 shrink-0 drop-shadow" />
+                  <p className="text-white leading-7 text-sm md:text-base">
+                    {text}
+                  </p>
                 </div>
               </AnimatedSection>
             ))}
@@ -491,16 +580,17 @@ export default function QualityPage() {
           <AnimatedSection animationType="fade-up" delay={150}>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl pb-[56%] mb-10">
               <img
-                src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1600&h=900&fit=crop"
+                src="/images/quality/Training Policy 2612611991.jpg"
                 alt="Team training session"
                 loading="lazy"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
           </AnimatedSection>
-
           <div className="relative">
-            <div className="absolute left-4 top-0 bottom-0 w-px bg-primary/20 hidden sm:block"></div>
+            {/* Vertical line */}
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-primary/30 hidden sm:block" />
+
             <div className="space-y-6">
               {trainingItems.map((item, idx) => (
                 <AnimatedSection
@@ -508,16 +598,20 @@ export default function QualityPage() {
                   animationType="fade-up"
                   delay={100 * (idx + 1)}
                 >
-                  <div className="relative pl-12 sm:pl-16">
-                    <div className="absolute left-2 top-2 w-8 h-8 rounded-full ring-4 ring-white overflow-hidden shadow-md">
-                      <img
-                        src={item.img}
-                        alt="Training thumbnail"
-                        loading="lazy"
-                        className="w-full h-full object-cover"
-                      />
+                  <div className="relative pl-12 sm:pl-20">
+                    {/* ICON — centered on the line */}
+                    <div
+                      className="absolute left-5 top-6 -translate-x-1/2
+                     w-9 h-9 rounded-full
+                     bg-white ring-4 ring-primary/20
+                     flex items-center justify-center
+                     shadow-md z-10"
+                    >
+                      <CheckCircle className="w-4 h-4 text-primary" />
                     </div>
-                    <div className="p-5 border border-gray-200 rounded-xl bg-white">
+
+                    {/* Content Card */}
+                    <div className="p-5 border border-gray-200 rounded-xl bg-white shadow-sm">
                       <div className="text-sm text-primary font-semibold mb-1">
                         Step {String(idx + 1).padStart(2, "0")}
                       </div>
@@ -558,7 +652,7 @@ export default function QualityPage() {
                   animationType="fade-up"
                   delay={100 * (idx + 1)}
                 >
-                  <div className="p-6 border border-gray-200 rounded-xl flex gap-4 bg-white">
+                  <div className="p-6 border border-gray-200 rounded-xl flex gap-4 mb-6 bg-white">
                     <CheckCircle className="w-6 h-6 text-primary mt-1 shrink-0" />
                     <p className="text-foreground/80">{text}</p>
                   </div>
@@ -567,7 +661,7 @@ export default function QualityPage() {
             </div>
             <AnimatedSection animationType="slide-right" delay={200}>
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=1400&h=900&fit=crop"
+                src="/images/quality/Health & Safety Policy.jpeg"
                 alt="Workplace safety gear"
                 className="w-full h-[360px] md:h-[420px] object-cover rounded-2xl shadow-2xl border-8 border-white"
               />
@@ -581,8 +675,7 @@ export default function QualityPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=1600&h=900&fit=crop)",
+            backgroundImage: "url(/images/quality/Health & Safety Policy.jpeg)",
           }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
