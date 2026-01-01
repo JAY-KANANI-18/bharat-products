@@ -76,7 +76,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
-                    15+
+                    11+
                   </div>
                   <div className="text-sm text-white/80 tracking-wide">
                     Years Experience
@@ -345,7 +345,7 @@ export default function AboutPage() {
                       Uncompromising Quality & Reliability
                     </h3>
                     <p className="text-gray-700 leading-8 mb-4">
-                      As an ISO 9001:2015 TUV SÜD Certified Company, our
+                      As an TUV SUD & ISO 9001:2015 Certified Company, our
                       adherence to stringent international standards is
                       non-negotiable. We employ RoHS and REACH-compliant
                       materials, ensuring every component meets the most
@@ -354,7 +354,7 @@ export default function AboutPage() {
                     </p>
                     <div className="flex items-center gap-3 text-primary font-semibold">
                       <Award className="w-6 h-6" />
-                      <span>ISO 9001:2015 Certified</span>
+                      <span>TUV SUD Certified</span>
                     </div>
                   </div>
                 </AnimatedSection>
@@ -613,7 +613,7 @@ export default function AboutPage() {
                       <div className="absolute -top-10 -right-10 w-24 h-24 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                       <div className="relative z-10">
                         <div className="text-4xl font-bold text-primary mb-2">
-                          10+
+                          8+
                         </div>
                         <div className="text-sm text-gray-600 font-semibold">
                           Years Average Tenure
@@ -648,7 +648,7 @@ export default function AboutPage() {
                     <div className="group relative bg-gradient-to-br from-primary to-primary/80 rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 text-white overflow-hidden">
                       <div className="absolute -top-10 -right-10 w-24 h-24 bg-white/10 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
                       <div className="relative z-10">
-                        <div className="text-4xl font-bold mb-2">50+</div>
+                        <div className="text-4xl font-bold mb-2">26+</div>
                         <div className="text-sm font-semibold opacity-90">
                           Diverse Team Members
                         </div>
@@ -742,17 +742,17 @@ export default function AboutPage() {
                     {
                       icon: Wrench,
                       text: "Gaskets & Sealing",
-                      color: "from-blue-500 to-blue-600",
+                      color: "from-yellow-500 to-yellow-600",
                     },
                     {
                       icon: Shield,
                       text: "EMI/RFI Shielding",
-                      color: "from-purple-500 to-purple-600",
+                      color: "from-yellow-500 to-yellow-600",
                     },
                     {
                       icon: Gauge,
                       text: "Spacers & Washers",
-                      color: "from-green-500 to-green-600",
+                      color: "from-yellow-500 to-yellow-600",
                     },
                     {
                       icon: Zap,
@@ -762,12 +762,12 @@ export default function AboutPage() {
                     {
                       icon: Cpu,
                       text: "Conductive Adhesives",
-                      color: "from-red-500 to-red-600",
+                      color: "from-yellow-500 to-yellow-600",
                     },
                     {
                       icon: Layers,
                       text: "Custom Manufacturing",
-                      color: "from-indigo-500 to-indigo-600",
+                      color: "from-yellow-500 to-yellow-600",
                     },
                   ].map((item, index) => {
                     const IconComponent = item.icon;
@@ -1061,7 +1061,7 @@ export default function AboutPage() {
                   <div className="flex items-center justify-center mb-6">
                     <Award className="w-12 h-12 text-primary mr-3" />
                     <h3 className="text-3xl font-bold text-black font-red_hat_display">
-                      ISO 9001:2015 Certified
+                      TUV SUD Certified
                     </h3>
                   </div>
                   <p className="text-lg text-gray-700 leading-8 max-w-3xl mx-auto mb-6">
@@ -1075,7 +1075,7 @@ export default function AboutPage() {
                   <div className="flex flex-wrap gap-4 justify-center">
                     <div className="bg-white rounded-full px-6 py-3 shadow-md">
                       <span className="font-semibold text-primary">
-                        ✓ TUV SÜD Certified
+                        ✓ ISO 9001:2015 Certified
                       </span>
                     </div>
                     <div className="bg-white rounded-full px-6 py-3 shadow-md">
