@@ -27,36 +27,42 @@ export default function AboutPage() {
       <TopBar />
 
       {/* Hero Section - Full Screen */}
-      <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Background Image with Overlay */}
+      <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
+        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
             backgroundImage: "url(/images/about/title-1809528311.jpg)",
           }}
         >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
+          {/* Base Dark Overlay */}
+          <div className="absolute inset-0 bg-black/40" />
+
+          {/* Bottom Gradient (CRITICAL for stats visibility) */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
         </div>
 
         {/* Content */}
-        <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center z-10">
+        <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center pt-24 pb-28">
+          {/* Top Label */}
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-xs font-bold tracking-[0.3em] text-white/80 mb-4 font-red_hat_text">
               // ABOUT BHARAT PRODUCT //
             </div>
           </AnimatedSection>
 
-          <AnimatedSection animationType="fade-up" delay={200}>
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 font-red_hat_display">
+          {/* Heading */}
+          <AnimatedSection animationType="fade-up" delay={150}>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 font-red_hat_display drop-shadow-[0_4px_30px_rgba(0,0,0,0.75)]">
               Your Curated <span className="text-primary">Metallic</span>
               <br />
               Expertise Partner
             </h1>
           </AnimatedSection>
 
-          <AnimatedSection animationType="fade-up" delay={400}>
-            <p className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-12">
+          {/* Description */}
+          <AnimatedSection animationType="fade-up" delay={300}>
+            <p className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-14 drop-shadow-[0_2px_14px_rgba(0,0,0,0.6)]">
               Transforming raw metals into precision-engineered components that
               drive industrial excellence. We combine advanced technology with
               unwavering integrity to deliver reliable, high-tolerance
@@ -64,24 +70,45 @@ export default function AboutPage() {
             </p>
           </AnimatedSection>
 
-          {/* About Stats */}
-          <AnimatedSection animationType="fade-up" delay={600}>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">15+</div>
-                <div className="text-sm text-white/80">Years Experience</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">50+</div>
-                <div className="text-sm text-white/80">Team Members</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">500+</div>
-                <div className="text-sm text-white/80">Satisfied Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-3xl font-bold text-primary mb-2">ISO</div>
-                <div className="text-sm text-white/80">9001:2015</div>
+          {/* Stats Panel */}
+          <AnimatedSection animationType="fade-up" delay={450}>
+            <div className="mx-auto max-w-4xl rounded-2xl border border-white/10 bg-white/5 backdrop-blur-md px-6 py-8 shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    15+
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Years Experience
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    50+
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Team Members
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    500+
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    Satisfied Clients
+                  </div>
+                </div>
+
+                <div className="text-center">
+                  <div className="text-3xl font-bold text-primary mb-1 drop-shadow">
+                    ISO
+                  </div>
+                  <div className="text-sm text-white/80 tracking-wide">
+                    9001:2015
+                  </div>
+                </div>
               </div>
             </div>
           </AnimatedSection>
@@ -117,7 +144,7 @@ export default function AboutPage() {
               <div className="relative">
                 <div className="relative max-w-lg mx-auto lg:max-w-full">
                   <img
-                    src="/images/about/"
+                    src="/images/about/Precision Manufacturing Excellence 1926254777.jpg"
                     alt="Bharat Product - Manufacturing Excellence"
                     className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
                   />
@@ -194,64 +221,104 @@ export default function AboutPage() {
           </div>
 
           {/* Vision, Promise, Difference Cards */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20">
-            <AnimatedSection animationType="scale" delay={700}>
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                {/* Bubble decoration */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
+          <section className="relative py-20">
+            <div className="max-w-7xl mx-auto ">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 items-stretch">
+                {/* Card 1 */}
+                <AnimatedSection animationType="scale" delay={700}>
+                  <div
+                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                  >
+                    {/* Bubble Decoration */}
+                    <div
+                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                    />
 
-                <div className="relative z-10">
-                  <Target className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                    Our Vision
-                  </h3>
-                  <p className="text-gray-700 leading-6">
-                    To be recognized as India's most trusted engineering partner
-                    and set the global standard for precision manufacturing
-                    excellence.
-                  </p>
-                </div>
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col flex-1">
+                      <Target className="w-10 h-10 text-primary mb-4" />
+
+                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                        Our Vision
+                      </h3>
+
+                      <p className="text-gray-700 leading-6 flex-1">
+                        To be recognized as India&apos;s most trusted
+                        engineering partner and set the global standard for
+                        precision manufacturing excellence.
+                      </p>
+                    </div>
+                  </div>
+                </AnimatedSection>
+
+                {/* Card 2 */}
+                <AnimatedSection animationType="scale" delay={800}>
+                  <div
+                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                  >
+                    {/* Bubble Decoration */}
+                    <div
+                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                    />
+
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col flex-1">
+                      <Award className="w-10 h-10 text-primary mb-4" />
+
+                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                        Our Brand Promise
+                      </h3>
+
+                      <p className="text-gray-700 leading-6 flex-1">
+                        Precision, forged in trust. Transforming raw metals into
+                        reliable, high-tolerance solutions through
+                        uncompromising integrity.
+                      </p>
+                    </div>
+                  </div>
+                </AnimatedSection>
+
+                {/* Card 3 */}
+                <AnimatedSection animationType="scale" delay={900}>
+                  <div
+                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                  >
+                    {/* Bubble Decoration */}
+                    <div
+                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                    />
+
+                    {/* Content */}
+                    <div className="relative z-10 flex flex-col flex-1">
+                      <Zap className="w-10 h-10 text-primary mb-4" />
+
+                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                        Our Difference
+                      </h3>
+
+                      <p className="text-gray-700 leading-6 flex-1">
+                        Where others see an order, we see a partnership. We
+                        deliver precision-engineered solutions that become the
+                        foundation of your long-term success.
+                      </p>
+                    </div>
+                  </div>
+                </AnimatedSection>
               </div>
-            </AnimatedSection>
-
-            <AnimatedSection animationType="scale" delay={800}>
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                {/* Bubble decoration */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
-
-                <div className="relative z-10">
-                  <Award className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                    Our Brand Promise
-                  </h3>
-                  <p className="text-gray-700 leading-6">
-                    Precision, Forged in Trust. Transforming raw metals into
-                    reliable, high-tolerance solutions with unwavering
-                    integrity.
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            <AnimatedSection animationType="scale" delay={900}>
-              <div className="p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-primary/20 hover:shadow-xl hover:scale-105 transition-all duration-300 relative overflow-hidden group">
-                {/* Bubble decoration */}
-                <div className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-500"></div>
-
-                <div className="relative z-10">
-                  <Zap className="w-10 h-10 text-primary mb-4" />
-                  <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                    Our Difference
-                  </h3>
-                  <p className="text-gray-700 leading-6">
-                    Where others see an order, we see a partnership. We deliver
-                    precision-engineered solutions that form the essential
-                    building blocks for your success.
-                  </p>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
+            </div>
+          </section>
         </div>
       </section>
 
@@ -294,7 +361,7 @@ export default function AboutPage() {
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
                     <img
-                      src="/images/about/What-Sets-Us-Apart-2646862705.jpg"
+                      src="/images/about/What Sets Us Apart 2646862705.jpg"
                       alt="Quality & Reliability"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -340,7 +407,7 @@ export default function AboutPage() {
                 >
                   <div className="relative group">
                     <img
-                      src="/images/about/Engineering-with-Excellent-Precision-8749717.jpg"
+                      src="/images/about/Engineering with Excellent Precision 8749717.jpg"
                       alt="Precision Engineering"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -378,7 +445,7 @@ export default function AboutPage() {
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
                     <img
-                      src="/images/about/customer-centricity-2659741901.jpg"
+                      src="/images/about/customer-centricity 2659741901.jpg"
                       alt="Customer Partnership"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -423,7 +490,7 @@ export default function AboutPage() {
                 >
                   <div className="relative group">
                     <img
-                      src="/images/about/Unbeatable-Value-&-Capacity-2175192891.jpg"
+                      src="/images/about/Unbeatable Value & Capacity 2175192891.jpg"
                       alt="Value & Capacity"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />
@@ -443,74 +510,6 @@ export default function AboutPage() {
       {/* Main About Section - Improved Desktop Layout */}
       <section className="py-20 md:py-32">
         <div className="max-w-7xl mx-auto px-5 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-20">
-            {/* Image Section with Animation */}
-            <AnimatedSection animationType="slide-left" delay={0}>
-              <div className="relative">
-                <div className="relative max-w-lg mx-auto lg:max-w-full">
-                  <img
-                    src="/images/about/Precision-Manufacturing-Excellence-1926254777.jpg"
-                    title="About Bharat Product"
-                    alt="Bharat Product manufacturing facility"
-                    className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500"
-                  />
-
-                  {/* Animated Decorative Elements */}
-                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
-                  <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
-                </div>
-              </div>
-            </AnimatedSection>
-
-            {/* Content Section */}
-            <AnimatedSection animationType="slide-right" delay={200}>
-              <div className="space-y-8">
-                <div>
-                  <AnimatedSection animationType="fade-up" delay={400}>
-                    <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
-                      // ABOUT AMWERK //
-                    </div>
-                  </AnimatedSection>
-                  <AnimatedSection animationType="fade-up" delay={600}>
-                    <h2 className="text-4xl lg:text-5xl font-bold text-black mb-6 font-red_hat_display">
-                      Precision Manufacturing Excellence
-                    </h2>
-                  </AnimatedSection>
-                </div>
-
-                <AnimatedSection animationType="fade-up" delay={800}>
-                  <p className="text-lg text-gray-700 leading-8 mb-6">
-                    Amwerk has been dedicated to precision manufacturing for
-                    over two decades. We specialize in custom products,
-                    electronic interfaces, and advanced manufacturing solutions,
-                    ensuring quality and innovation in every product we deliver.
-                  </p>
-                </AnimatedSection>
-
-                <AnimatedSection animationType="fade-up" delay={1000}>
-                  <div className="grid grid-cols-2 gap-6">
-                    <div className="text-center p-4 bg-gray-50 rounded-xl hover-lift">
-                      <div className="text-3xl font-bold text-primary mb-2">
-                        2000+
-                      </div>
-                      <div className="text-sm text-gray-600">
-                        Projects Completed
-                      </div>
-                    </div>
-                    <div className="text-center p-4 bg-gray-50 rounded-xl hover-lift">
-                      <div className="text-3xl font-bold text-primary mb-2">
-                        15+
-                      </div>
-                      <div className="text-sm text-gray-600">
-                        Years Experience
-                      </div>
-                    </div>
-                  </div>
-                </AnimatedSection>
-              </div>
-            </AnimatedSection>
-          </div>
-
           {/* Story, Culture, Capabilities Sections */}
           <div className="space-y-20">
             {/* Our Story Section - Timeline Style */}
@@ -580,7 +579,7 @@ export default function AboutPage() {
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-3xl"></div>
                       <div className="absolute bottom-6 left-6 text-white">
                         <div className="bg-black/60 backdrop-blur px-4 py-3 rounded-full text-sm font-bold flex items-center gap-2">
-                          <Layers className="w-5 h-5" /> Since 1995
+                          <Layers className="w-5 h-5" /> Since 2014
                         </div>
                       </div>
                     </div>
@@ -662,50 +661,60 @@ export default function AboutPage() {
                   </AnimatedSection>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                  <AnimatedSection animationType="slide-left" delay={200}>
-                    <img
-                      src="/images/about/Service Excellence 2676276151.jpg"
-                      alt="Team Culture"
-                      className="w-full h-auto rounded-3xl shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
-                    />
-                  </AnimatedSection>
+                <section className="relative py-20">
+                  <div className="max-w-7xl mx-auto px-5 md:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-stretch">
+                      {/* LEFT : IMAGE (same height as right content) */}
+                      <AnimatedSection animationType="slide-left" delay={200}>
+                        <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
+                          <img
+                            src="/images/about/Service Excellence 2676276151.jpg"
+                            alt="Team Culture"
+                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                          />
+                        </div>
+                      </AnimatedSection>
 
-                  <AnimatedSection animationType="slide-right" delay={400}>
-                    <div className="space-y-6">
-                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
-                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
-                          <div className="w-3 h-3 bg-primary rounded-full"></div>
-                          Service Excellence
-                        </h3>
-                        <p className="text-gray-700 leading-7">
-                          We prioritize customer and team member satisfaction in
-                          everything we do.
-                        </p>
-                      </div>
-                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
-                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
-                          <div className="w-3 h-3 bg-primary rounded-full"></div>
-                          Teamwork & Innovation
-                        </h3>
-                        <p className="text-gray-700 leading-7">
-                          Collaborative environment where ideas flourish and
-                          innovation thrives.
-                        </p>
-                      </div>
-                      <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
-                        <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
-                          <div className="w-3 h-3 bg-primary rounded-full"></div>
-                          Continuous Growth
-                        </h3>
-                        <p className="text-gray-700 leading-7">
-                          We invest in our people's development and career
-                          advancement.
-                        </p>
-                      </div>
+                      {/* RIGHT : CONTENT */}
+                      <AnimatedSection animationType="slide-right" delay={400}>
+                        <div className="flex flex-col space-y-6 h-full">
+                          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                            <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                              <span className="w-3 h-3 bg-primary rounded-full"></span>
+                              Service Excellence
+                            </h3>
+                            <p className="text-gray-700 leading-7">
+                              We prioritize customer and team member
+                              satisfaction in everything we do.
+                            </p>
+                          </div>
+
+                          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                            <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                              <span className="w-3 h-3 bg-primary rounded-full"></span>
+                              Teamwork & Innovation
+                            </h3>
+                            <p className="text-gray-700 leading-7">
+                              Collaborative environment where ideas flourish and
+                              innovation thrives.
+                            </p>
+                          </div>
+
+                          <div className="bg-gradient-to-r from-primary/10 to-primary/5 rounded-2xl p-6 border border-primary/20">
+                            <h3 className="text-xl font-bold text-black mb-3 flex items-center gap-2">
+                              <span className="w-3 h-3 bg-primary rounded-full"></span>
+                              Continuous Growth
+                            </h3>
+                            <p className="text-gray-700 leading-7">
+                              We invest in our people's development and career
+                              advancement.
+                            </p>
+                          </div>
+                        </div>
+                      </AnimatedSection>
                     </div>
-                  </AnimatedSection>
-                </div>
+                  </div>
+                </section>
               </div>
             </AnimatedSection>
 
@@ -826,7 +835,7 @@ export default function AboutPage() {
                           label: "Quality Control",
                         },
                         {
-                          src: "/images/about/Assembly & Testing 1926254777.jpg",
+                          src: "/images/about/Assembly & Testing 348871838.jpg",
                           label: "Assembly & Testing",
                         },
                       ].map((item, index) => (
@@ -859,7 +868,7 @@ export default function AboutPage() {
 
       {/* Benefits Section */}
       <section className="bg-gray-50 py-20 md:py-32">
-        <div className="max-w-8xl mx-auto px-5 md:px-8">
+        <div className="max-w-7xl mx-auto px-5 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-16">
               <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
@@ -871,7 +880,7 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
             {[
               {
                 icon: Users,
@@ -881,7 +890,7 @@ export default function AboutPage() {
               {
                 icon: Layers,
                 title: "Quality",
-                desc: "Every product meets the highest benchmarks—no compromises.",
+                desc: "Every product meets the highest benchmarks — no compromises.",
               },
               {
                 icon: Gauge,
