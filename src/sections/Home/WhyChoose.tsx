@@ -72,7 +72,7 @@ export const WhyChoose: React.FC = () => {
                       {/* Main image */}
                       <div className="col-span-2 relative aspect-[4/3] rounded-2xl overflow-hidden ring-1 ring-gray-200 shadow-lg">
                         <img
-                          src="/images/quality-hero.png"
+                          src="/images/about/CNC Technology 2473146403.jpg"
                           alt="Precision manufacturing floor"
                           className="absolute inset-0 w-full h-full object-cover"
                           loading="lazy"
@@ -88,7 +88,7 @@ export const WhyChoose: React.FC = () => {
                       <div className="col-span-1 grid grid-rows-2 gap-3">
                         <div className="relative rounded-2xl overflow-hidden aspect-square ring-1 ring-gray-200 shadow-md">
                           <img
-                            src="/images/why/cnc-detail.svg"
+                            src="/images/home/Client-Centric Approach.png"
                             alt="Close-up view of CNC machining detail"
                             className="absolute inset-0 w-full h-full object-cover"
                             loading="lazy"
@@ -97,7 +97,7 @@ export const WhyChoose: React.FC = () => {
                         </div>
                         <div className="relative rounded-2xl overflow-hidden aspect-square ring-1 ring-gray-200 shadow-md">
                           <img
-                            src="/images/why/instruments.svg"
+                            src="/images/home/Trust Confidentiality.png"
                             alt="Quality inspection instruments arranged for measurement"
                             className="absolute inset-0 w-full h-full object-cover"
                             loading="lazy"

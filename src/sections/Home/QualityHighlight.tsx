@@ -28,7 +28,7 @@ export const QualityHighlight: React.FC = () => {
         <AnimatedSection animationType="fade-up" delay={100}>
           <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-8">
             <img
-              src="/images/quality-hero.png"
+              src="/images/quality/Title 2640251683.jpg"
               alt="Quality systems and inspection"
               className="w-full h-56 md:h-72 object-cover"
               loading="lazy"

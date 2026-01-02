@@ -26,13 +26,17 @@ export const AboutHighlights: React.FC = () => {
         {/* Styled image band */}
         <AnimatedSection animationType="fade-up" delay={100}>
           <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-8">
-            <img
-              src="/images/quality-hero.png"
-              alt="Modern precision manufacturing"
-              className="w-full h-56 md:h-72 object-cover"
-              loading="lazy"
-            />
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
+              <img
+                src="/images/quality/Our Quality Approach 2664576671.jpg"
+                alt="Modern precision manufacturing"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-black/10 pointer-events-none"></div>
+
             <div className="absolute top-3 left-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-semibold ring-1 ring-gray-200">
               <span>R&D</span>
               <span className="text-foreground/40">•</span>
@@ -46,42 +50,29 @@ export const AboutHighlights: React.FC = () => {
         {/* Small image row */}
         <AnimatedSection animationType="fade-up" delay={140}>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
-            <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img
-                src="/images/about/cnc-operations.svg"
-                alt="CNC operations on production line"
-                className="w-full h-28 md:h-32 object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            </div>
-            <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img
-                src="/images/about/optical-comparator.svg"
-                alt="Optical comparator measuring part geometry"
-                className="w-full h-28 md:h-32 object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            </div>
-            <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200">
-              <img
-                src="/images/about/inspection-instruments.svg"
-                alt="Inspection instruments for precision measurement"
-                className="w-full h-28 md:h-32 object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            </div>
-            <div className="relative rounded-xl overflow-hidden ring-1 ring-gray-200 hidden md:block">
-              <img
-                src="/images/about/skilled-team.svg"
-                alt="Skilled manufacturing team collaborating on shop floor"
-                className="w-full h-28 md:h-32 object-cover"
-                loading="lazy"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
-            </div>
+            {[
+              "/images/quality/Quality Instruments 2642860503.jpg",
+              "/images/quality/Thread Gauges (Plug & Ring).jpg",
+              "/images/quality/Coordinate Measuring Machines.jpg",
+              "/images/quality/Digital Height Gauges & Surface Plates.jpg",
+            ].map((src, i) => (
+              <div
+                key={i}
+                className={`relative rounded-xl overflow-hidden ring-1 ring-gray-200 ${
+                  i === 3 ? "hidden md:block" : ""
+                }`}
+              >
+                <div className="relative w-full aspect-[4/3]">
+                  <img
+                    src={src}
+                    alt="Quality inspection equipment"
+                    className="absolute inset-0 w-full h-full object-cover"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+              </div>
+            ))}
           </div>
         </AnimatedSection>
 
@@ -146,11 +137,17 @@ export const AboutHighlights: React.FC = () => {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-foreground/80">
               <div>
-                <span className="text-primary text-lg mb-2"> Innovation at Scale </span> –
-                Advanced CNC technology and modern manufacturing practices.
+                <span className="text-primary text-lg mb-2">
+                  {" "}
+                  Innovation at Scale{" "}
+                </span>{" "}
+                – Advanced CNC technology and modern manufacturing practices.
               </div>
               <div>
-                <span className="text-primary text-lg mb-2"> Client‑Centric Approach </span>{" "}
+                <span className="text-primary text-lg mb-2">
+                  {" "}
+                  Client‑Centric Approach{" "}
+                </span>{" "}
                 – Tailored solutions for your unique requirements.
               </div>
               <div>
@@ -161,7 +158,6 @@ export const AboutHighlights: React.FC = () => {
                 – ISO 9001:2015 certified processes.
               </div>
               <div>
-              
                 <span className="text-primary text-lg mb-2">
                   {" "}
                   Partnership Beyond Projects{" "}

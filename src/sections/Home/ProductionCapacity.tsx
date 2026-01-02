@@ -24,13 +24,20 @@ export const ProductionCapacity: React.FC = () => {
         {/* Styled image band to match other sections */}
         <AnimatedSection animationType="fade-up" delay={120}>
           <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-10">
-            <img
-              src="/images/factory-band.svg"
-              alt="Panoramic factory floor illustrating scalable production lines and workflow"
-              className="w-full h-44 md:h-60 object-cover"
-              loading="lazy"
-            />
+            {/* Aspect ratio wrapper */}
+            <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
+              <img
+                src="/images/home/Production  Capacity.png"
+                alt="Panoramic factory floor illustrating scalable production lines and workflow"
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+              />
+            </div>
+
+            {/* Overlay */}
             <div className="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-black/10 pointer-events-none"></div>
+
+            {/* Badge */}
             <div className="absolute top-3 left-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-semibold ring-1 ring-gray-200">
               <span>High Volume</span>
               <span className="text-foreground/40">•</span>

@@ -54,7 +54,7 @@ export default function Home() {
         <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
           <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
             <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
-              <AnimatedSection animationType="scale" threshold={0.1}>
+              <AnimatedSection>
                 <HeroSection />
               </AnimatedSection>
               <AnimatedSection animationType="fade-up" threshold={0.15}>
