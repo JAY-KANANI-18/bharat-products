@@ -87,7 +87,7 @@ export const TopBar = () => {
             })}
 
             {/* POLICY DROPDOWN */}
-            <div className="relative group">
+            <div className="relative group text-primary">
               <button
                 className="
                   px-2 lg:px-2.5 xl:px-3

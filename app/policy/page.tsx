@@ -3,7 +3,15 @@ import Link from "next/link";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
-import { Ban, Handshake, ShieldCheck, HardHat, Scale, ExternalLink, BadgeCheck } from "lucide-react";
+import {
+  Ban,
+  Handshake,
+  ShieldCheck,
+  HardHat,
+  Scale,
+  ExternalLink,
+  BadgeCheck,
+} from "lucide-react";
 
 export const metadata = {
   title: "Policies | Bharat Products",
@@ -114,7 +122,9 @@ export default function SafetyPage() {
 
           <AnimatedSection animationType="fade-up" delay={400}>
             <p className="text-lg md:text-xl text-white/90 leading-8 max-w-3xl mx-auto mb-12">
-              At Bharat Products, our policies uphold ethical employment, zero tolerance for harassment, safe visitor practices, and a rigorous commitment to quality.
+              At Bharat Products, our policies uphold ethical employment, zero
+              tolerance for harassment, safe visitor practices, and a rigorous
+              commitment to quality.
             </p>
           </AnimatedSection>
 
@@ -141,10 +151,30 @@ export default function SafetyPage() {
       <nav className="sticky top-16 md:top-20 z-[9997] bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 border-b">
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <div className="flex flex-wrap items-center gap-2 py-3">
-            <a href="#labour" className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50">Labour & Employment</a>
-            <a href="#harassment" className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50">Harassment</a>
-            <a href="#visitor" className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50">Visitor Policy</a>
-            <a href="#quality" className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50">Quality</a>
+            <a
+              href="#labour"
+              className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50"
+            >
+              Labour & Employment
+            </a>
+            <a
+              href="#harassment"
+              className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50"
+            >
+              Harassment
+            </a>
+            <a
+              href="#visitor"
+              className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50"
+            >
+              Visitor Policy
+            </a>
+            <a
+              href="#quality"
+              className="px-3 py-1.5 rounded-full text-sm border border-gray-200 hover:bg-gray-50"
+            >
+              Quality
+            </a>
           </div>
         </div>
       </nav>
@@ -155,9 +185,21 @@ export default function SafetyPage() {
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
               {[
-                { href: "/policy/labour-employment", title: "Labour & Employment", Icon: Scale },
-                { href: "/policy/harassment", title: "Harassment", Icon: ShieldCheck },
-                { href: "/policy/visitor-policy", title: "Visitor Policy", Icon: ExternalLink },
+                {
+                  href: "/policy/labour-employment",
+                  title: "Labour & Employment",
+                  Icon: Scale,
+                },
+                {
+                  href: "/policy/harassment",
+                  title: "Harassment",
+                  Icon: ShieldCheck,
+                },
+                {
+                  href: "/policy/visitor-policy",
+                  title: "Visitor Policy",
+                  Icon: ExternalLink,
+                },
                 { href: "/policy/quality", title: "Quality", Icon: BadgeCheck },
               ].map(({ href, title, Icon }, i) => (
                 <a
@@ -167,7 +209,9 @@ export default function SafetyPage() {
                 >
                   <div className="flex items-center gap-3">
                     <Icon className="w-5 h-5 text-primary" />
-                    <div className="text-foreground font-semibold group-hover:text-primary">{title}</div>
+                    <div className="text-foreground font-semibold group-hover:text-primary">
+                      {title}
+                    </div>
                   </div>
                 </a>
               ))}
@@ -181,33 +225,93 @@ export default function SafetyPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-10">
-              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">POLICY</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">Labour & Employment Policy</h2>
+              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">
+                POLICY
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">
+                Labour & Employment Policy
+              </h2>
             </div>
           </AnimatedSection>
           <AnimatedSection animationType="fade-up" delay={120}>
-            <p className="text-foreground/80 leading-8 max-w-4xl mx-auto text-center mb-8">At Bharat Products, we are committed to maintaining the highest standards of ethical employment practices and ensuring a safe, fair, and respectful workplace for all.</p>
+            <p className="text-foreground/80 leading-8 max-w-4xl mx-auto text-center mb-8">
+              At Bharat Products, we are committed to maintaining the highest
+              standards of ethical employment practices and ensuring a safe,
+              fair, and respectful workplace for all.
+            </p>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <AnimatedSection animationType="fade-up" delay={160}>
               <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-                <div className="flex items-center gap-3 mb-3"><BadgeCheck className="w-5 h-5 text-primary" /><h3 className="text-lg font-semibold">Our Principles</h3></div>
+                <div className="flex items-center gap-3 mb-3">
+                  <BadgeCheck className="w-5 h-5 text-primary" />
+                  <h3 className="text-lg font-semibold">Our Principles</h3>
+                </div>
                 <ul className="space-y-3 text-foreground/80">
-                  <li className="flex items-start gap-2"><Ban className="w-5 h-5 text-primary mt-0.5" /> <span><strong>No Child Labour:</strong> Bharat Products strictly prohibits the employment of individuals below the age of 18 years.</span></li>
-                  <li className="flex items-start gap-2"><Ban className="w-5 h-5 text-primary mt-0.5" /> <span><strong>No Forced Labour:</strong> We categorically reject the use of child labour, bonded labour, or any form of forced or compulsory labour across all operations.</span></li>
-                  <li className="flex items-start gap-2"><Handshake className="w-5 h-5 text-primary mt-0.5" /> <span><strong>Respect & Dignity:</strong> Every employee works by choice and is never subjected to coercion, physical punishment, or any form of force.</span></li>
-                  <li className="flex items-start gap-2"><HardHat className="w-5 h-5 text-primary mt-0.5" /> <span><strong>Safe & Fair Workplace:</strong> We uphold the rights of our workforce, ensuring impartial treatment, equality, and dignity in every aspect of employment.</span></li>
+                  <li className="flex items-start gap-2">
+                    <Ban className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      <strong>No Child Labour:</strong> Bharat Products strictly
+                      prohibits the employment of individuals below the age of
+                      18 years.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Ban className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      <strong>No Forced Labour:</strong> We categorically reject
+                      the use of child labour, bonded labour, or any form of
+                      forced or compulsory labour across all operations.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Handshake className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      <strong>Respect & Dignity:</strong> Every employee works
+                      by choice and is never subjected to coercion, physical
+                      punishment, or any form of force.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <HardHat className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      <strong>Safe & Fair Workplace:</strong> We uphold the
+                      rights of our workforce, ensuring impartial treatment,
+                      equality, and dignity in every aspect of employment.
+                    </span>
+                  </li>
                 </ul>
               </div>
             </AnimatedSection>
             <AnimatedSection animationType="fade-up" delay={200}>
               <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-                <div className="flex items-center gap-3 mb-3"><ShieldCheck className="w-5 h-5 text-primary" /><h3 className="text-lg font-semibold">Our Commitment</h3></div>
+                <div className="flex items-center gap-3 mb-3">
+                  <ShieldCheck className="w-5 h-5 text-primary" />
+                  <h3 className="text-lg font-semibold">Our Commitment</h3>
+                </div>
                 <p className="text-foreground/80 mb-3">We pledge to:</p>
                 <ul className="space-y-3 text-foreground/80">
-                  <li className="flex items-start gap-2"><Scale className="w-5 h-5 text-primary mt-0.5" /> <span>Provide a workplace built on trust, transparency, and respect.</span></li>
-                  <li className="flex items-start gap-2"><Handshake className="w-5 h-5 text-primary mt-0.5" /> <span>Protect the dignity and rights of every employee.</span></li>
-                  <li className="flex items-start gap-2"><ShieldCheck className="w-5 h-5 text-primary mt-0.5" /> <span>Ensure compliance with all applicable labour laws and ethical standards, and foster a culture where employees can thrive.</span></li>
+                  <li className="flex items-start gap-2">
+                    <Scale className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      Provide a workplace built on trust, transparency, and
+                      respect.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <Handshake className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      Protect the dignity and rights of every employee.
+                    </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <ShieldCheck className="w-5 h-5 text-primary mt-0.5" />{" "}
+                    <span>
+                      Ensure compliance with all applicable labour laws and
+                      ethical standards, and foster a culture where employees
+                      can thrive.
+                    </span>
+                  </li>
                 </ul>
               </div>
             </AnimatedSection>
@@ -220,17 +324,34 @@ export default function SafetyPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-10">
-              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">POLICY</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">Harassment</h2>
+              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">
+                POLICY
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">
+                Harassment
+              </h2>
             </div>
           </AnimatedSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { title: "Commitment to a Respectful Workplace", desc: "Zero‑tolerance toward sexual or any other form of harassment. We ensure employees are protected from inappropriate conduct and can work safely." },
-              { title: "Equal Treatment & Dignity", desc: "Fair treatment for all regardless of race, gender, age, national origin, disability, caste, or religion. Inclusivity is fundamental to our culture." },
-              { title: "Professional Growth & Opportunity", desc: "We support development and equality of opportunity, enabling employees to enhance skills and grow within the organization." },
+              {
+                title: "Commitment to a Respectful Workplace",
+                desc: "Zero‑tolerance toward sexual or any other form of harassment. We ensure employees are protected from inappropriate conduct and can work safely.",
+              },
+              {
+                title: "Equal Treatment & Dignity",
+                desc: "Fair treatment for all regardless of race, gender, age, national origin, disability, caste, or religion. Inclusivity is fundamental to our culture.",
+              },
+              {
+                title: "Professional Growth & Opportunity",
+                desc: "We support development and equality of opportunity, enabling employees to enhance skills and grow within the organization.",
+              },
             ].map((card, i) => (
-              <AnimatedSection key={card.title} animationType="fade-up" delay={120 * (i + 1)}>
+              <AnimatedSection
+                key={card.title}
+                animationType="fade-up"
+                delay={120 * (i + 1)}
+              >
                 <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
                   <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
                   <p className="text-foreground/80">{card.desc}</p>
@@ -240,12 +361,27 @@ export default function SafetyPage() {
           </div>
           <AnimatedSection animationType="fade-up" delay={480}>
             <div className="mt-8 p-6 rounded-2xl border border-gray-200 bg-white">
-              <div className="flex items-center gap-3 mb-3"><BadgeCheck className="w-5 h-5 text-primary" /><h3 className="text-lg font-semibold">Our Promise</h3></div>
+              <div className="flex items-center gap-3 mb-3">
+                <BadgeCheck className="w-5 h-5 text-primary" />
+                <h3 className="text-lg font-semibold">Our Promise</h3>
+              </div>
               <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-foreground/80">
-                <li className="flex items-start gap-2"><ShieldCheck className="w-5 h-5 text-primary mt-0.5" /> Zero tolerance for harassment in any form.</li>
-                <li className="flex items-start gap-2"><Handshake className="w-5 h-5 text-primary mt-0.5" /> Respect and fairness for every employee.</li>
-                <li className="flex items-start gap-2"><BadgeCheck className="w-5 h-5 text-primary mt-0.5" /> Continuous growth and development support.</li>
-                <li className="flex items-start gap-2"><HardHat className="w-5 h-5 text-primary mt-0.5" /> Safe environment built on trust and accountability.</li>
+                <li className="flex items-start gap-2">
+                  <ShieldCheck className="w-5 h-5 text-primary mt-0.5" /> Zero
+                  tolerance for harassment in any form.
+                </li>
+                <li className="flex items-start gap-2">
+                  <Handshake className="w-5 h-5 text-primary mt-0.5" /> Respect
+                  and fairness for every employee.
+                </li>
+                <li className="flex items-start gap-2">
+                  <BadgeCheck className="w-5 h-5 text-primary mt-0.5" />{" "}
+                  Continuous growth and development support.
+                </li>
+                <li className="flex items-start gap-2">
+                  <HardHat className="w-5 h-5 text-primary mt-0.5" /> Safe
+                  environment built on trust and accountability.
+                </li>
               </ul>
             </div>
           </AnimatedSection>
@@ -257,10 +393,19 @@ export default function SafetyPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-10">
-              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">POLICY</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">Bharat Products – Visitor Policy</h2>
-              <p className="text-foreground/70 mt-2">Reference:&nbsp;
-                <Link href="https://www.bharatprecision.com/visitor-policy/" target="_blank" className="inline-flex items-center gap-1 text-primary hover:underline">
+              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">
+                POLICY
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">
+                Bharat Products – Visitor Policy
+              </h2>
+              <p className="text-foreground/70 mt-2">
+                Reference:&nbsp;
+                <Link
+                  href="https://www.bharatprecision.com/visitor-policy/"
+                  target="_blank"
+                  className="inline-flex items-center gap-1 text-primary hover:underline"
+                >
                   https://www.bharatprecision.com/visitor-policy/
                   <ExternalLink className="w-4 h-4" />
                 </Link>
@@ -271,14 +416,24 @@ export default function SafetyPage() {
             <AnimatedSection animationType="fade-up" delay={120}>
               <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
                 <h3 className="text-lg font-semibold mb-2">Purpose</h3>
-                <p className="text-foreground/80">Provide clear guidance for all visitors to Bharat Products premises, as well as for employees who sponsor and host visitors.</p>
+                <p className="text-foreground/80">
+                  Provide clear guidance for all visitors to Bharat Products
+                  premises, as well as for employees who sponsor and host
+                  visitors.
+                </p>
                 <h3 className="text-lg font-semibold mt-6 mb-2">Scope</h3>
-                <p className="text-foreground/80">Applies to every visitor entering any Bharat Products facility and to all employees responsible for coordinating or sponsoring visits.</p>
+                <p className="text-foreground/80">
+                  Applies to every visitor entering any Bharat Products facility
+                  and to all employees responsible for coordinating or
+                  sponsoring visits.
+                </p>
               </div>
             </AnimatedSection>
             <AnimatedSection animationType="fade-up" delay={180}>
               <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-                <h3 className="text-lg font-semibold mb-3">Visitor Guidelines</h3>
+                <h3 className="text-lg font-semibold mb-3">
+                  Visitor Guidelines
+                </h3>
                 <ul className="space-y-3 text-foreground/80">
                   {[
                     "Registration: All visitors must sign in and sign out at the security office using the visitor gate pass system.",
@@ -289,7 +444,10 @@ export default function SafetyPage() {
                     "Movement Within Premises: Visitors must use designated walkways during plant tours or site visits.",
                     "Staff Responsibility: Employees must confirm the visitor’s name, host, area/room to be visited, and purpose of the visit before granting access.",
                   ].map((t, i) => (
-                    <li key={i} className="flex items-start gap-2"><ShieldCheck className="w-5 h-5 text-primary mt-0.5" /> <span>{t}</span></li>
+                    <li key={i} className="flex items-start gap-2">
+                      <ShieldCheck className="w-5 h-5 text-primary mt-0.5" />{" "}
+                      <span>{t}</span>
+                    </li>
                   ))}
                 </ul>
               </div>
@@ -303,20 +461,38 @@ export default function SafetyPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="text-center mb-10">
-              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">POLICY</div>
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">Quality & Commitment Statement</h2>
+              <div className="text-xs font-bold tracking-[0.3em] text-primary/80 mb-3 font-red_hat_text">
+                POLICY
+              </div>
+              <h2 className="text-3xl md:text-4xl font-bold text-foreground font-red_hat_display">
+                Quality & Commitment Statement
+              </h2>
             </div>
           </AnimatedSection>
           <AnimatedSection animationType="fade-up" delay={120}>
             <div className="mx-auto max-w-4xl p-6 rounded-2xl border border-gray-200 bg-white">
               <p className="text-foreground/80 leading-8">
-                At Bharat Products, we are dedicated to delivering precision‑engineered components that meet exact customer specifications while upholding the highest standards of business ethics and regulatory compliance. Our unwavering focus is on achieving complete customer satisfaction through the motivation of our workforce and the efficient utilization of resources.
+                At{" "}
+                <span className="text-primary text-lg mb-2 ">
+                  Bharat Products
+                </span>
+                , we are dedicated to delivering precision‑engineered components
+                that meet exact customer specifications while upholding the
+                highest standards of business ethics and regulatory compliance.
+                Our unwavering focus is on achieving complete customer
+                satisfaction through the motivation of our workforce and the
+                efficient utilization of resources.
               </p>
               <p className="text-foreground/80 leading-8 mt-4">
-                We are committed to implementing, maintaining, and continually improving our Quality Management System across all areas of operation, ensuring consistency, reliability, and excellence in every product we deliver.
+                We are committed to implementing, maintaining, and continually
+                improving our Quality Management System across all areas of
+                operation, ensuring consistency, reliability, and excellence in
+                every product we deliver.
               </p>
               <p className="text-foreground/80 leading-8 mt-4">
-                Our mission is to provide cost‑effective solutions that empower our customers to excel in their industries, strengthening their competitive edge through precision, trust, and innovation.
+                Our mission is to provide cost‑effective solutions that empower
+                our customers to excel in their industries, strengthening their
+                competitive edge through precision, trust, and innovation.
               </p>
             </div>
           </AnimatedSection>

@@ -490,7 +490,7 @@ export default function AboutPage() {
                 >
                   <div className="relative group">
                     <img
-                      src="/images/about/Unbeatable Value & Capacity 2175192891.jpg"
+                      src="/images/about/Unbeatable Value & Capacity.jpg"
                       alt="Value & Capacity"
                       className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
                     />

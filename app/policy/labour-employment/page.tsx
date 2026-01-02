@@ -52,11 +52,16 @@ export default function LabourEmploymentPolicyPage() {
         <div className="max-w-6xl mx-auto px-4 md:px-8">
           <AnimatedSection animationType="fade-up">
             <p className="text-foreground/80 leading-8 max-w-4xl mx-auto text-center mb-10">
-              At Bharat Products, we are firmly committed to ethical employment
-              practices, respect for human rights, and the creation of a safe,
-              fair, and inclusive workplace. Our policies align with applicable
-              labour laws and international standards to ensure dignity and
-              equality for every individual.
+              At{" "}
+              <span className="text-primary text-lg mb-2 ">
+                {" "}
+                Bharat Products
+              </span>
+              , we are firmly committed to ethical employment practices, respect
+              for human rights, and the creation of a safe, fair, and inclusive
+              workplace. Our policies align with applicable labour laws and
+              international standards to ensure dignity and equality for every
+              individual.
             </p>
           </AnimatedSection>
 
