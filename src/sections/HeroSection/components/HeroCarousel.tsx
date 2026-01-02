@@ -34,7 +34,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
             "Dynamically target high-payoff intellectual capital for customized technologies. Objectively integrate emerging core competency innovations.",
           ctaText: "View our services",
           ctaHref: "#services",
-          imageUrl: "/images/quality-hero.png",
+          imageUrl: "/images/home/The-crafting-excellence.png",
           overlay: "bg-black/50",
         },
         {
@@ -45,7 +45,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
             "From concept to completion, we deliver quality workmanship and reliable results for demanding projects.",
           ctaText: "Explore projects",
           ctaHref: "#projects",
-          imageUrl: "/images/quality-hero.png",
+          imageUrl: "/images/home/Precision-engineerine.jpg",
           overlay: "bg-black/45",
         },
         {
@@ -56,7 +56,7 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
             "We combine modern technology with experienced craftsmanship to achieve consistent, scalable outcomes.",
           ctaText: "Contact us",
           ctaHref: "#contact",
-          imageUrl: "/images/quality-hero.png",
+          imageUrl: "/images/home/Innovation-in-motion.jpg",
           overlay: "bg-black/40",
         },
       ],

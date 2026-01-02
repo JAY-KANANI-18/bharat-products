@@ -193,7 +193,7 @@ export default function VisitorPolicyPage() {
             <div className="grid grid-cols-4 md:grid-cols-7 gap-2">
               {[
                 {
-                  img: "/images/policy/visitor-policy/1x/HIGH VISIBILITY JACKET MUST BE WORN.webp",
+                  img: "/images/policy/visitor-policy/1x/HIGH VISIBILITY JACKET MUST BE WORN.png",
                 },
                 {
                   img: "/images/policy/visitor-policy/1x/SAFETY HELMET MUST BE WORN.webp",
