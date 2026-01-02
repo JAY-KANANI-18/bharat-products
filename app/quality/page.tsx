@@ -39,7 +39,7 @@ export default function QualityPage() {
       title: "Skilled Workforce",
       description:
         "Trained operators and engineers focused on defect prevention.",
-      img: "",
+      img: "/images/quality/Skilled Workforce.jpg",
     },
     {
       icon: BookOpen,
@@ -352,7 +352,7 @@ export default function QualityPage() {
           <AnimatedSection animationType="fade-up" delay={100}>
             <div className="relative mb-12">
               <img
-                src="/images/quality/Health & Safety Policy.jpeg"
+                src="/images/quality/certifications & compliance 2683290423.jpg"
                 alt="Standards and certifications documents"
                 className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-lg"
               />
@@ -699,7 +699,7 @@ export default function QualityPage() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url(/images/quality/Health & Safety Policy.jpeg)",
+            backgroundImage: "url(/images/quality/footer.jpg)",
           }}
         >
           <div className="absolute inset-0 bg-black/60"></div>
