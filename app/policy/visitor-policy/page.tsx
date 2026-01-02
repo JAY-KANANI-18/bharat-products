@@ -36,7 +36,7 @@ export default function VisitorPolicyPage() {
       </section>
       <section className="py-2 bg-white">
         <AnimatedSection animationType="fade-up" delay={0}>
-          <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
+          <div className="p-6 rounded-2xl border max-w-6xl mx-auto px-5 md:px-8 border-gray-200 bg-white h-full">
             <h2 className="text-xl font-bold mb-3">Purpose</h2>
             <p className="text-foreground/80 leading-relaxed">
               This Visitor Policy is established to ensure the safety, security,
@@ -150,19 +150,30 @@ export default function VisitorPolicyPage() {
                   ].map((text, i) => (
                     <li
                       key={i}
-                      className="grid grid-cols-[20px_220px_1fr] gap-x-4 items-start"
+                      className="
+                      grid gap-x-4 gap-y-1
+                      grid-cols-[20px_1fr]
+                      sm:grid-cols-[20px_200px_1fr]
+                      items-start
+                    "
                     >
                       {/* Icon */}
                       <ShieldCheck className="w-5 h-5 text-primary mt-1" />
 
                       {/* Title */}
-                      <h3 className="text-lg font-semibold">{text.title}</h3>
+                      <h3 className="text-base font-semibold">{text.title}</h3>
 
                       {/* Description */}
-                      <span className="text-foreground/80">
-                        <strong> : </strong> &nbsp;
+                      <p
+                        className="
+                      col-span-2
+                      sm:col-span-1
+                      sm:col-start-3
+                      text-sm text-foreground/80
+                    "
+                      >
                         {text.description}
-                      </span>
+                      </p>
                     </li>
                   ))}
                 </ul>

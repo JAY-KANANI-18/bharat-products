@@ -74,31 +74,62 @@ export default function HarassmentPolicyPage() {
 
           <AnimatedSection animationType="fade-up" delay={480}>
             <div className="mt-8 p-6 rounded-2xl border border-gray-200 bg-white">
-              <div className="flex items-center gap-3 mb-3">
+              <div className="flex items-center gap-3 mb-4">
                 <h3 className="text-lg font-semibold">Our Promise</h3>
                 <BadgeCheck className="w-5 h-5 text-primary" />
               </div>
-              <ul className="grid grid-cols-1 md:grid-cols-1 gap-3 text-foreground/80">
-                <li className="flex items-start gap-2">
-                  <ShieldCheck className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="font-bold"> Zero tolerance :</span>{" "}
-                  Harassment in any form will not be tolerated.
-                </li>
-                <li className="flex items-start gap-2">
-                  <Handshake className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="font-bold">Respect & Fairness : </span> Every
-                  employee is entitled to integrity and equality.
-                </li>
-                <li className="flex items-start gap-2">
-                  <BadgeCheck className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="font-bold"> Growth & Development : </span> We
-                  support continuous learning and advancement.
-                </li>
-                <li className="flex items-start gap-2">
-                  <HardHat className="w-5 h-5 text-primary mt-0.5" />
-                  <span className="font-bold"> Safe Environment : </span> A
-                  culture of trust, transparency, and accountability.
-                </li>
+
+              <ul className="space-y-4 text-foreground/80">
+                {[
+                  {
+                    title: "Zero Tolerance",
+                    desc: "Harassment in any form will not be tolerated.",
+                    icon: ShieldCheck,
+                  },
+                  {
+                    title: "Respect & Fairness",
+                    desc: "Every employee is entitled to integrity and equality.",
+                    icon: Handshake,
+                  },
+                  {
+                    title: "Growth & Development",
+                    desc: "We support continuous learning and advancement.",
+                    icon: BadgeCheck,
+                  },
+                  {
+                    title: "Safe Environment",
+                    desc: "A culture of trust, transparency, and accountability.",
+                    icon: HardHat,
+                  },
+                ].map(({ title, desc, icon: Icon }, i) => (
+                  <li
+                    key={i}
+                    className="
+            grid gap-x-4 gap-y-1
+            grid-cols-[20px_1fr]
+            sm:grid-cols-[20px_200px_1fr]
+            items-start
+          "
+                  >
+                    {/* Icon */}
+                    <Icon className="w-5 h-5 text-primary mt-1" />
+
+                    {/* Title */}
+                    <span className="font-semibold text-base">{title}</span>
+
+                    {/* Description */}
+                    <p
+                      className="
+              col-span-2
+              sm:col-span-1
+              sm:col-start-3
+              text-sm
+            "
+                    >
+                      {desc}
+                    </p>
+                  </li>
+                ))}
               </ul>
             </div>
           </AnimatedSection>
