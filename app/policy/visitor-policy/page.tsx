@@ -37,7 +37,7 @@ export default function VisitorPolicyPage() {
       <section className="py-2 bg-white">
         <AnimatedSection animationType="fade-up" delay={0}>
           <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-            <h2 className="text-xl font-semibold mb-3">Purpose</h2>
+            <h2 className="text-xl font-bold mb-3">Purpose</h2>
             <p className="text-foreground/80 leading-relaxed">
               This Visitor Policy is established to ensure the safety, security,
               and smooth operation of Bharat Products’ facilities. It provides
@@ -45,7 +45,7 @@ export default function VisitorPolicyPage() {
               of employees who sponsor or host visitors within the premises.
             </p>
 
-            <h2 className="text-xl font-semibold mt-6 mb-3">Scope</h2>
+            <h2 className="text-xl font-bold mt-6 mb-3">Scope</h2>
             <p className="text-foreground/80 leading-relaxed">
               This policy applies to all visitors, contractors, suppliers, and
               guests entering any Bharat Products facility. It also applies to
@@ -112,17 +112,57 @@ export default function VisitorPolicyPage() {
 
                 <ul className="space-y-4 text-foreground/80 leading-relaxed">
                   {[
-                    "Entry & Exit Registration: All visitors must register at the security office and sign in and out using the official visitor gate pass system.",
-                    "Visitor Identification: Visitors must wear a valid visitor pass visibly at all times while inside company premises.",
-                    "Safety Compliance: Visitors entering production, warehouse, or operational areas must wear the required Personal Protective Equipment (PPE) as instructed.",
-                    "Photography & Recording: The use of cameras, mobile phones, or any recording devices for photography or videography is strictly prohibited unless prior written approval is granted.",
-                    "Liability & Responsibility: Visitors are responsible for any damage, loss, or safety incidents caused during their visit. Bharat Products shall not be held liable for any injury or harm arising from non-compliance.",
-                    "Movement Within Premises: Visitors must remain within designated walkways and permitted areas and should always be accompanied by authorized personnel where required.",
-                    "Host Responsibility: The hosting employee must verify the visitor’s identity, purpose of visit, and authorized area before granting access and ensure compliance throughout the visit.",
+                    {
+                      title: "Entry & Exit Registration",
+                      description:
+                        "All visitors must register at the security office and sign in and out using the official visitor gate pass system.",
+                    },
+                    {
+                      title: "Visitor Identification",
+                      description:
+                        "Visitors must wear a valid visitor pass visibly at all times while inside company premises.",
+                    },
+                    {
+                      title: "Safety Compliance",
+                      description:
+                        "Visitors entering production, warehouse, or operational areas must wear the required Personal Protective Equipment (PPE) as instructed.",
+                    },
+                    {
+                      title: "Photography & Recording",
+                      description:
+                        "The use of cameras, mobile phones, or any recording devices for photography or videography is strictly prohibited unless prior written approval is granted.",
+                    },
+                    {
+                      title: "Liability & Responsibility",
+                      description:
+                        "Visitors are responsible for any damage, loss, or safety incidents caused during their visit. Bharat Products shall not be held liable for any injury or harm arising from non-compliance.",
+                    },
+                    {
+                      title: "Movement Within Premises",
+                      description:
+                        "Visitors must remain within designated walkways and permitted areas and should always be accompanied by authorized personnel where required.",
+                    },
+                    {
+                      title: "Host Responsibility",
+                      description:
+                        "The hosting employee must verify the visitor’s identity, purpose of visit, and authorized area before granting access and ensure compliance throughout the visit.",
+                    },
                   ].map((text, i) => (
-                    <li key={i} className="flex items-start gap-3">
-                      <ShieldCheck className="w-5 h-5 text-primary mt-1 shrink-0" />
-                      <span>{text}</span>
+                    <li
+                      key={i}
+                      className="grid grid-cols-[20px_220px_1fr] gap-x-4 items-start"
+                    >
+                      {/* Icon */}
+                      <ShieldCheck className="w-5 h-5 text-primary mt-1" />
+
+                      {/* Title */}
+                      <h3 className="text-lg font-semibold">{text.title}</h3>
+
+                      {/* Description */}
+                      <span className="text-foreground/80">
+                        <strong> : </strong> &nbsp;
+                        {text.description}
+                      </span>
                     </li>
                   ))}
                 </ul>
@@ -142,25 +182,25 @@ export default function VisitorPolicyPage() {
             <div className="grid grid-cols-4 md:grid-cols-7 gap-2">
               {[
                 {
-                  img: "/images/policy/visitor-policy/imgi_13_img_1.png",
+                  img: "/images/policy/visitor-policy/1x/HIGH VISIBILITY JACKET MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_14_img_2.png",
+                  img: "/images/policy/visitor-policy/1x/SAFETY HELMET MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_15_img_3.png",
+                  img: "/images/policy/visitor-policy/1x/DUST MASK MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_16_img_4.png",
+                  img: "/images/policy/visitor-policy/1x/SAFETY  GOGGLES MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_17_img_5.png",
+                  img: "/images/policy/visitor-policy/1x/EAR PROTECTION MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_18_img_6.png",
+                  img: "/images/policy/visitor-policy/1x/SAFETY FOOTWEAR MUST BE WORN.webp",
                 },
                 {
-                  img: "/images/policy/visitor-policy/imgi_19_img_7.png",
+                  img: "/images/policy/visitor-policy/1x/SAFETY CLOVES MUST BE WORN.webp",
                 },
               ].map((item, i) => (
                 <img

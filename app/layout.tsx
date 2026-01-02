@@ -1,16 +1,83 @@
 import type { Metadata } from "next";
+import type { Viewport } from "next";
 import React from "react";
 import { Roboto } from "next/font/google";
 import "../src/globals.css";
 import { ScrollToTop } from "../src/components/ScrollToTop";
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bharatprod.com";
+
 export const metadata: Metadata = {
-  title: "Bharat Products",
-  description: "Professional services website",
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: "Bharat Products",
+    template: "%s | Bharat Products",
+  },
+  description:
+    "Bharat Products is an ISO 9001:2015 certified precision engineering partner delivering high‑tolerance brass, stainless steel, aluminium and forged components.",
+  applicationName: "Bharat Products",
+  keywords: [
+    "Bharat Products",
+    "precision components",
+    "CNC machining",
+    "brass turned parts",
+    "stainless steel parts",
+    "aluminium parts",
+    "forged components",
+    "India manufacturer",
+  ],
+  authors: [{ name: "Bharat Products" }],
+  creator: "Bharat Products",
+  publisher: "Bharat Products",
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    type: "website",
+    url: "/",
+    title: "Bharat Products",
+    siteName: "Bharat Products",
+    description:
+      "ISO 9001:2015 certified precision partner for brass, stainless steel, aluminium and forged components.",
+    images: [
+      {
+        url: "/Final-Logo/1x/White BG Favicon.png",
+        width: 512,
+        height: 512,
+        alt: "Bharat Products Logo",
+      },
+    ],
+    locale: "en_IN",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bharat Products",
+    description:
+      "Precision engineered components: brass, stainless steel, aluminium and forged parts.",
+    images: ["/Final-Logo/1x/White BG Favicon.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
   icons: {
     icon: "/Final-Logo/SVG/White-BG-Favicon.svg",
-    apple: "/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg",
+    apple: "/Final-Logo/SVG/White-Favicon.svg",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#f59e0b",
+  colorScheme: "light",
 };
 
 const roboto = Roboto({
@@ -28,6 +95,37 @@ export default function RootLayout({
       <body
         className={`${roboto.className} text-foreground/70 text-sm not-italic normal-nums font-normal accent-auto bg-fixed bg-white bg-no-repeat bg-cover box-border caret-transparent block tracking-[normal] leading-[21px] list-outside list-disc min-h-[1000px] pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-roboto md:text-base md:leading-6 pt-16 md:pt-20`}
       >
+        {/* Organization & WebSite JSON-LD */}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Bharat Products",
+              url: siteUrl,
+              logo: `${siteUrl}/Final-Logo/1x/White BG Favicon.png`,
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              name: "Bharat Products",
+              url: siteUrl,
+              potentialAction: {
+                "@type": "SearchAction",
+                target: `${siteUrl}/products?query={search_term_string}`,
+                "query-input": "required name=search_term_string",
+              },
+            }),
+          }}
+        />
         {children}
         <ScrollToTop />
       </body>

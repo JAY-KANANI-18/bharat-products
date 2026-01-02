@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
@@ -20,6 +21,29 @@ import {
   Briefcase,
   Shield,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "About Bharat Products | Precision Engineering Partner",
+  description:
+    "Learn about Bharat Products – a TÜV SÜD & ISO 9001:2015 certified precision manufacturer delivering high‑tolerance components across industries.",
+  alternates: { canonical: "/about" },
+  openGraph: {
+    url: "/about",
+    title: "About Bharat Products",
+    description:
+      "Precision engineering partner with 11+ years experience, 50+ team members and TÜV SÜD certification.",
+    images: [
+      { url: "/Final-Logo/1x/White BG Favicon.png", width: 1200, height: 630 },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About Bharat Products",
+    description:
+      "TÜV SÜD & ISO 9001:2015 certified precision manufacturer.",
+    images: ["/Final-Logo/1x/White BG Favicon.png"],
+  },
+};
 
 export default function AboutPage() {
   return (

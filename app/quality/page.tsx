@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
@@ -11,6 +12,13 @@ import {
   Briefcase,
   BookOpen,
 } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Quality Policy & Instruments | Bharat Products",
+  description:
+    "ISO 9001:2015 TÜV SÜD certified quality system, SPC, CMM, optical comparators, thread gauges and documented traceability ensuring ±0.01mm precision.",
+  alternates: { canonical: "/quality" },
+};
 
 export default function QualityPage() {
   const qualityPoints = [

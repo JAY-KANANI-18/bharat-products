@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
 import { TopBar } from "../../src/sections/TopBar";
@@ -13,10 +14,17 @@ import {
   BadgeCheck,
 } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Policies | Bharat Products",
   description:
     "Labour & Employment, Harassment, Visitor Policy, and Quality Policy of Bharat Products.",
+  alternates: { canonical: "/policy" },
+  openGraph: {
+    url: "/policy",
+    title: "Company Policies | Bharat Products",
+    description:
+      "Explore Labour & Employment, Harassment, Visitor, and Quality policies.",
+  },
 };
 
 const safetyMeasures = [

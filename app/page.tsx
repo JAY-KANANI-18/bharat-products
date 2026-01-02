@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import { AnimatedSection } from "./about/components/AnimatedSection";
 import { TopBar } from "../src/sections/TopBar";
@@ -15,6 +16,34 @@ import { ProductionCapacity } from "../src/sections/Home/ProductionCapacity";
 import { QualityHighlight } from "../src/sections/Home/QualityHighlight";
 import { ProductSliderLocal } from "../src/sections/Home/ProductSliderLocal";
 import { PolicySlider } from "../src/sections/Home/PolicySlider";
+
+export const metadata: Metadata = {
+  title: "Precision Metal Components Manufacturer | Bharat Products",
+  description:
+    "ISO 9001:2015 certified manufacturer delivering precision‑engineered brass, stainless steel, aluminium and forged components with ±0.01mm tolerance.",
+  alternates: { canonical: "/" },
+  openGraph: {
+    url: "/",
+    title: "Bharat Products | Precision Components",
+    description:
+      "Trusted precision engineering partner for brass, stainless steel, aluminium and forged parts.",
+    images: [
+      {
+        url: "/Final-Logo/1x/White BG Favicon.png",
+        width: 1200,
+        height: 630,
+        alt: "Bharat Products",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bharat Products | Precision Components",
+    description:
+      "ISO 9001:2015 certified precision engineering partner in India.",
+    images: ["/Final-Logo/1x/White BG Favicon.png"],
+  },
+};
 
 export default function Home() {
   return (

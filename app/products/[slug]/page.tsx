@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { TopBar } from "../../../src/sections/TopBar";
 import { Footer } from "../../../src/sections/Footer";
 import { AnimatedSection } from "../../about/components/AnimatedSection";
@@ -7,6 +8,8 @@ import {
   specialCategoryGroups,
   humanizeSlug,
 } from "../../../src/data/products";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bharatprod.com";
 
 // Product data (same as in products page)
 const products = [
@@ -320,6 +323,91 @@ interface ProductDetailProps {
   };
 }
 
+export function generateStaticParams() {
+  const productSlugs = products.map((p) => ({ slug: p.id }));
+  const specialSlugs = Object.keys(specialCategoryGroups).map((slug) => ({
+    slug,
+  }));
+  const unique = Array.from(
+    new Set([
+      ...productSlugs.map((o) => o.slug),
+      ...specialSlugs.map((o) => o.slug),
+    ])
+  );
+  return unique.map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: ProductDetailProps): Metadata {
+  const isSpecial = Object.prototype.hasOwnProperty.call(
+    specialCategoryGroups,
+    params.slug
+  );
+  if (isSpecial) {
+    const name = humanizeSlug(params.slug);
+    const url = `${siteUrl}/products/${params.slug}`;
+    return {
+      title: `${name} Products`,
+      description: `Explore ${name} from Bharat Products. Precision-engineered components and sub‑categories with inquiry options.`,
+      alternates: {
+        canonical: `/products/${params.slug}`,
+      },
+      openGraph: {
+        url,
+        title: `${name} Products | Bharat Products`,
+        description: `Discover ${name} categories and inquire directly.`,
+        images: [
+          {
+            url: "/Final-Logo/1x/White BG Favicon.png",
+            width: 512,
+            height: 512,
+            alt: "Bharat Products Logo",
+          },
+        ],
+      },
+      twitter: {
+        card: "summary_large_image",
+        title: `${name} Products | Bharat Products`,
+        description: `Discover ${name} categories and inquire directly.`,
+        images: ["/Final-Logo/1x/White BG Favicon.png"],
+      },
+    };
+  }
+
+  const product = products.find((p) => p.id === params.slug);
+  const title = product?.title || humanizeSlug(params.slug);
+  const description =
+    product?.description ||
+    `${title} from Bharat Products. Precision‑engineered components with custom specifications.`;
+  const url = `${siteUrl}/products/${params.slug}`;
+
+  return {
+    title: `${title} | Product Details`,
+    description,
+    alternates: {
+      canonical: `/products/${params.slug}`,
+    },
+    openGraph: {
+      url,
+      title: `${title} | Bharat Products`,
+      description,
+      images: [
+        {
+          url: product?.image || "/Final-Logo/1x/White BG Favicon.png",
+          width: 1200,
+          height: 630,
+          alt: title,
+        },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${title} | Bharat Products`,
+      description,
+      images: [product?.image || "/Final-Logo/1x/White BG Favicon.png"],
+    },
+  };
+}
+
 export default function ProductDetail({ params }: ProductDetailProps) {
   // If this slug is a special category (e.g., brass-turned-parts), render grouped listing
   const groups = (specialCategoryGroups as Record<string, any>)[params.slug] as
@@ -339,6 +427,49 @@ export default function ProductDetail({ params }: ProductDetailProps) {
     return (
       <div className="relative overflow-hidden">
         <TopBar />
+        {/* JSON-LD for CollectionPage and Breadcrumbs */}
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "CollectionPage",
+              name: `${title} Products`,
+              url: `${siteUrl}/products/${params.slug}`,
+            }),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Home",
+                  item: `${siteUrl}/`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Products",
+                  item: `${siteUrl}/products`,
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: title,
+                  item: `${siteUrl}/products/${params.slug}`,
+                },
+              ],
+            }),
+          }}
+        />
 
         {/* Hero */}
         <section className="relative bg-gradient-to-br from-gray-50 to-white py-16 md:py-24 overflow-hidden">
@@ -472,6 +603,53 @@ export default function ProductDetail({ params }: ProductDetailProps) {
   return (
     <div className="relative overflow-hidden">
       <TopBar />
+      {/* JSON-LD for Product and Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Product",
+            name: product.title,
+            image: [product.image],
+            description: product.description,
+            brand: { "@type": "Brand", name: "Bharat Products" },
+            url: `${siteUrl}/products/${params.slug}`,
+            category: product.category,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: `${siteUrl}/`,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Products",
+                item: `${siteUrl}/products`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: product.title,
+                item: `${siteUrl}/products/${params.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* Breadcrumb */}
       <section className="bg-gray-50 py-4">

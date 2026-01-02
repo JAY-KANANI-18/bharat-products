@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import type { Metadata } from "next";
 import { TopBar } from "../../../../src/sections/TopBar";
 import { Footer } from "../../../../src/sections/Footer";
 import { AnimatedSection } from "../../../about/components/AnimatedSection";
@@ -7,10 +8,49 @@ import {
   categoryFromSlug,
   getProductsByCategorySlug,
   specialCategoryGroups,
+  allCategories,
+  categorySlug,
 } from "../../../../src/data/products";
+
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bharatprod.com";
 
 interface CategoryPageProps {
   params: { slug: string };
+}
+
+export function generateStaticParams() {
+  const categories = allCategories().map((c) => categorySlug(c));
+  const groups = Object.keys(specialCategoryGroups);
+  const set = new Set<string>([...categories, ...groups]);
+  return Array.from(set).map((slug) => ({ slug }));
+}
+
+export function generateMetadata({ params }: CategoryPageProps): Metadata {
+  const name = categoryFromSlug(params.slug) || params.slug.replace(/-/g, " ");
+  const url = `${siteUrl}/products/category/${params.slug}`;
+  const items = getProductsByCategorySlug(params.slug);
+  const ogImage = items[0]?.image || "/Final-Logo/1x/White BG Favicon.png";
+  return {
+    title: `${name} | Product Category`,
+    description: `Browse ${name} from Bharat Products. Precision‑engineered components with inquiry options and details.`,
+    alternates: {
+      canonical: `/products/category/${params.slug}`,
+    },
+    openGraph: {
+      url,
+      title: `${name} | Bharat Products`,
+      description: `Explore ${name} products and sub‑categories.`,
+      images: [
+        { url: ogImage, width: 1200, height: 630, alt: `${name} products` },
+      ],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${name} | Bharat Products`,
+      description: `Explore ${name} products and sub‑categories.`,
+      images: [ogImage],
+    },
+  };
 }
 
 export default function CategoryPage({ params }: CategoryPageProps) {
@@ -53,6 +93,49 @@ export default function CategoryPage({ params }: CategoryPageProps) {
   return (
     <div className="relative overflow-hidden">
       <TopBar />
+      {/* JSON-LD for Collection and Breadcrumbs */}
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: `${categoryName} Products`,
+            url: `${siteUrl}/products/category/${params.slug}`,
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        suppressHydrationWarning
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: `${siteUrl}/`,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Products",
+                item: `${siteUrl}/products`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: categoryName,
+                item: `${siteUrl}/products/category/${params.slug}`,
+              },
+            ],
+          }),
+        }}
+      />
 
       {/* Hero */}
       <section className="relative bg-gradient-to-br from-gray-50 to-white py-16 md:py-24 overflow-hidden">

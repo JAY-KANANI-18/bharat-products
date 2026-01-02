@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../../src/sections/TopBar";
 import { Footer } from "../../../src/sections/Footer";
@@ -12,10 +13,11 @@ import {
   Dot,
 } from "lucide-react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Labour & Employment Policy | Bharat Products",
   description:
     "Bharat Products’ Labour & Employment Policy outlines our commitment to ethical employment, prohibition of child and forced labour, and a safe, fair workplace.",
+  alternates: { canonical: "/policy/labour-employment" },
 };
 
 export default function LabourEmploymentPolicyPage() {
@@ -80,17 +82,17 @@ export default function LabourEmploymentPolicyPage() {
                   <li className="flex items-start gap-3">
                     •{" "}
                     <span>
-                      <strong>No Child Labour:</strong> Bharat Products strictly
-                      prohibits the employment of individuals below the legally
-                      permitted working age and complies with all child labour
-                      laws and regulations.
+                      <strong>No Child Labour :</strong> Bharat Products
+                      strictly prohibits the employment of individuals below the
+                      legally permitted working age and complies with all child
+                      labour laws and regulations.
                     </span>
                   </li>
 
                   <li className="flex items-start gap-3">
                     •{" "}
                     <span>
-                      <strong>No Forced or Bonded Labour:</strong> We do not
+                      <strong>No Forced or Bonded Labour :</strong> We do not
                       tolerate bonded, forced, trafficked, or compulsory labour
                       in any form across our operations or supply chain.
                     </span>
@@ -99,7 +101,7 @@ export default function LabourEmploymentPolicyPage() {
                   <li className="flex items-start gap-3">
                     •{" "}
                     <span>
-                      <strong>Respect & Dignity:</strong> All employees work by
+                      <strong>Respect & Dignity :</strong> All employees work by
                       free choice and are treated with respect, without
                       harassment, coercion, abuse, or intimidation.
                     </span>
@@ -108,7 +110,7 @@ export default function LabourEmploymentPolicyPage() {
                   <li className="flex items-start gap-3">
                     •{" "}
                     <span>
-                      <strong>Safe & Fair Workplace:</strong> We ensure equal
+                      <strong>Safe & Fair Workplace :</strong> We ensure equal
                       opportunity, non-discrimination, and a healthy working
                       environment that prioritizes employee well-being.
                     </span>
@@ -126,9 +128,9 @@ export default function LabourEmploymentPolicyPage() {
                 </div>
 
                 <p className="text-foreground/80 mb-4 leading-relaxed">
-                  Bharat Products is committed to maintaining a workplace that
-                  promotes trust, transparency, and accountability. We pledge
-                  to:
+                  <span className="font-semibold">Bharat Products</span> is
+                  committed to maintaining a workplace that promotes trust,
+                  transparency, and accountability. We pledge to:
                 </p>
 
                 <ul className="space-y-4 text-foreground/80 leading-relaxed">

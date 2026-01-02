@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../../src/sections/TopBar";
 import { Footer } from "../../../src/sections/Footer";
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import { ShieldCheck, Handshake, BadgeCheck, HardHat } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Harassment Policy | Bharat Products",
+  description:
+    "Zero‑tolerance policy toward harassment with a workplace built on trust, respect and accountability.",
+  alternates: { canonical: "/policy/harassment" },
+};
 
 export default function HarassmentPolicyPage() {
   return (
@@ -57,7 +65,7 @@ export default function HarassmentPolicyPage() {
                 delay={120 * (i + 1)}
               >
                 <div className="p-6 rounded-2xl border border-gray-200 bg-white h-full">
-                  <h3 className="text-lg font-semibold mb-2">{card.title}</h3>
+                  <h3 className="text-lg font-bold mb-2">{card.title}</h3>
                   <p className="text-foreground/80">{card.desc}</p>
                 </div>
               </AnimatedSection>
@@ -70,24 +78,26 @@ export default function HarassmentPolicyPage() {
                 <h3 className="text-lg font-semibold">Our Promise</h3>
                 <BadgeCheck className="w-5 h-5 text-primary" />
               </div>
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-foreground/80">
+              <ul className="grid grid-cols-1 md:grid-cols-1 gap-3 text-foreground/80">
                 <li className="flex items-start gap-2">
-                  <ShieldCheck className="w-5 h-5 text-primary mt-0.5" /> Zero
-                  tolerance: Harassment in any form will not be tolerated.
+                  <ShieldCheck className="w-5 h-5 text-primary mt-0.5" />
+                  <span className="font-bold"> Zero tolerance :</span>{" "}
+                  Harassment in any form will not be tolerated.
                 </li>
                 <li className="flex items-start gap-2">
-                  <Handshake className="w-5 h-5 text-primary mt-0.5" /> Respect
-                  & Fairness: Every employee is entitled to integrity and
-                  equality.
+                  <Handshake className="w-5 h-5 text-primary mt-0.5" />
+                  <span className="font-bold">Respect & Fairness : </span> Every
+                  employee is entitled to integrity and equality.
                 </li>
                 <li className="flex items-start gap-2">
-                  <BadgeCheck className="w-5 h-5 text-primary mt-0.5" /> Growth
-                  & Development: We support continuous learning and advancement.
+                  <BadgeCheck className="w-5 h-5 text-primary mt-0.5" />
+                  <span className="font-bold"> Growth & Development : </span> We
+                  support continuous learning and advancement.
                 </li>
                 <li className="flex items-start gap-2">
-                  <HardHat className="w-5 h-5 text-primary mt-0.5" /> Safe
-                  Environment: A culture of trust, transparency, and
-                  accountability.
+                  <HardHat className="w-5 h-5 text-primary mt-0.5" />
+                  <span className="font-bold"> Safe Environment : </span> A
+                  culture of trust, transparency, and accountability.
                 </li>
               </ul>
             </div>

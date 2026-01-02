@@ -1,8 +1,22 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Contact Bharat Products | Get a Custom Quote",
+  description:
+    "Contact Bharat Products for precision components. Phone: +91 84605 24463 • Email: info@bharatprod.com • Jamnagar, Gujarat.",
+  alternates: { canonical: "/contact" },
+  openGraph: {
+    url: "/contact",
+    title: "Contact Bharat Products",
+    description:
+      "Reach our team for quotes and enquiries on precision‑engineered components.",
+  },
+};
 
 export default function ContactPage() {
   const contactInfo = [

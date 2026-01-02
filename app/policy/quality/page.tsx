@@ -14,7 +14,7 @@ export default function QualityPolicyPage() {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage:
-              "url(https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1600&h=900&fit=crop)",
+              "url(/images/policy/quality/Customer-Partnership.jpg)",
           }}
         />
         <div className="absolute inset-0 bg-black/55" />
@@ -38,13 +38,24 @@ export default function QualityPolicyPage() {
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="mx-auto max-w-4xl p-6 rounded-2xl border border-gray-200 bg-white">
               <p className="text-foreground/80 leading-8">
-                At Bharat Products, we are dedicated to delivering precision-engineered components that meet exact customer specifications while upholding the highest standards of business ethics and regulatory compliance. Our unwavering focus is on achieving complete customer satisfaction through the motivation of our workforce and the efficient utilization of resources.
+                At <span className="text-primary">Bharat Products</span>, we are
+                dedicated to delivering precision-engineered components that
+                meet exact customer specifications while upholding the highest
+                standards of business ethics and regulatory compliance. Our
+                unwavering focus is on achieving complete customer satisfaction
+                through the motivation of our workforce and the efficient
+                utilization of resources.
               </p>
               <p className="text-foreground/80 leading-8 mt-4">
-                We are committed to implementing, maintaining, and continually improving our Quality Management System across all areas of operation, ensuring consistency, reliability, and excellence in every product we deliver.
+                We are committed to implementing, maintaining, and continually
+                improving our Quality Management System across all areas of
+                operation, ensuring consistency, reliability, and excellence in
+                every product we deliver.
               </p>
               <p className="text-foreground/80 leading-8 mt-4">
-                Our mission is to provide cost-effective solutions that empower our customers to excel in their industries, strengthening their competitive edge through precision, trust, and innovation.
+                Our mission is to provide cost-effective solutions that empower
+                our customers to excel in their industries, strengthening their
+                competitive edge through precision, trust, and innovation.
               </p>
             </div>
           </AnimatedSection>

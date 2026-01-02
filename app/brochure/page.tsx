@@ -1,8 +1,16 @@
+import type { Metadata } from "next";
 import React from "react";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { Download, FileText, Eye, BadgeCheck } from "lucide-react";
+
+export const metadata: Metadata = {
+  title: "Brochures & Documents | Bharat Products",
+  description:
+    "Download company brochure, product catalogue, and quality certificates in PDF.",
+  alternates: { canonical: "/brochure" },
+};
 
 export default function BrochurePage() {
   const brochures = [
