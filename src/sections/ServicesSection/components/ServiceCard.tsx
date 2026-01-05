@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useState } from "react";
 
 type ServiceCardProps = {
@@ -63,11 +64,15 @@ export const ServiceCard = ({
               title={imageTitle ?? title}
               className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
             >
-              <img
+              <Image
                 src={imageSrc}
                 title={imageTitle ?? title}
                 alt={imageAlt}
-                className="text-sm bg-no-repeat box-border caret-transparent max-w-full w-full md:text-base transform transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+                width={1200}
+                height={800}
+                className="text-sm bg-no-repeat box-border caret-transparent w-full md:text-base transform transition-transform duration-500 ease-out group-hover:scale-[1.03] object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: '100%', height: 'auto' }}
               />
             </a>
           </div>

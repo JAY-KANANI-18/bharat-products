@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { TopBar } from "../../../../src/sections/TopBar";
 import { Footer } from "../../../../src/sections/Footer";
 import { AnimatedSection } from "../../../about/components/AnimatedSection";
@@ -189,10 +190,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                       >
                         <div className="w-2/5 relative bg-gradient-to-br from-gray-100 to-gray-50 flex items-center justify-center">
                           {it.image ? (
-                            <img
+                            <Image
                               src={it.image}
                               alt={it.title}
-                              className="absolute inset-0 w-full h-full object-cover"
+                              fill
+                              className="object-cover"
+                              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                           ) : (
                             <div className="w-16 h-16 rounded-xl bg-primary/10 border border-primary/20 flex items-center justify-center text-primary font-bold">
@@ -235,10 +238,12 @@ export default function CategoryPage({ params }: CategoryPageProps) {
                       <div className="group bg-white rounded-2xl shadow-sm hover:shadow-2xl transition overflow-hidden border border-gray-200 h-[420px] md:h-[460px] flex flex-col">
                         <Link href={`/products/${p.id}`} className="block">
                           <div className="relative h-64 md:h-72 w-full overflow-hidden">
-                            <img
+                            <Image
                               src={p.image}
                               alt={p.title}
-                              className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                              fill
+                              className="object-cover group-hover:scale-110 transition-transform duration-500"
+                              sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-black/10 to-transparent" />
                             <div className="absolute top-3 left-3 inline-flex items-center rounded-full bg-primary text-white px-3 py-1 text-xs font-semibold">

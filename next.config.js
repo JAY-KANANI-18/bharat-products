@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['c.animaapp.com', 'images.unsplash.com'],
+    domains: ['c.animaapp.com', 'images.unsplash.com', 'www.bharatprod.com'],
+    formats: ['image/avif', 'image/webp'],
   },
 }
 

@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 
 type Slide = {
   id: number;
@@ -122,17 +123,18 @@ export const HeroCarousel: React.FC<HeroCarouselProps> = ({
               isActive ? "opacity-100 z-10" : "opacity-0"
             }`}
           >
-            {/* Background image */}
-            <div
-              className="pointer-events-none absolute inset-0 bg-cover bg-center will-change-transform"
+            {/* Background image (optimized) */}
+            <Image
+              src={slide.imageUrl}
+              alt={slide.title}
+              fill
+              className="pointer-events-none object-cover will-change-transform"
+              sizes="100vw"
+              priority={index === 0}
+              fetchPriority={index === 0 ? 'high' : 'auto'}
               style={{
-                backgroundImage: `url(${slide.imageUrl})`,
                 transform: isActive
-                  ? `scale(${(1.05 + 0.1 * progress).toFixed(
-                      3
-                    )}) translate3d(${parallax.x.toFixed(
-                      1
-                    )}px, ${parallax.y.toFixed(1)}px, 0)`
+                  ? `scale(${(1.05 + 0.1 * progress).toFixed(3)}) translate3d(${parallax.x.toFixed(1)}px, ${parallax.y.toFixed(1)}px, 0)`
                   : "scale(1.05)",
               }}
               aria-hidden

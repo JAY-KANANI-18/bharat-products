@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import Image from "next/image";
 
 const testimonials = [
   {
@@ -166,11 +167,13 @@ export default function TestimonialCarousel() {
               <div
                 className={`flex items-center gap-3 sm:gap-4 pt-4 sm:pt-6 border-t border-gray-200 transition-all duration-500 delay-200`}
               >
-                <div className="w-12 sm:w-16 h-12 sm:h-16 rounded-full overflow-hidden ring-2 ring-primary/20 flex-shrink-0 animate-scale-in">
-                  <img
+                <div className="relative w-12 sm:w-16 h-12 sm:h-16 rounded-full overflow-hidden ring-2 ring-primary/20 flex-shrink-0 animate-scale-in">
+                  <Image
                     src={currentTestimonial.image}
                     alt={currentTestimonial.name}
-                    className="w-full h-full object-cover"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 640px) 48px, 64px"
                   />
                 </div>
                 <div className="min-w-0">

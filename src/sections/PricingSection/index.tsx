@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { PricingCard } from "@/sections/PricingSection/components/PricingCard";
 
 export const PricingSection = () => {
@@ -66,11 +67,15 @@ export const PricingSection = () => {
                               title="Amwek full service"
                               className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
                             >
-                              <img
+                              <Image
                                 src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-1-1280x1280.jpg"
                                 title="Amwek full service"
                                 alt="Amwek full service"
-                                className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
+                                width={640}
+                                height={640}
+                                className="text-sm bg-no-repeat box-border caret-transparent w-full md:text-base object-contain"
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                                style={{ width: '100%', height: 'auto' }}
                               />
                             </a>
                           </div>
@@ -133,11 +138,15 @@ export const PricingSection = () => {
                               title="Amwerk advanced"
                               className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
                             >
-                              <img
+                              <Image
                                 src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-5-1280x1280.jpg"
                                 title="Amwerk advanced"
                                 alt="Amwerk advanced"
-                                className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
+                                width={640}
+                                height={640}
+                                className="text-sm bg-no-repeat box-border caret-transparent w-full md:text-base object-contain"
+                                sizes="(max-width: 768px) 100vw, 33vw"
+                                style={{ width: '100%', height: 'auto' }}
                               />
                             </a>
                           </div>

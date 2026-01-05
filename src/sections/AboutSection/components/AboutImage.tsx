@@ -1,3 +1,4 @@
+import Image from 'next/image';
 export const AboutImage = () => {
   return (
     <div className="relative text-sm bg-no-repeat box-border caret-transparent flex basis-full flex-col grow justify-end leading-[21px] max-w-full text-left px-0 md:text-base md:grow-0 md:leading-6 md:max-w-[calc(50%_-_104.99px)] md:px-[30px]">
@@ -5,11 +6,15 @@ export const AboutImage = () => {
         <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
           <div className="text-sm bg-no-repeat box-border caret-transparent float-right leading-[21px] max-w-[650px] overflow-hidden rounded-[50%] md:text-base md:leading-6">
             <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-              <img
+              <Image
                 src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-11-1280x1280.avif"
                 title="img-yellow-demo-11"
-                alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2025/06/img-yellow-demo-11-1280x1280.avif"
+                alt="About image"
+                width={650}
+                height={650}
                 className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: '100%', height: 'auto' }}
               />
             </span>
           </div>

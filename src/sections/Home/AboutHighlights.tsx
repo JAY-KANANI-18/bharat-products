@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { AnimatedSection } from "../../../app/about/components/AnimatedSection";
 import { Cpu, Handshake, BadgeCheck } from "lucide-react";
@@ -27,11 +28,13 @@ export const AboutHighlights: React.FC = () => {
         <AnimatedSection animationType="fade-up" delay={100}>
           <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-8">
             <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
-              <img
+              <Image
                 src="/images/quality/Our Quality Approach 2664576671.jpg"
                 alt="Modern precision manufacturing"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 100vw"
+                priority={false}
               />
             </div>
 
@@ -63,11 +66,12 @@ export const AboutHighlights: React.FC = () => {
                 }`}
               >
                 <div className="relative w-full aspect-[4/3]">
-                  <img
+                  <Image
                     src={src}
                     alt="Quality inspection equipment"
-                    className="absolute inset-0 w-full h-full object-cover"
-                    loading="lazy"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 50vw, (max-width: 1024px) 25vw, 25vw"
                   />
                 </div>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />

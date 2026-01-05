@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const TestimonialCarousel = () => {
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6">
@@ -20,10 +21,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-05.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -68,10 +72,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/client-01.jpg"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-01.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -116,10 +123,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-02.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -164,10 +174,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-03.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -212,10 +225,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-04.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -260,10 +276,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-05.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -308,10 +327,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-01.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -356,10 +378,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-02.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -404,10 +429,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-03.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -452,10 +480,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-04.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>
@@ -500,10 +531,13 @@ export const TestimonialCarousel = () => {
                     <div className="text-sm bg-no-repeat box-border caret-transparent clear-both leading-[0px] mb-[15px] md:text-base before:accent-auto before:bg-no-repeat before:box-border before:caret-transparent before:clear-both before:text-foreground/70 before:table before:text-sm before:not-italic before:normal-nums before:font-normal before:tracking-[normal] before:leading-[0px] before:list-outside before:list-disc before:pointer-events-auto before:text-left before:indent-[0px] before:normal-case before:visible before:w-full before:border-separate before:inset-y-0 before:font-sanchez before:md:text-base"></div>
                     <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] max-w-[60px] overflow-hidden mr-3 rounded-[50%] md:text-base md:leading-6">
                       <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/blank.gif"
                           alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/client-05.jpg"
-                          className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
+                          width={60}
+                          height={60}
+                          className="text-sm bg-no-repeat box-border caret-transparent pointer-events-none rounded-[50%] md:text-base"
+                          sizes="60px"
                         />
                       </span>
                     </div>

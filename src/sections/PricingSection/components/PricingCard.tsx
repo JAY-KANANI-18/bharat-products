@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const PricingCard = () => {
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent flex basis-full flex-col grow justify-end leading-[21px] max-w-full text-left px-2.5 md:text-base md:basis-[33.3333%] md:leading-6 md:max-w-[33.3333%]">
@@ -11,11 +12,15 @@ export const PricingCard = () => {
                   title="Start with Amwerk"
                   className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base hover:text-primary hover:border-primary"
                 >
-                  <img
+                  <Image
                     src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-4-1280x1280.jpg"
                     title="Start with Amwerk"
                     alt="Start with Amwerk"
-                    className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
+                    width={640}
+                    height={640}
+                    className="text-sm bg-no-repeat box-border caret-transparent w-full md:text-base object-contain"
+                    sizes="(max-width: 768px) 100vw, 33vw"
+                    style={{ width: '100%', height: 'auto' }}
                   />
                 </a>
               </div>

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
@@ -691,10 +692,13 @@ export default function SafetyPage() {
         <div className="max-w-4xl mx-auto px-5 md:px-8 text-center">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="relative inline-block mb-8">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
                 alt="Founder"
+                width={128}
+                height={128}
                 className="w-32 h-32 rounded-full mx-auto shadow-2xl"
+                sizes="128px"
               />
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">CEO</span>
@@ -769,10 +773,13 @@ export default function SafetyPage() {
                   recommend their services.
                 </blockquote>
                 <div className="flex items-center justify-center space-x-4">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
                     alt="Client"
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full"
+                    sizes="48px"
                   />
                   <div className="text-left">
                     <div className="font-bold text-gray-800">
@@ -792,10 +799,12 @@ export default function SafetyPage() {
       {/* Call to Action (hidden legacy section) */}
       <section className="bg-gradient-to-r from-red-500 to-yellow-500 py-20 md:py-32 relative overflow-hidden hidden">
         <div className="absolute inset-0 opacity-10">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=600&fit=crop"
             alt="Safety Background"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
 

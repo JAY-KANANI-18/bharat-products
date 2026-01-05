@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { AnimatedSection } from "../../../app/about/components/AnimatedSection";
 import { BadgeCheck, ShieldCheck, Cpu, Users, Gauge } from "lucide-react";
 
@@ -26,12 +27,13 @@ export const QualityHighlight: React.FC = () => {
 
         {/* Styled image band for Quality */}
         <AnimatedSection animationType="fade-up" delay={100}>
-          <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-8">
-            <img
+          <div className="relative w-full h-56 md:h-72 overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-8">
+            <Image
               src="/images/quality/Title 2640251683.jpg"
               alt="Quality systems and inspection"
-              className="w-full h-56 md:h-72 object-cover"
-              loading="lazy"
+              fill
+              className="object-cover"
+              sizes="100vw"
             />
             <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-primary/10 pointer-events-none"></div>
 

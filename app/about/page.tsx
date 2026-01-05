@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
+import Image from "next/image";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import { AnimatedSection } from "./components/AnimatedSection";
 import {
@@ -48,19 +49,21 @@ export default function AboutPage() {
     <div className="relative overflow-hidden">
       {/* Hero Section - Full Screen */}
       <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/images/about/title-1809528311.jpg)",
-          }}
-        >
-          {/* Base Dark Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
+        {/* Background Image (optimized) */}
+        <Image
+          src="/images/about/title-1809528311.jpg"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        {/* Base Dark Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
 
-          {/* Bottom Gradient (CRITICAL for stats visibility) */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-        </div>
+        {/* Bottom Gradient (CRITICAL for stats visibility) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center pt-24 pb-28">
@@ -163,11 +166,15 @@ export default function AboutPage() {
             <AnimatedSection animationType="slide-left" delay={100}>
               <div className="relative">
                 <div className="relative max-w-lg mx-auto lg:max-w-full">
-                  <img
-                    src="/images/about/Precision Manufacturing Excellence 1926254777.jpg"
-                    alt="Bharat Product - Manufacturing Excellence"
-                    className="w-full h-auto rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white"
-                  />
+                  <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white">
+                    <Image
+                      src="/images/about/Precision Manufacturing Excellence 1926254777.jpg"
+                      alt="Bharat Product - Manufacturing Excellence"
+                      fill
+                      className="object-cover"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                    />
+                  </div>
 
                   {/* Animated Decorative Elements */}
                   <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
@@ -380,11 +387,15 @@ export default function AboutPage() {
                 </AnimatedSection>
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
-                    <img
-                      src="/images/about/What Sets Us Apart 2646862705.jpg"
-                      alt="Quality & Reliability"
-                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
-                    />
+                    <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white">
+                      <Image
+                        src="/images/about/What Sets Us Apart 2646862705.jpg"
+                        alt="Quality & Reliability"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
                     {/* Decorative Bubbles */}
                     <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
@@ -426,11 +437,15 @@ export default function AboutPage() {
                   className="lg:order-1"
                 >
                   <div className="relative group">
-                    <img
-                      src="/images/about/Engineering with Excellent Precision 8749717.jpg"
-                      alt="Precision Engineering"
-                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
-                    />
+                    <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white">
+                      <Image
+                        src="/images/about/Engineering with Excellent Precision 8749717.jpg"
+                        alt="Precision Engineering"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
                     {/* Decorative Bubbles */}
                     <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
@@ -464,11 +479,15 @@ export default function AboutPage() {
                 </AnimatedSection>
                 <AnimatedSection animationType="slide-right" delay={400}>
                   <div className="relative group">
-                    <img
-                      src="/images/about/customer-centricity 2659741901.jpg"
-                      alt="Customer Partnership"
-                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
-                    />
+                    <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white">
+                      <Image
+                        src="/images/about/customer-centricity 2659741901.jpg"
+                        alt="Customer Partnership"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
                     {/* Decorative Bubbles */}
                     <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
@@ -509,11 +528,15 @@ export default function AboutPage() {
                   className="lg:order-1"
                 >
                   <div className="relative group">
-                    <img
-                      src="/images/about/Unbeatable Value & Capacity.jpg"
-                      alt="Value & Capacity"
-                      className="w-full h-auto rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
-                    />
+                    <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white">
+                      <Image
+                        src="/images/about/Unbeatable Value & Capacity.jpg"
+                        alt="Value & Capacity"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-full"></div>
                     {/* Decorative Bubbles */}
                     <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
@@ -591,11 +614,15 @@ export default function AboutPage() {
 
                   <AnimatedSection animationType="slide-right" delay={400}>
                     <div className="relative group">
-                      <img
-                        src="/images/about/Our Story 1082567276.jpg"
-                        alt="Our Manufacturing Story"
-                        className="w-full h-auto rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white"
-                      />
+                      <div className="relative w-full pb-[56%] rounded-3xl shadow-2xl group-hover:scale-105 transition-transform duration-500 border-8 border-white overflow-hidden">
+                        <Image
+                          src="/images/about/Our Story 1082567276.jpg"
+                          alt="Our Manufacturing Story"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
+                        />
+                      </div>
                       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent rounded-3xl"></div>
                       <div className="absolute bottom-6 left-6 text-white">
                         <div className="bg-black/60 backdrop-blur px-4 py-3 rounded-full text-sm font-bold flex items-center gap-2">
@@ -687,10 +714,12 @@ export default function AboutPage() {
                       {/* LEFT : IMAGE (same height as right content) */}
                       <AnimatedSection animationType="slide-left" delay={200}>
                         <div className="relative h-full w-full rounded-3xl overflow-hidden shadow-2xl border-8 border-white">
-                          <img
+                          <Image
                             src="/images/about/Service Excellence 2676276151.jpg"
                             alt="Team Culture"
-                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                            fill
+                            className="object-cover transition-transform duration-500 hover:scale-105"
+                            sizes="(max-width: 1024px) 100vw, 50vw"
                           />
                         </div>
                       </AnimatedSection>
@@ -870,11 +899,12 @@ export default function AboutPage() {
                               delay={600 + index * 100}
                             >
                               <div className="relative h-full group overflow-hidden rounded-2xl">
-                                <img
+                                <Image
                                   src={item.src}
                                   alt={item.label}
-                                  className="absolute inset-0 w-full h-full object-cover
-                             group-hover:scale-110 transition-transform duration-500"
+                                  fill
+                                  className="object-cover group-hover:scale-110 transition-transform duration-500"
+                                  sizes="(max-width: 1024px) 100vw, 33vw"
                                 />
 
                                 {/* Overlay */}
@@ -1051,11 +1081,15 @@ export default function AboutPage() {
               >
                 <div className="group h-full">
                   <div className="relative overflow-hidden rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 h-full flex flex-col">
-                    <img
-                      src={item.src}
-                      alt={item.title}
-                      className="w-full h-72 object-cover group-hover:scale-110 transition-transform duration-500"
-                    />
+                    <div className="relative w-full h-72">
+                      <Image
+                        src={item.src}
+                        alt={item.title}
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        sizes="(max-width: 1024px) 100vw, 50vw"
+                      />
+                    </div>
                     <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent"></div>
                     <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
                       <h3 className="text-xl font-bold font-red_hat_display mb-2">
@@ -1119,10 +1153,12 @@ export default function AboutPage() {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-[hsl(var(--primary))] to-[hsl(var(--accent))] py-20 md:py-32 overflow-hidden relative">
         <div className="absolute inset-0 opacity-10">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=600&fit=crop"
             alt="Manufacturing Background"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
         <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center">

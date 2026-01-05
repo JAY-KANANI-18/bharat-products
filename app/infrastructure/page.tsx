@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import Image from "next/image";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import {
   CheckCircle,
@@ -32,18 +33,12 @@ function ImageBlock({
 
       {/* Image */}
       <div className="relative w-full aspect-[16/9]">
-        <img
+        <Image
           src={src}
           alt={`Infrastructure ${index}`}
-          loading="lazy"
-          className="
-            absolute inset-0 
-            w-full h-full 
-            object-cover 
-            transition-transform 
-            duration-700 
-            group-hover:scale-105
-          "
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
+          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
         />
         <div className="absolute inset-0 bg-black/10" />
       </div>
@@ -134,12 +129,14 @@ export default function InfrastructurePage() {
     <div className="relative overflow-hidden">
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[520px] w-full overflow-hidden flex items-center">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&h=1000&fit=crop)",
-          }}
+        <Image
+          src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&h=1000&fit=crop"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
         />
         <div className="absolute inset-0 bg-black/55" />
         <div className="pointer-events-none absolute -top-24 -left-24 w-72 h-72 rounded-full bg-primary/20 blur-3xl" />
@@ -444,11 +441,12 @@ export default function InfrastructurePage() {
       {/* Machine Banner */}
       <section className="relative">
         <div className="relative h-72 md:h-96 w-full overflow-hidden">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop"
             alt="Precision machining"
-            loading="lazy"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/20 to-transparent"></div>
         </div>
@@ -633,11 +631,12 @@ export default function InfrastructurePage() {
                   className="relative overflow-hidden rounded-2xl group shadow-sm hover:shadow-lg transition"
                 >
                   <div className="relative w-full pb-[65%]">
-                    <img
+                    <Image
                       src={src}
                       alt={`${activeTab} ${idx + 1}`}
-                      loading="lazy"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
                   </div>

@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import { useState } from 'react';
 
 export const ContactForm = () => {
@@ -30,10 +31,14 @@ export const ContactForm = () => {
         <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] md:text-base md:leading-6">
           <div className="relative text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] overflow-hidden -mx-10 rounded-t-[10px] md:text-base md:leading-6">
             <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-              <img
+              <Image
                 src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-6-1280x854.jpg"
-                alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2020/11/img-yellow-demo-6-1280x854.jpg"
-                className="text-sm bg-no-repeat box-border caret-transparent max-w-full md:text-base"
+                alt="Contact section hero"
+                width={1280}
+                height={854}
+                className="text-sm bg-no-repeat box-border caret-transparent w-full md:text-base object-contain"
+                sizes="(max-width: 768px) 100vw, 50vw"
+                style={{ width: '100%', height: 'auto' }}
               />
             </span>
             <div className="absolute text-sm bg-amber-400/90 bg-no-repeat box-border caret-transparent leading-[21px] pointer-events-none w-full inset-0 md:text-base md:leading-6 md:w-6/12">

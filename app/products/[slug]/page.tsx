@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
+import Image from "next/image";
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import {
   specialCategoryGroups,
@@ -519,10 +520,12 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                       {/* Image Section – takes most space */}
                       <div className="relative h-[180px] md:h-[220px] lg:h-[240px] bg-gradient-to-br from-gray-100 to-gray-50">
                         {it.image ? (
-                          <img
+                          <Image
                             src={it.image}
                             alt={it.title}
-                            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-300"
+                            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           />
                         ) : (
                           <div className="absolute inset-0 flex items-center justify-center">
@@ -669,11 +672,16 @@ export default function ProductDetail({ params }: ProductDetailProps) {
               <div className="space-y-6">
                 {/* Main Image */}
                 <div className="relative group overflow-hidden rounded-2xl">
-                  <img
-                    src={product.image}
-                    alt={product.title}
-                    className="w-full h-96 object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
+                  <div className="relative w-full h-96">
+                    <Image
+                      src={product.image}
+                      alt={product.title}
+                      fill
+                      className="object-cover group-hover:scale-105 transition-transform duration-500"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
+                      priority
+                    />
+                  </div>
                   <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
 
@@ -686,11 +694,15 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                       delay={200 + index * 100}
                     >
                       <div className="relative group overflow-hidden rounded-lg cursor-pointer">
-                        <img
-                          src={img}
-                          alt={`${product.title} ${index + 1}`}
-                          className="w-full h-24 object-cover group-hover:scale-110 transition-transform duration-300"
-                        />
+                        <div className="relative w-full h-24">
+                          <Image
+                            src={img}
+                            alt={`${product.title} ${index + 1}`}
+                            fill
+                            className="object-cover group-hover:scale-110 transition-transform duration-300"
+                            sizes="(max-width: 640px) 33vw, (max-width: 1024px) 20vw, 20vw"
+                          />
+                        </div>
                         <div className="absolute inset-0 bg-yellow-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>
                     </AnimatedSection>
@@ -883,11 +895,13 @@ export default function ProductDetail({ params }: ProductDetailProps) {
                 >
                   <Link href={`/products/${relatedProduct.id}`}>
                     <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
-                      <div className="relative overflow-hidden">
-                        <img
+                      <div className="relative overflow-hidden h-48">
+                        <Image
                           src={relatedProduct.image}
                           alt={relatedProduct.title}
-                          className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                          fill
+                          className="object-cover group-hover:scale-110 transition-transform duration-500"
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                       </div>

@@ -1,3 +1,4 @@
+import Image from "next/image";
 export type LogoProps = {
   variant: string;
   href?: string;
@@ -22,11 +23,17 @@ export const Logo = (props: LogoProps) => {
               href={href}
               className="text-sm bg-no-repeat box-border caret-transparent block min-h-[auto] min-w-[auto] md:text-base md:min-h-0 md:min-w-0 hover:text-primary hover:border-primary"
             >
-              <img
-                src={imageUrl}
-                alt={alt}
-                className="text-sm bg-no-repeat box-border caret-transparent h-[72px] max-w-full md:text-base md:h-[120px]"
-              />
+              <span className="relative block h-[72px] md:h-[120px] w-auto">
+                {/* Use large intrinsic size but constrain via CSS heights to avoid CLS */}
+                <Image
+                  src={imageUrl}
+                  alt={alt}
+                  width={600}
+                  height={200}
+                  className="h-full w-auto"
+                  priority={false}
+                />
+              </span>
             </a>
           </span>
         </div>
@@ -41,11 +48,16 @@ export const Logo = (props: LogoProps) => {
           href={href}
           className="text-sm bg-no-repeat box-border caret-transparent text-center md:text-base md:text-start hover:text-primary hover:border-primary"
         >
-          <img
-            src={imageUrl}
-            alt={alt}
-            className="text-sm bg-no-repeat box-border caret-transparent h-auto max-w-full text-center mx-auto md:text-base md:h-[120px] md:text-start md:mx-0"
-          />
+          <span className="relative inline-block h-[72px] md:h-[120px]">
+            <Image
+              src={imageUrl}
+              alt={alt}
+              width={600}
+              height={200}
+              className="h-full w-auto mx-auto md:mx-0"
+              priority={false}
+            />
+          </span>
         </a>
       </span>
     </div>

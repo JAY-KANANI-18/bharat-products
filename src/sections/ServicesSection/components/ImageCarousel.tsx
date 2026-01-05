@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const ImageCarousel = () => {
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] max-w-full m-0 px-5 md:text-base md:leading-6 md:max-w-[1200px] md:m-auto md:px-0">
@@ -11,171 +12,255 @@ export const ImageCarousel = () => {
                   <div className="static text-base bg-repeat box-content caret-black leading-[normal] md:relative md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:leading-6 md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:overflow-hidden md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
                     <div className="static bg-repeat box-content caret-black transform-none w-auto mx-0 left-auto top-auto md:relative md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:translate-x-[-1200px] md:w-[5040px] md:[mask-position:0%] md:bg-left-top md:mx-auto md:scroll-m-0 md:scroll-p-[auto] md:left-0 md:top-0 before:md:accent-auto before:md:bg-no-repeat before:md:box-border before:md:caret-transparent before:md:text-foreground/70 before:md:table before:md:text-base before:md:not-italic before:md:normal-nums before:md:font-normal before:md:tracking-[normal] before:md:leading-6 before:md:list-outside before:md:list-disc before:md:pointer-events-auto before:md:text-center before:md:no-underline before:md:indent-[0px] before:md:normal-case before:md:visible before:md:border-separate before:md:font-sanchez after:md:accent-auto after:md:bg-no-repeat after:md:box-border after:md:caret-transparent after:md:clear-both after:md:text-foreground/70 after:md:table after:md:text-base after:md:not-italic after:md:normal-nums after:md:font-normal after:md:tracking-[normal] after:md:leading-6 after:md:list-outside after:md:list-disc after:md:pointer-events-auto after:md:text-center after:md:no-underline after:md:indent-[0px] after:md:normal-case after:md:visible after:md:border-separate after:md:font-sanchez">
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-california.png"
                           alt="Hotel California"
                           title="Hotel California"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-estato.png"
                           alt="Estato"
                           title="Estato"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-urbanist.png"
                           alt="Urbanist"
                           title="Urbanist"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-konstrakt.png"
                           alt="Konstrakt"
                           title="Konstrakt"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-avantage.png"
                           alt="Avantage"
                           title="Avantage"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-codiqa.png"
                           alt="Codiqa"
                           title="Codiqa"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-bello.png"
                           alt="Bello"
                           title="Bello"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-applauz.png"
                           alt="Applauz"
                           title="Applauz"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-california.png"
                           alt="Hotel California"
                           title="Hotel California"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-estato.png"
                           alt="Estato"
                           title="Estato"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-urbanist.png"
                           alt="Urbanist"
                           title="Urbanist"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-konstrakt.png"
                           alt="Konstrakt"
                           title="Konstrakt"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="text-sm bg-no-repeat bg-cover box-border caret-transparent float-left h-full leading-[21px] min-h-px w-[295px] md:text-base md:leading-6 md:w-60">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-avantage.png"
                           alt="Avantage"
                           title="Avantage"
-                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6"
+                          width={240}
+                          height={120}
+                          className="text-sm bg-no-repeat box-border caret-transparent leading-[21px] w-full md:text-base md:leading-6 object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-codiqa.png"
                           alt="Codiqa"
                           title="Codiqa"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-bello.png"
                           alt="Bello"
                           title="Bello"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-applauz.png"
                           alt="Applauz"
                           title="Applauz"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-california.png"
                           alt="Hotel California"
                           title="Hotel California"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-estato.png"
                           alt="Estato"
                           title="Estato"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-urbanist.png"
                           alt="Urbanist"
                           title="Urbanist"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-konstrakt.png"
                           alt="Konstrakt"
                           title="Konstrakt"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                       <div className="bg-repeat bg-auto box-content caret-black float-none h-auto min-h-0 w-auto md:aspect-auto md:bg-no-repeat md:bg-cover md:box-border md:caret-transparent md:float-left md:h-full md:min-h-px md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:w-60 md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]">
-                        <img
+                        <Image
                           src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/logo-avantage.png"
                           alt="Avantage"
                           title="Avantage"
-                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto]"
+                          width={240}
+                          height={120}
+                          className="bg-repeat box-content caret-black align-middle w-auto md:aspect-auto md:bg-no-repeat md:box-border md:caret-transparent md:overscroll-x-auto md:overscroll-y-auto md:snap-align-none md:snap-normal md:snap-none md:decoration-auto md:underline-offset-auto md:align-baseline md:w-full md:[mask-position:0%] md:bg-left-top md:scroll-m-0 md:scroll-p-[auto] object-contain"
+                          sizes="(max-width: 768px) 295px, 240px"
+                          style={{ width: '100%', height: 'auto' }}
                         />
                       </div>
                     </div>

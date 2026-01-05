@@ -3,6 +3,7 @@ import React from "react";
 import Link from "next/link";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { categorySlug } from "../../src/data/products";
+import Image from "next/image";
 
 import { useState } from "react";
 
@@ -171,16 +172,18 @@ export default function ProductsPage() {
     <div className="relative overflow-hidden">
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Background Image with Overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/images/products/product-banner.jpg)",
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+        {/* Background Image with Overlay (optimized) */}
+        <Image
+          src="/images/products/product-banner.jpg"
+          alt="Products banner"
+          fill
+          priority
+          fetchPriority="high"
+          className="object-cover"
+          sizes="100vw"
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
 
         {/* Content */}
         <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center z-10">
@@ -272,11 +275,15 @@ export default function ProductsPage() {
                     <div className="product-card group relative bg-white rounded-2xl shadow-lg overflow-hidden cursor-pointer transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                       {/* Image Container with Multiple Hover Effects */}
                       <div className="relative overflow-hidden">
-                        <img
-                          src={product.image}
-                          alt={product.title}
-                          className="w-full h-64 object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
-                        />
+                        <div className="relative w-full h-64">
+                          <Image
+                            src={product.image}
+                            alt={product.title}
+                            fill
+                            className="object-cover transition-transform duration-700 group-hover:scale-110 group-hover:brightness-110"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          />
+                        </div>
 
                         {/* Gradient Overlay */}
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -386,10 +393,12 @@ export default function ProductsPage() {
       {/* Call to Action Section */}
       <section className="bg-gradient-to-r from-yellow-500 to-yellow-600 py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=600&fit=crop"
             alt="Manufacturing Background"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
 

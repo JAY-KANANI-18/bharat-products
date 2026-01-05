@@ -1,3 +1,4 @@
+import Image from "next/image";
 export type MobileMenuToggleProps = {
   variant: string;
   logoUrl?: string;
@@ -39,11 +40,16 @@ export const MobileMenuToggle = (props: MobileMenuToggleProps) => {
                 href={props.logoLinkUrl}
                 className="text-sm bg-no-repeat box-border caret-transparent block min-h-[auto] min-w-[auto] md:text-base md:min-h-0 md:min-w-0 hover:text-primary hover:border-primary"
               >
-                <img
-                  src={props.logoUrl}
-                  alt={props.logoAlt}
-                  className="text-sm bg-no-repeat box-border caret-transparent h-[72px] max-w-full md:text-base md:h-[120px]"
-                />
+                <span className="relative block h-[72px] md:h-[120px] w-auto">
+                  <Image
+                    src={props.logoUrl ?? "/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg"}
+                    alt={props.logoAlt ?? "Logo"}
+                    width={600}
+                    height={200}
+                    className="h-full w-auto"
+                    priority={false}
+                  />
+                </span>
               </a>
             </span>
           </div>

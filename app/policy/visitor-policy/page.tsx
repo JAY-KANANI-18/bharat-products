@@ -1,6 +1,7 @@
 "use client";
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import { ExternalLink, ShieldCheck } from "lucide-react";
@@ -83,11 +84,15 @@ export default function VisitorPolicyPage() {
                   img: "/images/policy/visitor-policy/imgi_12_group_7.png",
                 },
               ].map((item, i) => (
-                <img
-                  src={item.img}
-                  alt="Icon"
-                  className="h-20 sm:h-24 md:h-40 object-contain "
-                />
+                <div key={i} className="relative h-20 sm:h-24 md:h-40">
+                  <Image
+                    src={item.img}
+                    alt="Icon"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 25vw, (max-width: 1024px) 14vw, 10vw"
+                  />
+                </div>
               ))}
             </div>
           </AnimatedSection>
@@ -211,11 +216,15 @@ export default function VisitorPolicyPage() {
                   img: "/images/policy/visitor-policy/1x/SAFETY CLOVES MUST BE WORN.webp",
                 },
               ].map((item, i) => (
-                <img
-                  src={item.img}
-                  alt="PPE"
-                  className="h-20 sm:h-24 md:h-40 object-contain mb-3"
-                />
+                <div key={i} className="relative h-20 sm:h-24 md:h-40 mb-3">
+                  <Image
+                    src={item.img}
+                    alt="PPE"
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 25vw, (max-width: 1024px) 14vw, 10vw"
+                  />
+                </div>
               ))}
             </div>
           </AnimatedSection>

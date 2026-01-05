@@ -1,3 +1,4 @@
+import Image from "next/image";
 export const HeroImage = () => {
   return (
     <div className="text-sm bg-no-repeat box-border caret-transparent flex basis-full flex-col grow justify-start leading-[21px] max-w-full text-left px-[30px] md:text-base md:basis-6/12 md:leading-6 md:max-w-[50%]">
@@ -15,12 +16,15 @@ export const HeroImage = () => {
           </div>
           <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px] overflow-hidden rounded-[50%] md:text-base md:leading-6">
             <span className="text-sm bg-no-repeat box-border caret-transparent block leading-[0px] md:text-base">
-              <img
-                src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-2-1280x1280.avif"
-                title="img-yellow-demo-2"
-                alt="https://amwerk.bold-themes.com/berlin/wp-content/uploads/sites/2/2025/06/img-yellow-demo-2-1280x1280.avif"
-                className="text-sm bg-no-repeat box-border caret-transparent max-w-full pointer-events-none rounded-[50%] md:text-base"
-              />
+              <span className="relative block w-28 h-28 md:w-32 md:h-32 rounded-[50%] overflow-hidden">
+                <Image
+                  src="https://c.animaapp.com/mhypf3xrXgMUxE/assets/img-yellow-demo-2-1280x1280.avif"
+                  alt="Profile"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 112px, 128px"
+                />
+              </span>
             </span>
           </div>
           <div className="absolute text-sm bg-no-repeat box-border caret-transparent leading-[21px] pointer-events-none mr-[70px] mb-[70px] right-0 bottom-0 md:text-base md:leading-6 md:mr-20 md:mb-20">

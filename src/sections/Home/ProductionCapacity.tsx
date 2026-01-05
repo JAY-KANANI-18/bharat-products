@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { AnimatedSection } from "../../../app/about/components/AnimatedSection";
 import { Package, Globe2, TrendingUp } from "lucide-react";
 
@@ -26,11 +27,13 @@ export const ProductionCapacity: React.FC = () => {
           <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl ring-1 ring-gray-200 mb-10">
             {/* Aspect ratio wrapper */}
             <div className="relative w-full aspect-[16/9] md:aspect-[21/9]">
-              <img
+              <Image
                 src="/images/home/Production  Capacity.png"
                 alt="Panoramic factory floor illustrating scalable production lines and workflow"
-                className="absolute inset-0 w-full h-full object-cover"
-                loading="lazy"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 100vw"
+                priority={false}
               />
             </div>
 

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
+import Image from "next/image";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import {
   CheckCircle,
@@ -105,19 +106,20 @@ export default function QualityPage() {
     <div className="relative overflow-hidden">
       {/* Hero Section – Full Screen */}
       <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
-        {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/images/quality/Title%202640251683.jpg)",
-          }}
-        >
-          {/* Base Overlay */}
-          <div className="absolute inset-0 bg-black/40" />
-
-          {/* Bottom Gradient – for stats readability */}
-          <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
-        </div>
+        {/* Background Image (optimized) */}
+        <Image
+          src="/images/quality/Title%202640251683.jpg"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority
+        />
+        {/* Base Overlay */}
+        <div className="absolute inset-0 bg-black/40" />
+        {/* Bottom Gradient – for stats readability */}
+        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent" />
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-5 md:px-8 text-center pt-24 pb-28">
@@ -226,11 +228,12 @@ export default function QualityPage() {
                 >
                   <div className="group overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm hover:shadow-lg transition-all h-full flex flex-col">
                     <div className="relative w-full overflow-hidden rounded-t-2xl pb-[56%]">
-                      <img
+                      <Image
                         src={point.img}
                         alt={point.title}
-                        loading="lazy"
-                        className="absolute inset-0 w-full h-full object-cover"
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                       <div className="absolute top-3 left-3 bg-white/90 backdrop-blur rounded-full p-2 shadow">
                         <Icon className="w-5 h-5 text-primary" />
@@ -267,11 +270,15 @@ export default function QualityPage() {
           <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
             <AnimatedSection animationType="slide-left" delay={150}>
               <div className="relative group">
-                <img
-                  src="/images/quality/Our Quality Approach 2664576671.jpg"
-                  alt="Engineers reviewing process controls"
-                  className="w-full h-[360px] md:h-[420px] object-cover rounded-3xl shadow-2xl border-8 border-white"
-                />
+                <div className="relative w-full h-[360px] md:h-[420px] rounded-3xl shadow-2xl border-8 border-white overflow-hidden">
+                  <Image
+                    src="/images/quality/Our Quality Approach 2664576671.jpg"
+                    alt="Engineers reviewing process controls"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                  />
+                </div>
                 <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
                 <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
               </div>
@@ -355,11 +362,15 @@ export default function QualityPage() {
 
           <AnimatedSection animationType="fade-up" delay={100}>
             <div className="relative mb-12">
-              <img
-                src="/images/quality/certifications & compliance 2683290423.jpg"
-                alt="Standards and certifications documents"
-                className="w-full h-56 md:h-64 object-cover rounded-2xl shadow-lg"
-              />
+              <div className="relative w-full h-56 md:h-64 rounded-2xl shadow-lg overflow-hidden">
+                <Image
+                  src="/images/quality/certifications & compliance 2683290423.jpg"
+                  alt="Standards and certifications documents"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 100vw"
+                />
+              </div>
               <div className="absolute inset-0 rounded-2xl bg-black/10"></div>
             </div>
           </AnimatedSection>
@@ -436,11 +447,12 @@ export default function QualityPage() {
 
           <AnimatedSection animationType="fade-up" delay={150}>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl pb-[56%] mb-10">
-              <img
+              <Image
                 src="/images/quality/Quality Instruments 2642860503.jpg"
                 alt="Instrumentation showcase"
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 80vw"
               />
             </div>
           </AnimatedSection>
@@ -485,12 +497,12 @@ export default function QualityPage() {
 
                     {/* IMAGE — now visually dominant */}
                     <div className="relative w-full h-44 overflow-hidden">
-                      <img
+                      <Image
                         src={item.img}
                         alt="Instrument"
-                        loading="lazy"
-                        className="absolute inset-0 w-full h-full object-cover
-                         transition-transform duration-500 group-hover:scale-110"
+                        fill
+                        className="object-cover transition-transform duration-500 group-hover:scale-110"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
 
                       {/* subtle overlay */}
@@ -535,15 +547,16 @@ export default function QualityPage() {
       {/* Testing Equipment */}
       <section className="relative py-16 md:py-24 overflow-hidden">
         {/* Background Image */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url(/images/quality/Hardness%20Testers.jpg)",
-          }}
-        >
-          {/* Gradient overlay for readability */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70" />
-        </div>
+        <Image
+          src="/images/quality/Hardness%20Testers.jpg"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        {/* Gradient overlay for readability */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-black/50 to-black/70" />
 
         {/* Content */}
         <div className="relative z-10 max-w-6xl mx-auto px-4 md:px-8">
@@ -607,11 +620,12 @@ export default function QualityPage() {
 
           <AnimatedSection animationType="fade-up" delay={150}>
             <div className="relative w-full overflow-hidden rounded-3xl shadow-2xl pb-[56%] mb-10">
-              <img
+              <Image
                 src="/images/quality/Training Policy 2612611991.jpg"
                 alt="Team training session"
-                loading="lazy"
-                className="absolute inset-0 w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 80vw, 80vw"
               />
             </div>
           </AnimatedSection>
@@ -688,11 +702,15 @@ export default function QualityPage() {
               ))}
             </div>
             <AnimatedSection animationType="slide-right" delay={200}>
-              <img
-                src="/images/quality/Health & Safety Policy.jpeg"
-                alt="Workplace safety gear"
-                className="w-full h-[360px] md:h-[420px] object-cover rounded-2xl shadow-2xl border-8 border-white"
-              />
+              <div className="relative w-full h-[360px] md:h-[420px] rounded-2xl shadow-2xl border-8 border-white overflow-hidden">
+                <Image
+                  src="/images/quality/Health & Safety Policy.jpeg"
+                  alt="Workplace safety gear"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 50vw"
+                />
+              </div>
             </AnimatedSection>
           </div>
         </div>
@@ -700,14 +718,15 @@ export default function QualityPage() {
 
       {/* Closing Statement */}
       <section className="relative py-16 md:py-24 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: "url(/images/quality/footer.jpg)",
-          }}
-        >
-          <div className="absolute inset-0 bg-black/60"></div>
-        </div>
+        <Image
+          src="/images/quality/footer.jpg"
+          alt=""
+          aria-hidden
+          fill
+          className="object-cover"
+          sizes="100vw"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative z-10 max-w-4xl mx-auto px-4 md:px-8 text-center">
           <AnimatedSection animationType="fade-up" delay={0}>
             <p className="text-lg md:text-xl text-white leading-8">

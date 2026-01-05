@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { TopBar } from "../../src/sections/TopBar";
 import { Footer } from "../../src/sections/Footer";
@@ -80,16 +81,17 @@ export default function SafetyPage() {
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Background Image with Overlay */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage:
-              "url(https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop)",
-          }}
-        >
-          {/* Dark Overlay */}
-          <div className="absolute inset-0 bg-black/50"></div>
-        </div>
+        <Image
+          src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=1600&h=900&fit=crop"
+          alt=""
+          aria-hidden
+          fill
+          className="absolute inset-0 object-cover"
+          sizes="100vw"
+          priority
+        />
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50"></div>
 
         {/* Content */}
         <div className="relative max-w-4xl mx-auto px-5 md:px-8 text-center z-10">
@@ -319,10 +321,13 @@ export default function SafetyPage() {
         <div className="max-w-4xl mx-auto px-5 md:px-8 text-center">
           <AnimatedSection animationType="fade-up" delay={0}>
             <div className="relative inline-block mb-8">
-              <img
+              <Image
                 src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=200&h=200&fit=crop&crop=face"
                 alt="Founder"
+                width={128}
+                height={128}
                 className="w-32 h-32 rounded-full mx-auto shadow-2xl"
+                sizes="128px"
               />
               <div className="absolute -bottom-2 -right-2 w-12 h-12 bg-primary rounded-full flex items-center justify-center">
                 <span className="text-white font-bold text-sm">CEO</span>
@@ -397,10 +402,13 @@ export default function SafetyPage() {
                   recommend their services.
                 </blockquote>
                 <div className="flex items-center justify-center space-x-4">
-                  <img
+                  <Image
                     src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face"
                     alt="Client"
+                    width={48}
+                    height={48}
                     className="w-12 h-12 rounded-full"
+                    sizes="48px"
                   />
                   <div className="text-left">
                     <div className="font-bold text-gray-800">
@@ -420,10 +428,12 @@ export default function SafetyPage() {
       {/* Call to Action */}
       <section className="bg-gradient-to-r from-red-500 to-yellow-500 py-20 md:py-32 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=1200&h=600&fit=crop"
             alt="Safety Background"
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
+            sizes="100vw"
           />
         </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { AnimatedSection } from "../../../app/about/components/AnimatedSection";
 import { Gauge, Users, ShieldCheck } from "lucide-react";
 
@@ -71,11 +72,12 @@ export const WhyChoose: React.FC = () => {
                     <div className="grid grid-cols-3 gap-3">
                       {/* Main image */}
                       <div className="col-span-2 relative aspect-[4/3] rounded-2xl overflow-hidden ring-1 ring-gray-200 shadow-lg">
-                        <img
+                        <Image
                           src="/images/about/CNC Technology 2473146403.jpg"
                           alt="Precision manufacturing floor"
-                          className="absolute inset-0 w-full h-full object-cover"
-                          loading="lazy"
+                          fill
+                          className="object-cover"
+                          sizes="(max-width: 1024px) 100vw, 50vw"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/25 to-transparent"></div>
                         <div className="absolute top-3 left-3 inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/90 backdrop-blur text-xs font-semibold ring-1 ring-gray-200">
@@ -87,20 +89,22 @@ export const WhyChoose: React.FC = () => {
                       {/* Side column images */}
                       <div className="col-span-1 grid grid-rows-2 gap-3">
                         <div className="relative rounded-2xl overflow-hidden aspect-square ring-1 ring-gray-200 shadow-md">
-                          <img
+                          <Image
                             src="/images/home/Client-Centric Approach.png"
                             alt="Close-up view of CNC machining detail"
-                            className="absolute inset-0 w-full h-full object-cover"
-                            loading="lazy"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 50vw, 25vw"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>
                         <div className="relative rounded-2xl overflow-hidden aspect-square ring-1 ring-gray-200 shadow-md">
-                          <img
+                          <Image
                             src="/images/home/Trust Confidentiality.png"
                             alt="Quality inspection instruments arranged for measurement"
-                            className="absolute inset-0 w-full h-full object-cover"
-                            loading="lazy"
+                            fill
+                            className="object-cover"
+                            sizes="(max-width: 1024px) 50vw, 25vw"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                         </div>

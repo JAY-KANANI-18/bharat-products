@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { AnimatedSection } from "../../../app/about/components/AnimatedSection";
 import AdvancedCarousel from "@/components/AdvancedCarousel";
+import Image from "next/image";
 
 const items = [
   {
@@ -102,10 +103,12 @@ export const ProductSliderLocal: React.FC = () => {
                 >
                   <div className="group w-full bg-white rounded-2xl shadow-sm hover:shadow-2xl transition overflow-hidden border border-gray-200 h-[440px] md:h-[500px] flex flex-col">
                     <div className="relative h-64 md:h-80 w-full overflow-hidden">
-                      <img
+                      <Image
                         src={p.image}
                         alt={p.alt ?? `${p.title} – ${p.category}`}
-                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-500"
+                        sizes="(max-width: 768px) 92vw, (max-width: 1024px) 70vw, (max-width: 1280px) 52vw, (max-width: 1536px) 38vw, 32vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                       {/* Hover showcase overlay */}
