@@ -565,7 +565,6 @@ export default function ProductDetail({ params }: ProductDetailProps) {
             </div>
           </div>
         </section>
-
       </div>
     );
   }
@@ -915,8 +914,6 @@ export default function ProductDetail({ params }: ProductDetailProps) {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }
