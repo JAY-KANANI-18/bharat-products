@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
-import { TopBar } from "../../../src/sections/TopBar";
-import { Footer } from "../../../src/sections/Footer";
+
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import { ShieldCheck, Handshake, BadgeCheck, HardHat } from "lucide-react";
 
@@ -15,8 +14,6 @@ export const metadata: Metadata = {
 export default function HarassmentPolicyPage() {
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] w-full overflow-hidden flex items-center">
         <div
@@ -135,8 +132,6 @@ export default function HarassmentPolicyPage() {
           </AnimatedSection>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

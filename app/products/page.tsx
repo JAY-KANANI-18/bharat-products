@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { categorySlug } from "../../src/data/products";
 
@@ -171,8 +169,6 @@ export default function ProductsPage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Background Image with Overlay */}
@@ -425,7 +421,6 @@ export default function ProductsPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

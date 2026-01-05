@@ -44,8 +44,6 @@ export default function BrochurePage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-50 to-white py-20 md:py-32 overflow-hidden">
         {/* Background Elements */}
@@ -186,8 +184,6 @@ export default function BrochurePage() {
           </AnimatedSection>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

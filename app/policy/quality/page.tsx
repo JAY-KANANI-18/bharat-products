@@ -6,7 +6,7 @@ import { AnimatedSection } from "../../about/components/AnimatedSection";
 export default function QualityPolicyPage() {
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
+      {/* <TopBar /> */}
 
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] w-full overflow-hidden flex items-center">
@@ -62,7 +62,7 @@ export default function QualityPolicyPage() {
         </div>
       </section>
 
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }

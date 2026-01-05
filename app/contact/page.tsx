@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import React from "react";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
 
@@ -48,8 +46,6 @@ export default function ContactPage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-gray-50 to-white py-20 md:py-32 overflow-hidden">
         {/* Background Elements */}
@@ -213,7 +209,6 @@ export default function ContactPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

@@ -1,8 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import type { Metadata } from "next";
-import { TopBar } from "../../../src/sections/TopBar";
-import { Footer } from "../../../src/sections/Footer";
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import {
   specialCategoryGroups,
@@ -426,7 +424,6 @@ export default function ProductDetail({ params }: ProductDetailProps) {
     const title = humanizeSlug(params.slug);
     return (
       <div className="relative overflow-hidden">
-        <TopBar />
         {/* JSON-LD for CollectionPage and Breadcrumbs */}
         <script
           type="application/ld+json"
@@ -569,7 +566,6 @@ export default function ProductDetail({ params }: ProductDetailProps) {
           </div>
         </section>
 
-        <Footer />
       </div>
     );
   }
@@ -578,7 +574,6 @@ export default function ProductDetail({ params }: ProductDetailProps) {
   if (!product) {
     return (
       <div className="relative overflow-hidden">
-        <TopBar />
         <div className="min-h-screen flex items-center justify-center">
           <div className="text-center">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">
@@ -595,14 +590,12 @@ export default function ProductDetail({ params }: ProductDetailProps) {
             </Link>
           </div>
         </div>
-        <Footer />
       </div>
     );
   }
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
       {/* JSON-LD for Product and Breadcrumbs */}
       <script
         type="application/ld+json"

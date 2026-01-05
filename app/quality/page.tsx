@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import React from "react";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import {
   CheckCircle,
@@ -105,8 +103,6 @@ export default function QualityPage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section – Full Screen */}
       <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -723,7 +719,6 @@ export default function QualityPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

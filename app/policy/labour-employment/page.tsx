@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import React from "react";
-import { TopBar } from "../../../src/sections/TopBar";
-import { Footer } from "../../../src/sections/Footer";
+
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import {
   Ban,
@@ -23,8 +22,6 @@ export const metadata: Metadata = {
 export default function LabourEmploymentPolicyPage() {
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] w-full overflow-hidden flex items-center">
         <div
@@ -164,8 +161,6 @@ export default function LabourEmploymentPolicyPage() {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

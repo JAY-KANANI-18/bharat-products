@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import React from "react";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import TestimonialCarousel from "./components/TestimonialCarousel";
 import { AnimatedSection } from "./components/AnimatedSection";
 import {
@@ -48,8 +46,6 @@ export const metadata: Metadata = {
 export default function AboutPage() {
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section - Full Screen */}
       <section className="relative min-h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -1156,7 +1152,6 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

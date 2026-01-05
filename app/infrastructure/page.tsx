@@ -1,7 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import {
   CheckCircle,
@@ -107,9 +105,9 @@ export default function InfrastructurePage() {
   const gallery = {
     infrastructure: [
       "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1581092580495-05b4d1b3c57c?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1581091014534-7f54bcd5f43b?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1518779578993-ec3579fee39f?w=1200&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop",
+      "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop`",
     ],
     machines: [
       "https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=1200&h=800&fit=crop",
@@ -134,8 +132,6 @@ export default function InfrastructurePage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero */}
       <section className="relative h-[70vh] min-h-[520px] w-full overflow-hidden flex items-center">
         <div
@@ -449,7 +445,7 @@ export default function InfrastructurePage() {
       <section className="relative">
         <div className="relative h-72 md:h-96 w-full overflow-hidden">
           <img
-            src="https://images.unsplash.com/photo-1581091014534-7f54bcd5f43b?w=1600&h=900&fit=crop"
+            src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&h=800&fit=crop"
             alt="Precision machining"
             loading="lazy"
             className="absolute inset-0 w-full h-full object-cover"
@@ -651,8 +647,6 @@ export default function InfrastructurePage() {
           </AnimatedSection>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

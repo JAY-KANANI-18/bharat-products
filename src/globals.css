@@ -2,48 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'Amwerk';
-  font-weight: normal;
-  font-style: normal;
-}
 
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'FontAwesome';
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'FontAwesome5Brands';
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'FontAwesome5Regular';
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'FontAwesome5Solid';
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  /* This font could not be included automatically because of legal reasons. Please add it manually or switch to another font */
-  font-family: 'Werkmann';
-  font-weight: normal;
-  font-style: normal;
-}
-
+/* 
 @font-face {
   font-family: 'Red Hat Display';
   src: url('https://fonts.gstatic.com/s/redhatdisplay/v21/8vIQ7wUr0m80wwYf0QCXZzYzUoTg_T6h.woff2') format("woff2");
@@ -140,7 +100,7 @@
   src: url('https://fonts.gstatic.com/s/sanchez/v16/Ycm2sZJORluHnXbITm5b_BwE.woff2') format("woff2");
   font-weight: 400;
   font-style: italic;
-}
+} */
 
 @layer base {
   :root {

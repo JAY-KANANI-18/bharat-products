@@ -1,6 +1,4 @@
 import React from "react";
-import { TopBar } from "../../src/sections/TopBar";
-import { Footer } from "../../src/sections/Footer";
 import { AnimatedSection } from "../about/components/AnimatedSection";
 import { Plane, Cpu, Wrench, Zap, Factory, Cog } from "lucide-react";
 
@@ -43,8 +41,6 @@ export default function IndustriesPage() {
 
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero Section - Full Screen */}
       <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
         {/* Background Image with Overlay */}
@@ -194,7 +190,6 @@ export default function IndustriesPage() {
         </div>
       </section>
 
-      <Footer />
     </div>
   );
 }

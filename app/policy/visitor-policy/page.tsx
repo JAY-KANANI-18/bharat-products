@@ -1,16 +1,13 @@
 "use client";
 import React from "react";
 import Link from "next/link";
-import { TopBar } from "../../../src/sections/TopBar";
-import { Footer } from "../../../src/sections/Footer";
+
 import { AnimatedSection } from "../../about/components/AnimatedSection";
 import { ExternalLink, ShieldCheck } from "lucide-react";
 
 export default function VisitorPolicyPage() {
   return (
     <div className="relative overflow-hidden">
-      <TopBar />
-
       {/* Hero */}
       <section className="relative h-[55vh] min-h-[420px] w-full overflow-hidden flex items-center">
         <div
@@ -224,8 +221,6 @@ export default function VisitorPolicyPage() {
           </AnimatedSection>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 }

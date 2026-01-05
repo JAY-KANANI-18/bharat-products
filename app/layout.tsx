@@ -4,6 +4,8 @@ import React from "react";
 import { Roboto } from "next/font/google";
 import "../src/globals.css";
 import { ScrollToTop } from "../src/components/ScrollToTop";
+import { TopBar } from "../src/sections/TopBar";
+import { Footer } from "../src/sections/Footer";
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://bharatprod.com";
 
@@ -126,7 +128,9 @@ export default function RootLayout({
             }),
           }}
         />
+        <TopBar />
         {children}
+        <Footer />
         <ScrollToTop />
       </body>
     </html>
