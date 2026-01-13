@@ -42,16 +42,16 @@ export const TopBar = () => {
         <div className="flex items-center justify-between h-16 md:h-18 xl:h-20 gap-3">
           {/* LOGO */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center">
-              <Image
-                src="/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg"
-                alt="Bharat Product"
-                width={100}
-                height={50}
-                priority
-                className="h-9 lg:h-10 xl:h-12 2xl:h-14 w-auto"
-              />
-            </Link>
+            {/* <Link href="/" className="flex items-center"> */}
+            <Image
+              src="/Final-Logo/SVG/Bharat-PRoduct-Final-Logo.svg"
+              alt="Bharat Product"
+              width={100}
+              height={50}
+              priority
+              className="h-9 lg:h-10 xl:h-12 2xl:h-14 w-auto"
+            />
+            {/* </Link> */}
           </div>
 
           {/* DESKTOP NAV */}
