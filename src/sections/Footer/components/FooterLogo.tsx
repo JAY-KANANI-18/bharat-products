@@ -10,7 +10,7 @@ export const FooterLogo = () => {
           <div className="text-sm bg-no-repeat box-border caret-transparent float-left leading-[21px]  overflow-hidden md:text-base md:leading-6">
             {/* <Link href="/" className="flex items-center"> */}
             <Image
-              src="/Final-Logo/SVG/BG-Secondry-Color.svg"
+              src="/images/Final-Logo/SVG/BG-Secondry-Color.svg"
               alt="Bharat Product"
               width={200}
               height={200}
