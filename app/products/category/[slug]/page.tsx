@@ -30,7 +30,8 @@ export function generateMetadata({ params }: CategoryPageProps): Metadata {
   const name = categoryFromSlug(params.slug) || params.slug.replace(/-/g, " ");
   const url = `${siteUrl}/products/category/${params.slug}`;
   const items = getProductsByCategorySlug(params.slug);
-  const ogImage = items[0]?.image || "/Final-Logo/1x/White BG Favicon.png";
+  const ogImage =
+    items[0]?.image || "/images/Final-Logo/SVG/White-BG-Favicon.svg";
   return {
     title: `${name} | Product Category`,
     description: `Browse ${name} from Bharat Products. Precision‑engineered components with inquiry options and details.`,

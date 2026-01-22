@@ -356,7 +356,7 @@ export function generateMetadata({ params }: ProductDetailProps): Metadata {
         description: `Discover ${name} categories and inquire directly.`,
         images: [
           {
-            url: "/Final-Logo/1x/White BG Favicon.png",
+            url: "/images/Final-Logo/SVG/White-BG-Favicon.svg",
             width: 512,
             height: 512,
             alt: "Bharat Products Logo",
@@ -367,7 +367,7 @@ export function generateMetadata({ params }: ProductDetailProps): Metadata {
         card: "summary_large_image",
         title: `${name} Products | Bharat Products`,
         description: `Discover ${name} categories and inquire directly.`,
-        images: ["/Final-Logo/1x/White BG Favicon.png"],
+        images: ["/images/Final-Logo/SVG/White-BG-Favicon.svg"],
       },
     };
   }
@@ -391,7 +391,7 @@ export function generateMetadata({ params }: ProductDetailProps): Metadata {
       description,
       images: [
         {
-          url: product?.image || "/Final-Logo/1x/White BG Favicon.png",
+          url: product?.image || "/images/Final-Logo/SVG/White-BG-Favicon.svg",
           width: 1200,
           height: 630,
           alt: title,
@@ -402,7 +402,7 @@ export function generateMetadata({ params }: ProductDetailProps): Metadata {
       card: "summary_large_image",
       title: `${title} | Bharat Products`,
       description,
-      images: [product?.image || "/Final-Logo/1x/White BG Favicon.png"],
+      images: [product?.image || "/images/Final-Logo/SVG/White-BG-Favicon.svg"],
     },
   };
 }

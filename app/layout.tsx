@@ -43,7 +43,7 @@ export const metadata: Metadata = {
       "ISO 9001:2015 certified precision partner for brass, stainless steel, aluminium and forged components.",
     images: [
       {
-        url: "/Final-Logo/1x/White BG Favicon.png",
+        url: "/images/Final-Logo/SVG/White-BG-Favicon.svg",
         width: 512,
         height: 512,
         alt: "Bharat Products Logo",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     title: "Bharat Products",
     description:
       "Precision engineered components: brass, stainless steel, aluminium and forged parts.",
-    images: ["/Final-Logo/1x/White BG Favicon.png"],
+    images: ["/images/Final-Logo/SVG/White-BG-Favicon.svg"],
   },
   robots: {
     index: true,
@@ -70,8 +70,8 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/Final-Logo/SVG/White-BG-Favicon.svg",
-    apple: "/Final-Logo/SVG/White-Favicon.svg",
+    icon: "/images/Final-Logo/SVG/White-BG-Favicon.svg",
+    apple: "/images/Final-Logo/SVG/White-Favicon.svg",
   },
 };
 
@@ -107,7 +107,7 @@ export default function RootLayout({
               "@type": "Organization",
               name: "Bharat Products",
               url: siteUrl,
-              logo: `${siteUrl}/Final-Logo/1x/White BG Favicon.png`,
+              logo: `${siteUrl}/images/Final-Logo/SVG/White-BG-Favicon.svg`,
             }),
           }}
         />

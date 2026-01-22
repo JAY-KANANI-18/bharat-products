@@ -16,13 +16,13 @@ export default function manifest(): MetadataRoute.Manifest {
     theme_color: '#f59e0b',
     icons: [
       {
-        src: '/Final-Logo/1x/White BG Favicon.png',
+        src: '/images/Final-Logo/SVG/White-BG-Favicon.svg',
         sizes: '192x192',
         type: 'image/png',
         purpose: 'maskable',
       },
       {
-        src: '/Final-Logo/1x/White BG Favicon.png',
+        src: '/images/Final-Logo/SVG/White-BG-Favicon.svg',
         sizes: '512x512',
         type: 'image/png',
         purpose: 'any',

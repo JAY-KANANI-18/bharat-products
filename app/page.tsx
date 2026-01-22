@@ -28,7 +28,7 @@ export const metadata: Metadata = {
       "Trusted precision engineering partner for brass, stainless steel, aluminium and forged parts.",
     images: [
       {
-        url: "/images/Final-Logo/1x/White BG Favicon.png",
+        url: "/images/Final-Logo/SVG/White-BG-Favicon.svg",
         width: 1200,
         height: 630,
         alt: "Bharat Products",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     title: "Bharat Products | Precision Components",
     description:
       "ISO 9001:2015 certified precision engineering partner in India.",
-    images: ["/Final-Logo/1x/White BG Favicon.png"],
+    images: ["/images/Final-Logo/SVG/White-BG-Favicon.svg"],
   },
 };
 
