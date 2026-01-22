@@ -29,7 +29,7 @@ export const WhyChoose: React.FC = () => {
         <AnimatedSection animationType="fade-up">
           <div className="max-w-4xl mb-16">
             <div className="text-xs font-semibold tracking-[0.35em] text-gray-500 mb-4 font-red_hat_text">
-              WHY CHOOSE BHARAT PRODUCTS
+              // WHY CHOOSE BHARAT PRODUCTS //
             </div>
 
             <h2 className="text-4xl md:text-5xl font-bold leading-tight mb-6 font-red_hat_display">

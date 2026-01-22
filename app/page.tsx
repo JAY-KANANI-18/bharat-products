@@ -10,6 +10,7 @@ import { ContactSection } from "../src/sections/ContactSection";
 import { ScrollProgressBar } from "../src/components/ScrollProgressBar";
 import { WhyChoose } from "../src/sections/Home/WhyChoose";
 import { AboutHighlights } from "../src/sections/Home/AboutHighlights";
+import { IndustriesWeServe } from "../src/sections/Home/IndustriesWeServe";
 import { ProductionCapacity } from "../src/sections/Home/ProductionCapacity";
 import { QualityHighlight } from "../src/sections/Home/QualityHighlight";
 import { ProductSliderLocal } from "../src/sections/Home/ProductSliderLocal";
@@ -62,6 +63,9 @@ export default function Home() {
               </AnimatedSection> */}
               <AnimatedSection animationType="fade-up" threshold={0.15}>
                 <AboutHighlights />
+              </AnimatedSection>
+              <AnimatedSection animationType="fade-up" threshold={0.15}>
+                <IndustriesWeServe />
               </AnimatedSection>
               {/* <AnimatedSection
                 animationType="slide-left"
