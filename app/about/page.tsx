@@ -38,8 +38,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "About Bharat Products",
-    description:
-      "TÜV SÜD & ISO 9001:2015 certified precision manufacturer.",
+    description: "TÜV SÜD & ISO 9001:2015 certified precision manufacturer.",
     images: ["/Final-Logo/1x/White BG Favicon.png"],
   },
 };
@@ -140,19 +139,18 @@ export default function AboutPage() {
 
       {/* Who We Are Section */}
       <section className="py-16 md:py-24 bg-gradient-to-br from-white to-gray-50 relative overflow-hidden">
-        {/* Decorative Bubbles */}
+        {/* Decorative background accents */}
         <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-10 left-5 w-32 h-32 bg-primary/10 rounded-full animate-pulse"></div>
-          <div className="absolute top-40 right-10 w-24 h-24 bg-primary/15 rounded-full animate-bounce delay-300"></div>
-          <div className="absolute bottom-20 left-1/4 w-20 h-20 bg-primary/20 rounded-full animate-ping delay-700"></div>
-          <div className="absolute bottom-10 right-1/3 w-28 h-28 bg-primary/10 rounded-full animate-float"></div>
+          <div className="absolute top-24 left-12 w-32 h-32 bg-primary/5 rounded-full"></div>
+          <div className="absolute bottom-32 right-16 w-40 h-40 bg-primary/5 rounded-full"></div>
         </div>
 
         <div className="max-w-6xl mx-auto px-5 md:px-8 relative z-10">
+          {/* Header */}
           <AnimatedSection animationType="fade-up" delay={0}>
-            <div className="text-center mb-16">
+            <div className="text-center mb-14">
               <div className="text-xs font-bold tracking-[0.3em] text-gray-500 mb-4 font-red_hat_text">
-                // ABOUT BHARAT PRODUCT //
+                // ABOUT BHARAT PRODUCTS //
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-black mb-4 font-red_hat_display">
                 Who We Are
@@ -161,191 +159,232 @@ export default function AboutPage() {
             </div>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            {/* Left: Image with Bubbles */}
-            <AnimatedSection animationType="slide-left" delay={100}>
-              <div className="relative">
-                <div className="relative max-w-lg mx-auto lg:max-w-full">
-                  <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl hover:scale-105 transition-transform duration-500 border-8 border-white">
-                    <Image
-                      src="/images/about/Precision Manufacturing Excellence 1926254777.jpg"
-                      alt="Bharat Product - Manufacturing Excellence"
-                      fill
-                      className="object-cover"
-                      sizes="(max-width: 1024px) 100vw, 50vw"
-                    />
-                  </div>
+          {/* Intro – full width */}
+          <AnimatedSection animationType="fade-up" delay={100}>
+            <div className="max-w-7xl mx-auto mb-20 text-center">
+              <p className="text-lg text-gray-700 leading-8">
+                <strong className="text-black">Bharat Products</strong>, an{" "}
+                <strong>IATF 16949:2016</strong> and{" "}
+                <strong>ISO 9001:2015</strong> certified manufacturer and
+                exporter of precision brass components, is proudly based in{" "}
+                <strong>Jamnagar</strong>. With over{" "}
+                <strong>11 years of industry expertise</strong>, we deliver
+                high-quality products that meet global industrial standards
+                across diverse sectors including automotive, aerospace,
+                sanitary, and many more. Our commitment to excellence ensures
+                that every component we produce contributes to the reliability
+                and performance of industries worldwide.
+              </p>
+            </div>
+          </AnimatedSection>
 
-                  {/* Animated Decorative Elements */}
-                  <div className="absolute -top-4 -right-4 w-24 h-24 bg-primary rounded-full opacity-20 animate-pulse"></div>
-                  <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gray-400 rounded-full opacity-30 animate-float"></div>
-                  <div className="absolute top-1/2 -right-8 w-16 h-16 bg-primary/30 rounded-full animate-bounce delay-500"></div>
+          {/* Image + detailed content */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+            {/* Image */}
+            <AnimatedSection animationType="slide-left" delay={200}>
+              <div className="relative max-w-lg mx-auto lg:max-w-none">
+                <div className="relative w-full aspect-square overflow-hidden rounded-full shadow-2xl border-8 border-white">
+                  <Image
+                    src="/images/about/Precision Manufacturing Excellence 1926254777.jpg"
+                    alt="Bharat Product - Manufacturing Excellence"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                  />
                 </div>
+
+                {/* Subtle accents */}
+                <div className="absolute -top-5 -right-5 w-20 h-20 bg-primary/15 rounded-full"></div>
+                <div className="absolute -bottom-6 -left-6 w-28 h-28 bg-gray-300/30 rounded-full"></div>
               </div>
             </AnimatedSection>
 
-            {/* Right: Content */}
-            <AnimatedSection animationType="slide-right" delay={200}>
-              <div className="space-y-8">
-                <div>
-                  <AnimatedSection animationType="fade-up" delay={300}>
-                    <p className="text-lg text-gray-700 leading-8 mb-6">
-                      At <strong>Bharat Product</strong>, we are more than just
-                      manufacturers; we are architects of precision and partners
-                      in progress. As a leading force in Indian manufacturing,
-                      we specialize in transforming raw metals—Brass, Stainless
-                      Steel, Mild Steel, Copper, and Aluminum—into high-quality,
-                      precision-engineered components that drive industrial and
-                      national growth.
-                    </p>
-                  </AnimatedSection>
+            {/* Right content – typography driven */}
+            <AnimatedSection animationType="slide-right" delay={300}>
+              <div className="space-y-10 relative pl-6">
+                <span className="absolute left-0 top-0 h-full w-[3px] bg-primary/60 rounded-full"></span>
 
-                  <AnimatedSection animationType="fade-up" delay={400}>
-                    <p className="text-gray-700 leading-8 mb-6">
-                      Our identity is built on a foundation of Indian
-                      manufacturing excellence, where advanced technology meets
-                      unwavering integrity.
-                    </p>
-                  </AnimatedSection>
+                <AnimatedSection animationType="fade-up" delay={400}>
+                  <p className="text-gray-700 leading-8">
+                    <strong className="text-black">
+                      More than just manufacturers,
+                    </strong>{" "}
+                    we see ourselves as architects of precision and partners in
+                    progress. As a leading force in Indian manufacturing, we
+                    specialize in transforming raw metals —{" "}
+                    <strong>
+                      Brass, Stainless Steel, Mild Steel, Copper, and Aluminium
+                    </strong>{" "}
+                    — into precision-engineered components that fuel both
+                    industrial and national growth.
+                  </p>
+                </AnimatedSection>
 
-                  <AnimatedSection animationType="fade-up" delay={500}>
-                    <p className="text-gray-700 leading-8 mb-6">
-                      Our mission is clear: to harness advanced machining and
-                      curated expertise to transform raw metals into reliable,
-                      high-tolerance solutions. We go beyond supplying parts; we
-                      partner with industries to provide the essential building
-                      blocks for our clients' success.
-                    </p>
-                  </AnimatedSection>
-                </div>
+                <AnimatedSection animationType="fade-up" delay={500}>
+                  <p className="text-gray-700 leading-8">
+                    Our work reflects a deep dedication to{" "}
+                    <strong>innovation</strong>, <strong>craftsmanship</strong>,
+                    and the advancement of{" "}
+                    <strong>Indian manufacturing excellence</strong>, where
+                    advanced technology seamlessly blends with unwavering
+                    integrity.
+                  </p>
+                </AnimatedSection>
 
-                {/* Materials we work with */}
                 <AnimatedSection animationType="fade-up" delay={600}>
-                  <div className="pt-4">
-                    <p className="text-sm font-semibold text-gray-600 mb-4">
-                      Materials We Specialize In:
-                    </p>
-                    <div className="flex flex-wrap gap-3">
-                      {[
-                        "Brass",
-                        "Stainless Steel",
-                        "Mild Steel",
-                        "Copper",
-                        "Aluminum",
-                      ].map((m) => (
-                        <span
-                          key={m}
-                          className="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20 hover:bg-primary/20 hover:shadow-md transition-all duration-300"
-                        >
-                          {m}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  <p className="text-gray-700 leading-8">
+                    <strong className="text-black">
+                      At the heart of Bharat Products lies a clear mission:
+                    </strong>{" "}
+                    to harness advanced machining and curated expertise to
+                    deliver reliable, high-tolerance solutions. We go beyond
+                    simply supplying parts; we collaborate with industries to
+                    provide the essential building blocks for their success.
+                  </p>
                 </AnimatedSection>
               </div>
             </AnimatedSection>
           </div>
 
-          {/* Vision, Promise, Difference Cards */}
-          <section className="relative py-20">
-            <div className="max-w-7xl mx-auto ">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 items-stretch">
-                {/* Card 1 */}
-                <AnimatedSection animationType="scale" delay={700}>
-                  <div
-                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
-                        border border-primary/20 hover:shadow-xl hover:scale-105
-                        transition-all duration-300 relative overflow-hidden group
-                        flex flex-col"
-                  >
-                    {/* Bubble Decoration */}
-                    <div
-                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
-                          group-hover:scale-150 transition-transform duration-500"
-                    />
+          {/* Full-width philosophy + materials + vision/promise */}
+          <AnimatedSection animationType="fade-up" delay={700}>
+            <div className="max-w-7xl mx-auto mt-28 text-center">
+              <p className="text-lg text-gray-700 leading-8 mb-12">
+                By combining{" "}
+                <strong className="text-black">precision engineering</strong>{" "}
+                with a{" "}
+                <strong className="text-black">
+                  partnership-driven approach
+                </strong>
+                , we ensure that our clients receive not just components, but{" "}
+                <strong className="text-black">solutions</strong> that empower
+                progress and strengthen the foundation of{" "}
+                <strong className="text-black">global industry</strong>.
+              </p>
 
-                    {/* Content */}
-                    <div className="relative z-10 flex flex-col flex-1">
-                      <Target className="w-10 h-10 text-primary mb-4" />
-
-                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                        Our Vision
-                      </h3>
-
-                      <p className="text-gray-700 leading-6 flex-1">
-                        To be recognized as India&apos;s most trusted
-                        engineering partner and set the global standard for
-                        precision manufacturing excellence.
-                      </p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                {/* Card 2 */}
-                <AnimatedSection animationType="scale" delay={800}>
-                  <div
-                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
-                        border border-primary/20 hover:shadow-xl hover:scale-105
-                        transition-all duration-300 relative overflow-hidden group
-                        flex flex-col"
-                  >
-                    {/* Bubble Decoration */}
-                    <div
-                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
-                          group-hover:scale-150 transition-transform duration-500"
-                    />
-
-                    {/* Content */}
-                    <div className="relative z-10 flex flex-col flex-1">
-                      <Award className="w-10 h-10 text-primary mb-4" />
-
-                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                        Our Brand Promise
-                      </h3>
-
-                      <p className="text-gray-700 leading-6 flex-1">
-                        Precision, forged in trust. Transforming raw metals into
-                        reliable, high-tolerance solutions through
-                        uncompromising integrity.
-                      </p>
-                    </div>
-                  </div>
-                </AnimatedSection>
-
-                {/* Card 3 */}
-                <AnimatedSection animationType="scale" delay={900}>
-                  <div
-                    className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
-                        border border-primary/20 hover:shadow-xl hover:scale-105
-                        transition-all duration-300 relative overflow-hidden group
-                        flex flex-col"
-                  >
-                    {/* Bubble Decoration */}
-                    <div
-                      className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
-                          group-hover:scale-150 transition-transform duration-500"
-                    />
-
-                    {/* Content */}
-                    <div className="relative z-10 flex flex-col flex-1">
-                      <Zap className="w-10 h-10 text-primary mb-4" />
-
-                      <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
-                        Our Difference
-                      </h3>
-
-                      <p className="text-gray-700 leading-6 flex-1">
-                        Where others see an order, we see a partnership. We
-                        deliver precision-engineered solutions that become the
-                        foundation of your long-term success.
-                      </p>
-                    </div>
-                  </div>
-                </AnimatedSection>
+              {/* Materials */}
+              <div className="mb-20">
+                <p className="text-sm font-semibold text-gray-600 mb-6 uppercase tracking-wider">
+                  Materials We Specialize In
+                </p>
+                <div className="flex flex-wrap justify-center gap-4">
+                  {[
+                    "Brass",
+                    "Stainless Steel",
+                    "Mild Steel",
+                    "Copper",
+                    "Aluminum",
+                  ].map((m) => (
+                    <span
+                      key={m}
+                      className="px-5 py-2 rounded-full bg-primary/10 text-primary text-sm font-medium border border-primary/20"
+                    >
+                      {m}
+                    </span>
+                  ))}
+                </div>
               </div>
+
+              <section className="relative py-20">
+                <div className="max-w-7xl mx-auto ">
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-20 items-stretch">
+                    {/* Card 1 */}
+                    <AnimatedSection animationType="scale" delay={700}>
+                      <div
+                        className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                      >
+                        {/* Bubble Decoration */}
+                        <div
+                          className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                        />
+
+                        {/* Content */}
+                        <div className="relative z-10 flex flex-col flex-1">
+                          <Target className="w-10 h-10 text-primary mb-4" />
+
+                          <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                            Our Vision
+                          </h3>
+
+                          <p className="text-gray-700 leading-6 flex-1">
+                            To be recognized as India&apos;s most trusted
+                            engineering partner and set the global standard for
+                            precision manufacturing excellence.
+                          </p>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+
+                    {/* Card 2 */}
+                    <AnimatedSection animationType="scale" delay={800}>
+                      <div
+                        className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                      >
+                        {/* Bubble Decoration */}
+                        <div
+                          className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                        />
+
+                        {/* Content */}
+                        <div className="relative z-10 flex flex-col flex-1">
+                          <Award className="w-10 h-10 text-primary mb-4" />
+
+                          <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                            Our Brand Promise
+                          </h3>
+
+                          <p className="text-gray-700 leading-6 flex-1">
+                            Precision, forged in trust. Transforming raw metals
+                            into reliable, high-tolerance solutions through
+                            uncompromising integrity.
+                          </p>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+
+                    {/* Card 3 */}
+                    <AnimatedSection animationType="scale" delay={900}>
+                      <div
+                        className="h-full p-8 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10
+                        border border-primary/20 hover:shadow-xl hover:scale-105
+                        transition-all duration-300 relative overflow-hidden group
+                        flex flex-col"
+                      >
+                        {/* Bubble Decoration */}
+                        <div
+                          className="absolute -top-8 -right-8 w-24 h-24 bg-primary/20 rounded-full
+                          group-hover:scale-150 transition-transform duration-500"
+                        />
+
+                        {/* Content */}
+                        <div className="relative z-10 flex flex-col flex-1">
+                          <Zap className="w-10 h-10 text-primary mb-4" />
+
+                          <h3 className="text-xl font-bold text-foreground mb-3 font-red_hat_display">
+                            Our Difference
+                          </h3>
+
+                          <p className="text-gray-700 leading-6 flex-1">
+                            Where others see an order, we see a partnership. We
+                            deliver precision-engineered solutions that become
+                            the foundation of your long-term success.
+                          </p>
+                        </div>
+                      </div>
+                    </AnimatedSection>
+                  </div>
+                </div>
+              </section>
             </div>
-          </section>
+          </AnimatedSection>
         </div>
       </section>
 
@@ -1187,7 +1226,6 @@ export default function AboutPage() {
           </AnimatedSection>
         </div>
       </section>
-
     </div>
   );
 }
