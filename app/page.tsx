@@ -27,7 +27,7 @@ export const metadata: Metadata = {
       "Trusted precision engineering partner for brass, stainless steel, aluminium and forged parts.",
     images: [
       {
-        url: "/Final-Logo/1x/White BG Favicon.png",
+        url: "/images/Final-Logo/1x/White BG Favicon.png",
         width: 1200,
         height: 630,
         alt: "Bharat Products",
