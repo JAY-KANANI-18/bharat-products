@@ -7,13 +7,13 @@ import AdvancedCarousel from "@/components/AdvancedCarousel";
 import Image from "next/image";
 
 const items = [
-  {
-    id: "precision-high-quality-components",
-    title: "Precision High Quality Components",
-    category: "Precision Engineering",
-    image: "/images/products/precision-brass-components.jpg",
-    alt: "precision-high-quality-components",
-  },
+  // {
+  //   id: "precision-high-quality-components",
+  //   title: "Precision High Quality Components",
+  //   category: "Precision Engineering",
+  //   image: "/images/products/precision-brass-components.jpg",
+  //   alt: "precision-high-quality-components",
+  // },
   {
     id: "brass-turned-parts",
     title: "Brass Turned Parts",
@@ -46,7 +46,7 @@ const items = [
     id: "automotive-parts",
     title: "Automotive Parts",
     category: "Automotive Components",
-    image: "/images/products/stainless-steel-parts.jpg",
+    image: "/images/products/automotive.png",
     alt: "automotive-parts",
   },
   {
@@ -60,7 +60,7 @@ const items = [
     id: "forged-and-machined-components",
     title: "Forged and Machined Components",
     category: "Heavy Duty Components",
-    image: "/images/products/stainless-steel-parts.jpg",
+    image: "/images/products/forged.jpg",
     alt: "forged-and-machined-components",
   },
 ];

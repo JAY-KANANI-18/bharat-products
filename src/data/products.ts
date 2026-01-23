@@ -6,12 +6,12 @@ export type ProductLite = {
 };
 
 export const products: ProductLite[] = [
-    {
-        id: "precision-high-quality-components",
-        title: "Precision High Quality Components",
-        category: "Precision Engineering",
-        image: "/images/products/precision-brass-components.jpg",
-    },
+    // {
+    //     id: "precision-high-quality-components",
+    //     title: "Precision High Quality Components",
+    //     category: "Precision Engineering",
+    //     image: "/images/products/precision-brass-components.jpg",
+    // },
     {
         id: "brass-turned-parts",
         title: "Brass Turned Parts",
@@ -40,7 +40,7 @@ export const products: ProductLite[] = [
         id: "automotive-parts",
         title: "Automotive Parts",
         category: "Automotive Components",
-        image: "/images/products/stainless-steel-parts.jpg",
+        image: "/images/products/automotive.png",
     },
     {
         id: "copper-and-other-metal-parts",
@@ -52,7 +52,7 @@ export const products: ProductLite[] = [
         id: "forged-and-machined-components",
         title: "Forged and Machined Components",
         category: "Heavy Duty Components",
-        image: "/images/products/stainless-steel-parts.jpg",
+        image: "/images/products/forged.jpg",
     },
 ];
 
@@ -374,14 +374,14 @@ export const specialCategoryGroups: Record<string, CategoryGroup[]> = {
             title: "Forged Components",
             items: [
                 {
-                    title: "Forged Parts", image: "/images/products/stainless-steel-parts/imgi_6_ss-products.jpg",
+                    title: "Forged Parts", image: "/images/products/forged-and-machined-components/forged-parts.jpg",
 
                 },
                 {
-                    title: "Precision Machined Forged Parts", image: "/images/products/stainless-steel-parts/imgi_7_ss-products-1.jpg",
+                    title: "Precision Machined Forged Parts", image: "/images/products/forged-and-machined-components/precision-machined-forged-parts.jpg",
                 },
                 {
-                    title: "Custom Forged Components", image: "/images/products/stainless-steel-parts/imgi_8_ss-products-2.jpg",
+                    title: "Custom Forged Components", image: "/images/products/forged-and-machined-components/custom-forged-components.jpg",
                 },
             ],
         },

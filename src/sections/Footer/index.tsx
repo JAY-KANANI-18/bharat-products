@@ -11,30 +11,6 @@ export const Footer = () => {
           {/* Left: Logo + Contact */}
           <div>
             <FooterLogo />
-            <div className="px-5 mt-4 space-y-3 text-white/80">
-              {/* <div>Bharat Products</div> */}
-              <div>
-                G-3533, GIDC,
-                <br />
-                Phase-3, Dared,
-                <br />
-                Jamnagar, Gujarat - 361006
-              </div>
-              <div>
-                <a
-                  className="hover:text-white"
-                  href="mailto:info@bharatproducts.com"
-                >
-                  info@bharatprod.com
-                </a>
-              </div>
-              <div>
-                Phone:{" "}
-                <a className="hover:text-white" href="tel:+919876543210">
-                  +91 8460524463
-                </a>
-              </div>
-            </div>
           </div>
 
           {/* Center: Quick Links */}

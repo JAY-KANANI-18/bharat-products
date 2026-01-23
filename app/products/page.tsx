@@ -9,22 +9,22 @@ import { useState } from "react";
 
 // Product data with detailed information
 const products = [
-  {
-    id: "precision-high-quality-components",
-    title: "Precision High Quality Components",
-    category: "Precision Engineering",
-    description:
-      "High-precision engineered components manufactured to meet strict quality standards and tight tolerances for critical industrial applications.",
-    image: "/images/products/precision-brass-components.jpg",
-    features: [
-      "Tight dimensional tolerances",
-      "Superior surface finish",
-      "Consistent quality",
-      "Long service life",
-    ],
-    applications: ["Automotive", "Aerospace", "Industrial Machinery"],
-    price: "Custom Quote",
-  },
+  // {
+  //   id: "precision-high-quality-components",
+  //   title: "Precision High Quality Components",
+  //   category: "Precision Engineering",
+  //   description:
+  //     "High-precision engineered components manufactured to meet strict quality standards and tight tolerances for critical industrial applications.",
+  //   image: "/images/products/precision-brass-components.jpg",
+  //   features: [
+  //     "Tight dimensional tolerances",
+  //     "Superior surface finish",
+  //     "Consistent quality",
+  //     "Long service life",
+  //   ],
+  //   applications: ["Automotive", "Aerospace", "Industrial Machinery"],
+  //   price: "Custom Quote",
+  // },
   {
     id: "brass-turned-parts",
     title: "Brass Turned Parts",
@@ -95,7 +95,7 @@ const products = [
     category: "Automotive Components",
     description:
       "Precision-engineered automotive components designed to meet OEM standards for performance, safety, and durability.",
-    image: "/images/products/stainless-steel-parts.jpg",
+    image: "/images/products/forging.png",
     features: [
       "OEM quality standards",
       "High fatigue resistance",
@@ -127,7 +127,7 @@ const products = [
     category: "Heavy Duty Components",
     description:
       "Forged and precision-machined components engineered for high strength, durability, and performance under extreme conditions.",
-    image: "/images/products/stainless-steel-parts.jpg",
+    image: "/images/products/forged.jpg",
     features: [
       "High load-bearing capacity",
       "Enhanced material strength",
@@ -429,7 +429,6 @@ export default function ProductsPage() {
           </AnimatedSection>
         </div>
       </section>
-
     </div>
   );
 }
