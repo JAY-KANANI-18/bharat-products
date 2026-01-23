@@ -6,7 +6,7 @@ export const FooterQuick = () => {
     { href: "/about", label: "About Us" },
     { href: "/products", label: "Products" },
     { href: "/quality", label: "Quality" },
-    { href: "/policy", label: "Policy" },
+    // { href: "/policy", label: "Policy" },
     { href: "/infrastructure", label: "Infrastructure" },
     { href: "/brochure", label: "Brochure" },
     { href: "/contact", label: "Contact Us" },
