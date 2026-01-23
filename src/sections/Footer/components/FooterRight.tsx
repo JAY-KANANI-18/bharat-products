@@ -17,7 +17,12 @@ export const FooterRight = () => {
 
       <div className="space-y-6 text-white/70">
         {/* Address */}
-        <div className="flex gap-4 items-start">
+        <div
+          className="flex gap-4 items-start cursor-pointer"
+          onClick={() =>
+            window.open("https://maps.app.goo.gl/LGvPokgACSrNYphe7", "_blank")
+          }
+        >
           <MapPin className="w-5 h-5 text-white/60 mt-1" />
           <div>
             <p className="text-white font-medium mb-1">Office Address</p>
