@@ -46,7 +46,7 @@ const items = [
     id: "automotive-parts",
     title: "Automotive Parts",
     category: "Automotive Components",
-    image: "/images/products/automotive.png",
+    image: "/images/products/automotive-parts/auto_1.jpg",
     alt: "automotive-parts",
   },
   {

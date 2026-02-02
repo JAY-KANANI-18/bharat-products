@@ -40,7 +40,7 @@ export const products: ProductLite[] = [
         id: "automotive-parts",
         title: "Automotive Parts",
         category: "Automotive Components",
-        image: "/images/products/automotive.png",
+        image: "/images/products/automotive-parts/auto_1.jpg",
     },
     {
         id: "copper-and-other-metal-parts",
@@ -214,7 +214,7 @@ export const specialCategoryGroups: Record<string, CategoryGroup[]> = {
             title: "Automobile Parts",
             items: [
                 {
-                    title: "Automotive Contact Pins",
+                    title: "Automative Components",
                     image: "/images/products/brass-turned-parts/imgi_29_contact-pins.jpg",
                 },
             ],
@@ -353,10 +353,16 @@ export const specialCategoryGroups: Record<string, CategoryGroup[]> = {
             title: "Automotive Components",
             items: [
                 {
-                    title: "Automotive Contact Pins", image: "/images/products/stainless-steel-parts/imgi_6_ss-products.jpg",
+                    title: "Automative Components", image: "/images/products/automotive-parts/auto_1.jpg",
                 },
                 {
-                    title: "Automotive Components", image: "/images/products/stainless-steel-parts/imgi_7_ss-products-1.jpg",
+                    title: "Automative Components", image: "/images/products/automotive-parts/auto_2.jpg",
+                },
+                {
+                    title: "Automative Components", image: "/images/products/automotive-parts/auto_3.jpg",
+                },
+                {
+                    title: "Automative Components", image: "/images/products/automotive-parts/auto_4.jpg",
                 },
             ],
         },

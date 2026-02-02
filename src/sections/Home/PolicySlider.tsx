@@ -91,11 +91,10 @@ export const PolicySlider: React.FC = () => {
                 return (
                   <Link key={href} href={href}>
                     <div
-                      className={`group w-full bg-white rounded-2xl shadow-sm hover:shadow-2xl transition overflow-hidden border ${
-                        isActive
+                      className={`group w-full bg-white rounded-2xl shadow-sm hover:shadow-2xl transition overflow-hidden border ${isActive
                           ? "border-primary/30 ring-1 ring-primary/20"
                           : "border-gray-200"
-                      } h-[360px] md:h-[380px] flex flex-col`}
+                        } h-[360px] md:h-[380px] flex flex-col`}
                     >
                       <div className="p-6 flex-1 flex flex-col">
                         <div className="flex items-center gap-3 mb-3">
@@ -109,11 +108,11 @@ export const PolicySlider: React.FC = () => {
                           className={`${"max-h-[420px]"} relative transition-all flex-1 overflow-hidden`}
                           aria-expanded={isActive}
                         >
-                          <ul className="space-y-2 text-foreground/80 text-sm">
+                          <ul className="space-y-3 text-foreground/80 text-sm">
                             {visibleDetails.map((d, j) => (
-                              <li key={j} className="flex items-start gap-2">
-                                <ShieldCheck className="w-4 h-4 text-primary mt-0.5" />
-                                <span>{d}</span>
+                              <li key={j} className="flex gap-3 min-h-[24px]">
+                                <ShieldCheck className="w-4 h-4 text-primary mt-1 flex-shrink-0" />
+                                <span className="leading-6 flex-1">{d}</span>
                               </li>
                             ))}
                           </ul>

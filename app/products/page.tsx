@@ -95,7 +95,7 @@ const products = [
     category: "Automotive Components",
     description:
       "Precision-engineered automotive components designed to meet OEM standards for performance, safety, and durability.",
-    image: "/images/products/forging.png",
+    image: "/images/products/automotive-parts/auto_1.jpg",
     features: [
       "OEM quality standards",
       "High fatigue resistance",
